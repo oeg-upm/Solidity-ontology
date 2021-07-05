@@ -1,1094 +1,2013 @@
-@prefix : <http://www.solidityontology.oeg.upm.es#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.solidityontology.oeg.upm.es> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.solidityontology.oeg.upm.es#"
+     xml:base="http://www.solidityontology.oeg.upm.es"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.solidityontology.oeg.upm.es">
+        <owl:versionIRI rdf:resource="urn:absolute:1.0"/>
+        <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
+        <terms:creator>Andrea Cimmino</terms:creator>
+        <terms:creator>Juan Cano-Benito</terms:creator>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <rdfs:comment>Ontology explained</rdfs:comment>
+        <rdfs:label>Solidity Ontology</rdfs:label>
+        <owl:versionInfo rdf:resource="https://oeg.fi.upm.es/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
 
-<http://www.solidityontology.oeg.upm.es> rdf:type owl:Ontology ;
-                                          owl:versionIRI <urn:absolute:1.0> .
 
-#################################################################
-#    Object Properties
-#################################################################
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayDimension
-:hasArrayDimension rdf:type owl:ObjectProperty ;
-                   rdfs:label "has Array Dimension" .
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayType
-:hasArrayType rdf:type owl:ObjectProperty ;
-              rdfs:label "has Array Type" .
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayValue
-:hasArrayValue rdf:type owl:ObjectProperty ;
-               rdfs:label "has Array Value" .
 
+    <!-- http://purl.org/dc/terms/creator -->
 
-###  http://www.solidityontology.oeg.upm.es#hasAttributeValue
-:hasAttributeValue rdf:type owl:ObjectProperty ;
-                   rdfs:label "has Attribute Value" .
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasAttributeVisibility
-:hasAttributeVisibility rdf:type owl:ObjectProperty ;
-                        rdfs:label "has Attribute Visibility" .
+    <!-- http://purl.org/dc/terms/license -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasConstantAttribute
-:hasConstantAttribute rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Constant Attribute" .
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute
-:hasConstantStructAttribute rdf:type owl:ObjectProperty ;
-                            rdfs:label "has Constant Struct Attribute" .
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasConstructor
-:hasConstructor rdf:type owl:ObjectProperty ;
-                rdfs:label "has Constructor" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasAbstractFunction -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasAbstractFunction">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#Abstract"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.solidityontology.oeg.upm.es#hasInterfaceFunction"/>
+        <rdfs:label>has Abstract Function</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasConstructorArguments
-:hasConstructorArguments rdf:type owl:ObjectProperty ;
-                         rdfs:label "has Constructor Arguments" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasArrayDimension -->
 
-###  http://www.solidityontology.oeg.upm.es#hasContractType
-:hasContractType rdf:type owl:ObjectProperty ;
-                 rdfs:label "has Contract Type" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasArrayDimension">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayType"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayDimension"/>
+        <rdfs:label>has Array Dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasContractValue
-:hasContractValue rdf:type owl:ObjectProperty ;
-                  rdfs:label "has Contract Value" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasArrayType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasArrayType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayType"/>
+        <rdfs:label>has Array Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasEvent
-:hasEvent rdf:type owl:ObjectProperty ;
-          rdfs:label "has Event" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasArrayValue -->
 
-###  http://www.solidityontology.oeg.upm.es#hasEventArguments
-:hasEventArguments rdf:type owl:ObjectProperty ;
-                   rdfs:label "has Event Arguments" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasArrayValue">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayValueSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayValue"/>
+        <rdfs:label>has Array Value</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour
-:hasFallbackBehaviour rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Fallback Behaviour" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasAttribute -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasAttribute">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#AttributeSpecification"/>
+        <rdfs:label>has Attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackFunction
-:hasFallbackFunction rdf:type owl:ObjectProperty ;
-                     rdfs:comment "Contract has a Fallback Function" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasAttributeValue -->
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackVisibility
-:hasFallbackVisibility rdf:type owl:ObjectProperty ;
-                       rdfs:label "has Fallback Visibility" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasAttributeValue">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ValueSpecification"/>
+        <rdfs:label>has Attribute Value</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunction
-:hasFunction rdf:type owl:ObjectProperty ;
-             rdfs:label "has Function" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasAttributeVisibility -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasAttributeVisibility">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:label>has Attribute Visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionArguments
-:hasFunctionArguments rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Function Arguments" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute -->
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour
-:hasFunctionBehaviour rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Function Behaviour" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#StructType"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification"/>
+        <rdfs:label>has Constant Struct Attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionReturn
-:hasFunctionReturn rdf:type owl:ObjectProperty ;
-                   rdfs:label "has Function Return" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasConstantType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasConstantType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantType"/>
+        <rdfs:label>has Constant Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionVisibility
-:hasFunctionVisibility rdf:type owl:ObjectProperty ;
-                       rdfs:label "has Function Visibility" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasConstructor -->
 
-###  http://www.solidityontology.oeg.upm.es#hasInterface
-:hasInterface rdf:type owl:ObjectProperty ;
-              rdfs:label "has Interface" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasConstructor">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ConstructorSpecification"/>
+        <rdfs:label>has Constructor</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasInterfaceFunction
-:hasInterfaceFunction rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Interface Function" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasConstructorArguments -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasConstructorArguments">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ConstructorSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:label>has Constructor Arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasKeyMap
-:hasKeyMap rdf:type owl:ObjectProperty ;
-           rdfs:label "has Key Map" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasEvent -->
 
-###  http://www.solidityontology.oeg.upm.es#hasModifier
-:hasModifier rdf:type owl:ObjectProperty ;
-             rdfs:label "has Modifier" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasEvent">
+        <rdfs:label>has Event</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierArguments
-:hasModifierArguments rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Modifier Arguments" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasEventArguments -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasEventArguments">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#EventSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:label>has Event Arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierBehaviour
-:hasModifierBehaviour rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Modifier Behaviour" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour -->
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierOverrideType
-:hasModifierOverrideType rdf:type owl:ObjectProperty ;
-                         rdfs:label "has Modifier Override Type" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ReceiveSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FRBehaviour"/>
+        <rdfs:label>has Fallback Behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute
-:hasNonConstantAttribute rdf:type owl:ObjectProperty ;
-                         rdfs:label "has Non Constant Attribute" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasFallbackFunction -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFallbackFunction">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FallbackSpecification"/>
+        <rdfs:comment>Contract has a Fallback Function</rdfs:comment>
+        <rdfs:label>has Fallback Function</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasOverrideReturn
-:hasOverrideReturn rdf:type owl:ObjectProperty ;
-                   rdfs:label "has Override Return" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasFallbackVisibility -->
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterType
-:hasParameterType rdf:type owl:ObjectProperty ;
-                  rdfs:label "has Parameter Type" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFallbackVisibility">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ReceiveSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FRVisibility"/>
+        <rdfs:label>has Fallback Visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation
-:hasParameterTypeWithDataLocation rdf:type owl:ObjectProperty ;
-                                  rdfs:label "has Parameter Type With Data Location" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunction -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunction">
+        <owl:propertyDisjointWith rdf:resource="http://www.solidityontology.oeg.upm.es#hasInterfaceFunction"/>
+        <rdfs:label>has Function</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour
-:hasReceiveBehaviour rdf:type owl:ObjectProperty ;
-                     rdfs:label "has Receive Behaviour" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunctionArguments -->
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveFunction
-:hasReceiveFunction rdf:type owl:ObjectProperty ;
-                    rdfs:comment "Contract has a Receive Function" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunctionArguments">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:label>has Function Arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveVisibility
-:hasReceiveVisibility rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Receive Visibility" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+        <rdfs:label>has Function Behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasRestrictedFunction
-:hasRestrictedFunction rdf:type owl:ObjectProperty ;
-                       rdfs:label "has Restricted Function" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunctionReturn -->
 
-###  http://www.solidityontology.oeg.upm.es#hasSimpleArrayValue
-:hasSimpleArrayValue rdf:type owl:ObjectProperty ;
-                     rdfs:label "has Simple Array Value" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunctionReturn">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:label>has Function Return</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasSimpleType
-:hasSimpleType rdf:type owl:ObjectProperty ;
-               rdfs:label "has Simple Type" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunctionVisibility -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunctionVisibility">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:label>has Function Visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasSimpleValue
-:hasSimpleValue rdf:type owl:ObjectProperty ;
-                rdfs:label "has Simple Value" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasIndexArrayValue -->
 
-###  http://www.solidityontology.oeg.upm.es#hasType
-:hasType rdf:type owl:ObjectProperty ;
-         rdfs:label "has Type" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasIndexArrayValue">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayValue"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:label>has Index Array Value</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasValueMap
-:hasValueMap rdf:type owl:ObjectProperty ;
-             rdfs:label "has Value Map" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasInterface -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasInterface">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Interface"/>
+        <rdfs:label>has Interface</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#includes
-:includes rdf:type owl:ObjectProperty ;
-          rdfs:label "includes" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasInterfaceFunction -->
 
-###  http://www.solidityontology.oeg.upm.es#isAbstract
-:isAbstract rdf:type owl:ObjectProperty ;
-            rdfs:label "is Abstract" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasInterfaceFunction">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#Interface"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification"/>
+        <rdfs:label>has Interface Function</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-#################################################################
-#    Data properties
-#################################################################
+    <!-- http://www.solidityontology.oeg.upm.es#hasKeyMap -->
 
-###  http://www.solidityontology.oeg.upm.es#hasCode
-:hasCode rdf:type owl:DatatypeProperty ;
-         rdfs:label "has Code" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasKeyMap">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#MapType"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+        <rdfs:label>has Key Map</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasImports
-:hasImports rdf:type owl:DatatypeProperty ;
-            rdfs:label "has Imports" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasMapType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasMapType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#MapAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#MapType"/>
+        <rdfs:label>has Map Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasIndex
-:hasIndex rdf:type owl:DatatypeProperty ;
-          rdfs:label "has Index" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasModifier -->
 
-###  http://www.solidityontology.oeg.upm.es#hasInheritance
-:hasInheritance rdf:type owl:DatatypeProperty ;
-                rdfs:label "has Inheritance" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasModifier">
+        <rdfs:label>has Modifier</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasLenght
-:hasLenght rdf:type owl:DatatypeProperty ;
-           rdfs:label "has Lenght" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasModifierArguments -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasModifierArguments">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:label>has Modifier Arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasMemory
-:hasMemory rdf:type owl:DatatypeProperty ;
-           rdfs:label "has Memory" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasModifierBehaviour -->
 
-###  http://www.solidityontology.oeg.upm.es#hasMemoryM
-:hasMemoryM rdf:type owl:DatatypeProperty ;
-            rdfs:label "has MemoryM" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasModifierBehaviour">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierBehaviour"/>
+        <rdfs:label>has Modifier Behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasMemoryN
-:hasMemoryN rdf:type owl:DatatypeProperty ;
-            rdfs:label "hasMemoryN" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasModifierOverrideType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasModifierOverrideType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideType"/>
+        <rdfs:label>Has Modifier Override Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#hasName
-:hasName rdf:type owl:DatatypeProperty ;
-         rdfs:domain [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasName ;
-                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onDataRange xsd:string
-                     ] .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute -->
 
-###  http://www.solidityontology.oeg.upm.es#hasOption
-:hasOption rdf:type owl:DatatypeProperty ;
-           rdfs:label "has Option" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#LibraryImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:label>has Non Constant Attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#hasValue
-:hasValue rdf:type owl:DatatypeProperty ;
-          rdfs:label "has Value" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasNonConstantType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasNonConstantType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+        <rdfs:label>has Non Constant Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#isConstant
-:isConstant rdf:type owl:DatatypeProperty ;
-            rdfs:label "is Constant" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasOverrideReturn -->
 
-###  http://www.solidityontology.oeg.upm.es#isInmutable
-:isInmutable rdf:type owl:DatatypeProperty ;
-             rdfs:label "is Inmutable" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasOverrideReturn">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification"/>
+        <rdfs:label>has Override Return</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-#################################################################
-#    Classes
-#################################################################
+    <!-- http://www.solidityontology.oeg.upm.es#hasParameterType -->
 
-###  http://www.solidityontology.oeg.upm.es#Abstract
-:Abstract rdf:type owl:Class ;
-          rdfs:subClassOf :ContractImplementation ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasRestrictedFunction ;
-                            owl:someValuesFrom :RestrictedFunctionSpecification
-                          ] ;
-          rdfs:comment "A contract which may have unimplemented functions" ;
-          rdfs:label "Abstract" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasParameterType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:label>has Parameter Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#Address
-:Address rdf:type owl:Class ;
-         rdfs:subClassOf :ElementaryType ;
-         rdfs:label "Address" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+        <rdfs:label>has Parameter Type With Data Location</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#ArrayDimension
-:ArrayDimension rdf:type owl:Class ;
-                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasIndex ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:integer
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasLenght ;
-                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:integer
-                                ] ;
-                rdfs:comment "The number of indices needed in order to specify an individual element of the array and its value" ;
-                rdfs:label "Array Dimension" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour -->
 
-###  http://www.solidityontology.oeg.upm.es#ArrayType
-:ArrayType rdf:type owl:Class ;
-           rdfs:subClassOf :ParameterTypeWithDataLocation ,
-                           :SimpleType ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasArrayDimension ;
-                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :ArrayDimension
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasType ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :SimpleType
-                           ] ;
-           rdfs:label "Array Type" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FallbackSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FRBehaviour"/>
+        <rdfs:label>has Receive Behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayValue
-:ArrayValue rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasSimpleArrayValue ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :SimpleValue
-                            ] ;
-            rdfs:label "Array Value" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasReceiveFunction -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasReceiveFunction">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#ReceiveSpecification"/>
+        <rdfs:comment>Contract has a Receive Function</rdfs:comment>
+        <rdfs:label>has Receive Function</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#ArrayValueSpecification
-:ArrayValueSpecification rdf:type owl:Class ;
-                         rdfs:subClassOf :ValueSpecification ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty :hasArrayValue ;
-                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass :ArrayValue
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty :hasIndex ;
-                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onDataRange xsd:integer
-                                         ] ;
-                         rdfs:label "Array Value Specification" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasReceiveVisibility -->
 
-###  http://www.solidityontology.oeg.upm.es#ArrayVariableSpecification
-:ArrayVariableSpecification rdf:type owl:Class ;
-                            rdfs:subClassOf :ConstantAttributeSpecification ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty :hasArrayType ;
-                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onClass :ArrayType
-                                            ] ;
-                            rdfs:label "Array Variable Specification" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasReceiveVisibility">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FallbackSpecification"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#FRVisibility"/>
+        <rdfs:label>has Receive Visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#Bool
-:Bool rdf:type owl:Class ;
-      rdfs:subClassOf :ElementaryType ;
-      rdfs:label "Bool" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasType -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasType">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayType"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+        <rdfs:label>has Type</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#BoolValue
-:BoolValue rdf:type owl:Class ;
-           rdfs:subClassOf :SimpleValue ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasValue ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onDataRange xsd:boolean
-                           ] ;
-           rdfs:label "Bool Value" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasUsingForDirective -->
 
-###  http://www.solidityontology.oeg.upm.es#Bytes
-:Bytes rdf:type owl:Class ;
-       rdfs:subClassOf :ParameterTypeWithDataLocation ,
-                       :SingleMemoryType ;
-       rdfs:label "Bytes" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasUsingForDirective">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#UsinForDirective"/>
+        <rdfs:label>has Using For Directive</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#BytesValue
-:BytesValue rdf:type owl:Class ;
-            rdfs:subClassOf :SimpleValue ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasValue ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:hexBinary
-                            ] ;
-            rdfs:label "Bytes Value" .
+    <!-- http://www.solidityontology.oeg.upm.es#hasValueMap -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasValueMap">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#MapType"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+        <rdfs:label>has Value Map</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#CompleteFunctionSpecification
-:CompleteFunctionSpecification rdf:type owl:Class ;
-                               rdfs:subClassOf :RestrictedFunctionSpecification ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasCode ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onDataRange xsd:string
-                                               ] ;
-                               rdfs:label "Complete Function Specification" .
 
+    <!-- http://www.solidityontology.oeg.upm.es#includes -->
 
-###  http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification
-:ConstantAttributeSpecification rdf:type owl:Class ;
-                                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasName ;
-                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                  owl:onDataRange xsd:string
-                                                ] ;
-                                rdfs:comment "This type of attributes cant have a value nor a visibility." ;
-                                rdfs:label "Constant Attribute Specification" .
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#includes">
+        <rdfs:label>includes</rdfs:label>
+    </owl:ObjectProperty>
+    
 
 
-###  http://www.solidityontology.oeg.upm.es#ConstructorSpecification
-:ConstructorSpecification rdf:type owl:Class ;
-                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hasConstructorArguments ;
-                                            owl:someValuesFrom :ParameterVariableSpecification
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hasCode ;
-                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                            owl:onDataRange xsd:string
-                                          ] ;
-                          rdfs:label "Constructor Specification" .
+    <!-- http://www.solidityontology.oeg.upm.es#isAbstract -->
 
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#isAbstract">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#Abstract"/>
+        <rdfs:label>is Abstract</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-###  http://www.solidityontology.oeg.upm.es#ContractImplementation
-:ContractImplementation rdf:type owl:Class ;
-                        rdfs:subClassOf :Implementation ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasConstantAttribute ;
-                                          owl:someValuesFrom :ConstantAttributeSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasEvent ;
-                                          owl:someValuesFrom :EventSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasFunction ;
-                                          owl:someValuesFrom :CompleteFunctionSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasModifier ;
-                                          owl:someValuesFrom :ModifierSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasNonConstantAttribute ;
-                                          owl:someValuesFrom :NonconstantAttributeSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasConstructor ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :ConstructorSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasFallbackFunction ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :FallbackSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasInterface ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :Interface
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasReceiveFunction ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :ReceiveSpecification
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :isAbstract ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :Abstract
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasInheritance ;
-                                          owl:someValuesFrom xsd:string
-                                        ] ;
-                        rdfs:comment "A computer program that includes variables, complete functions, events and all the code that perform the logic to achieve the contract objective" ;
-                        rdfs:label "Contract Implementation" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ContractType
-:ContractType rdf:type owl:Class ;
-              rdfs:subClassOf :MapType ,
-                              :ModifierOverrideType ,
-                              :ParameterType ,
-                              :SimpleType ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasContractType ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass :ContractImplementation
-                              ] ;
-              rdfs:label "Contract Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ContractValue
-:ContractValue rdf:type owl:Class ;
-               rdfs:subClassOf :SimpleValue ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :hasContractValue ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass :ContractImplementation
-                               ] ;
-               rdfs:label "Contract Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#DataLocation
-:DataLocation rdf:type owl:Class ;
-              rdfs:label "Data location" .
-
-
-###  http://www.solidityontology.oeg.upm.es#DualMemoryType
-:DualMemoryType rdf:type owl:Class ;
-                rdfs:subClassOf :MemoryType ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasMemoryM ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:short
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasMemoryN ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:short
-                                ] ;
-                rdfs:label "Dual Memory Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ElementaryType
-:ElementaryType rdf:type owl:Class ;
-                rdfs:subClassOf :MapType ,
-                                :ParameterType ,
-                                :SimpleType ;
-                rdfs:label "Elementary Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#EnumType
-:EnumType rdf:type owl:Class ;
-          rdfs:subClassOf :MapType ,
-                          :ModifierOverrideType ,
-                          :ParameterType ,
-                          :SimpleType ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasOption ;
-                            owl:someValuesFrom xsd:string
-                          ] ;
-          rdfs:label "Enum Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#EventSpecification
-:EventSpecification rdf:type owl:Class ;
-                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasEventArguments ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :ParameterVariableSpecification
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasName ;
-                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onDataRange xsd:string
-                                    ] ;
-                    rdfs:label "Event Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FRBehaviour
-:FRBehaviour rdf:type owl:Class ;
-             rdfs:comment "Fallback / Receive behaviour" ;
-             rdfs:label "Fallback Receive Behaviour" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FRVisibility
-:FRVisibility rdf:type owl:Class ;
-              rdfs:label "Fallback Receive Visibility" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FallbackSpecification
-:FallbackSpecification rdf:type owl:Class ;
-                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasReceiveVisibility ;
-                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :FRVisibility
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasReceiveBehaviour ;
-                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :FRBehaviour
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasCode ;
-                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onDataRange xsd:string
-                                       ] ;
-                       rdfs:comment "It is called when a non-existent function is called on the contract. This function always receives data, but to also receive Ethereum, function must be payable." ;
-                       rdfs:label "Fallback Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FixedMxN
-:FixedMxN rdf:type owl:Class ;
-          rdfs:subClassOf :DualMemoryType ;
-          rdfs:label "FixedMxN" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FixedValue
-:FixedValue rdf:type owl:Class ;
-            rdfs:subClassOf :SimpleValue ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasValue ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:float
-                            ] ;
-            rdfs:label "Fixed Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#FunctionBehaviour
-:FunctionBehaviour rdf:type owl:Class ;
-                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty :includes ;
-                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass :ModifierSpecification
-                                   ] ;
-                   rdfs:label "Function Behaviour" .
-
-
-###  http://www.solidityontology.oeg.upm.es#GenericValue
-:GenericValue rdf:type owl:Class ;
-              rdfs:subClassOf :SimpleValue ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasValue ;
-                                owl:cardinality "1"^^xsd:nonNegativeInteger
-                              ] ;
-              rdfs:label "Generic Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Implementation
-:Implementation rdf:type owl:Class ;
-                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasImports ;
-                                  owl:someValuesFrom xsd:string
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasName ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:string
-                                ] ;
-                rdfs:comment "There are two types of smart contract implementations, contracts and libraries" ;
-                rdfs:label "Implementation" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Int
-:Int rdf:type owl:Class ;
-     rdfs:subClassOf :SingleMemoryType .
-
-
-###  http://www.solidityontology.oeg.upm.es#IntValue
-:IntValue rdf:type owl:Class ;
-          rdfs:subClassOf :SimpleValue ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasValue ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:integer
-                          ] ;
-          rdfs:label "Int Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Interface
-:Interface rdf:type owl:Class ;
-           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasInterfaceFunction ;
-                             owl:someValuesFrom :RestrictedFunctionSpecification
-                           ] ;
-           rdfs:comment "A computer program that defines only the functions, in a way to improve the interaction between users and smart contracts, providing better accessibility, self-documentation and removing code duplication" ;
-           rdfs:label "Interface" .
-
-
-###  http://www.solidityontology.oeg.upm.es#LibraryImplementation
-:LibraryImplementation rdf:type owl:Class ;
-                       rdfs:subClassOf :Implementation ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasConstantAttribute ;
-                                         owl:someValuesFrom :ConstantAttributeSpecification
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasEvent ;
-                                         owl:someValuesFrom :EventSpecification
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasFunction ;
-                                         owl:someValuesFrom :RestrictedFunctionSpecification
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasModifier ;
-                                         owl:someValuesFrom :ModifierSpecification
-                                       ] ;
-                       rdfs:comment "Libraries are similar to contracts, but their purpose is that they are deployed only once at a specific address and for their code reuse" ;
-                       rdfs:label "Library Implementation" .
-
-
-###  http://www.solidityontology.oeg.upm.es#MapType
-:MapType rdf:type owl:Class ;
-         rdfs:label "Map Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#MapVariableSpecification
-:MapVariableSpecification rdf:type owl:Class ;
-                          rdfs:subClassOf :ConstantAttributeSpecification ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hasValueMap ;
-                                            owl:someValuesFrom :SimpleType
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hasKeyMap ;
-                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                            owl:onClass :MapType
-                                          ] ;
-                          rdfs:label "Map Variable Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#MemoryType
-:MemoryType rdf:type owl:Class ;
-            rdfs:subClassOf :MapType ,
-                            :ParameterType ,
-                            :SimpleType ;
-            rdfs:label "Memory Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ModifierBehaviour
-:ModifierBehaviour rdf:type owl:Class ;
-                   rdfs:label "Modifier Behaviour" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification
-:ModifierOverrideSpecification rdf:type owl:Class ;
-                               rdfs:subClassOf :ConstantAttributeSpecification ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasModifierOverrideType ;
-                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass :ModifierOverrideType
-                                               ] ;
-                               rdfs:label "Modifier Override Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ModifierOverrideType
-:ModifierOverrideType rdf:type owl:Class ;
-                      rdfs:label "Modifier Override Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ModifierSpecification
-:ModifierSpecification rdf:type owl:Class ;
-                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasModifierArguments ;
-                                         owl:someValuesFrom :ParameterVariableSpecification
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasOverrideReturn ;
-                                         owl:someValuesFrom :ModifierOverrideSpecification
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasModifierBehaviour ;
-                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :ModifierBehaviour
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasName ;
-                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onDataRange xsd:string
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasCode ;
-                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onDataRange xsd:string
-                                       ] ;
-                       rdfs:label "Modifier Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification
-:NonconstantAttributeSpecification rdf:type owl:Class ;
-                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :includes ;
-                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass :ConstantAttributeSpecification
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasAttributeValue ;
-                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass :ParameterVariableSpecification
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasAttributeVisibility ;
-                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass :Visibility
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :isInmutable ;
-                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onDataRange xsd:boolean
-                                                   ] ;
-                                   rdfs:comment "This type of attributes can have a value and change it, have a visibility and can be immutable" ;
-                                   rdfs:label "Non Constant Attribute Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ParameterType
-:ParameterType rdf:type owl:Class ;
-               rdfs:label "Parameter Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation
-:ParameterTypeWithDataLocation rdf:type owl:Class ;
-                               rdfs:subClassOf :ParameterType ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasParameterTypeWithDataLocation ;
-                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass :DataLocation
-                                               ] ;
-                               rdfs:label "Parameter Type With Data Location" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification
-:ParameterVariableSpecification rdf:type owl:Class ;
-                                rdfs:subClassOf :ConstantAttributeSpecification ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasParameterType ;
-                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                  owl:onClass :ParameterType
-                                                ] ;
-                                rdfs:label "Parameter Variable Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#ReceiveSpecification
-:ReceiveSpecification rdf:type owl:Class ;
-                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasReceiveVisibility ;
-                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass :FRVisibility
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasReceiveBehaviour ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass :FRBehaviour
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasCode ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onDataRange xsd:string
-                                      ] ;
-                      rdfs:comment "Receive function is used as a fallback function in a contract to receive ethereum" ;
-                      rdfs:label "Receive Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#RestrictedFunctionSpecification
-:RestrictedFunctionSpecification rdf:type owl:Class ;
-                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasFunctionArguments ;
-                                                   owl:someValuesFrom :ParameterVariableSpecification
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasFunctionReturn ;
-                                                   owl:someValuesFrom :ParameterVariableSpecification
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasFunctionVisibility ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onClass :Visibility
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasFunctionBehaviour ;
-                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onClass :FunctionBehaviour
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasName ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onDataRange xsd:string
-                                                 ] ;
-                                 rdfs:label "Restricted Function Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#SimpleType
-:SimpleType rdf:type owl:Class ;
-            rdfs:comment "Attribute types can be contracts, elementary types, memory types, enum and struct types" ;
-            rdfs:label "Simple Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#SimpleValue
-:SimpleValue rdf:type owl:Class ;
-             rdfs:label "Simple Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#SimpleValueSpecification
-:SimpleValueSpecification rdf:type owl:Class ;
-                          rdfs:subClassOf :ValueSpecification ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hasSimpleValue ;
-                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                            owl:onClass :SimpleValue
-                                          ] ;
-                          rdfs:label "Simple Value Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification
-:SimpleVariableSpecification rdf:type owl:Class ;
-                             rdfs:subClassOf :ConstantAttributeSpecification ,
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty :hasSimpleType ;
-                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                               owl:onClass :SimpleType
-                                             ] ;
-                             rdfs:label "Simple Variable Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#SingleMemoryType
-:SingleMemoryType rdf:type owl:Class ;
-                  rdfs:subClassOf :MemoryType ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasMemory ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:short
-                                  ] ;
-                  rdfs:label "Single Memory Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#String
-:String rdf:type owl:Class ;
-        rdfs:subClassOf :ElementaryType ,
-                        :ParameterTypeWithDataLocation ;
-        rdfs:label "String" .
-
-
-###  http://www.solidityontology.oeg.upm.es#StringValue
-:StringValue rdf:type owl:Class ;
-             rdfs:subClassOf :SimpleValue ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasValue ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ;
-             rdfs:label "String Value" .
-
-
-###  http://www.solidityontology.oeg.upm.es#StructType
-:StructType rdf:type owl:Class ;
-            rdfs:subClassOf :ModifierOverrideType ,
-                            :ParameterTypeWithDataLocation ,
-                            :SimpleType ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasConstantStructAttribute ;
-                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :ConstantAttributeSpecification
-                            ] ;
-            rdfs:label "Struct Type" .
-
-
-###  http://www.solidityontology.oeg.upm.es#UfixedMxN
-:UfixedMxN rdf:type owl:Class ;
-           rdfs:subClassOf :DualMemoryType ;
-           rdfs:label "UfixedMxN" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Uint
-:Uint rdf:type owl:Class ;
-      rdfs:subClassOf :SingleMemoryType .
-
-
-###  http://www.solidityontology.oeg.upm.es#ValueSpecification
-:ValueSpecification rdf:type owl:Class ;
-                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                      owl:onProperty :isConstant ;
-                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onDataRange xsd:boolean
-                                    ] ;
-                    rdfs:label "Value Specification" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Visibility
-:Visibility rdf:type owl:Class ;
-            rdfs:label "Visibility" .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.solidityontology.oeg.upm.es#Calldata
-:Calldata rdf:type owl:NamedIndividual ,
-                   :DataLocation .
-
-
-###  http://www.solidityontology.oeg.upm.es#External
-:External rdf:type owl:NamedIndividual ,
-                   :FRVisibility ,
-                   :Visibility ;
-          rdfs:comment "Defines a function/attribute that can only be called from a third party." .
-
-
-###  http://www.solidityontology.oeg.upm.es#Indexed
-:Indexed rdf:type owl:NamedIndividual ,
-                  :DataLocation .
-
-
-###  http://www.solidityontology.oeg.upm.es#Internal
-:Internal rdf:type owl:NamedIndividual ,
-                   :Visibility ;
-          rdfs:comment "Defines a function/attribute that can be called by the main contract itself, plus any derived contracts." .
-
-
-###  http://www.solidityontology.oeg.upm.es#Memory
-:Memory rdf:type owl:NamedIndividual ,
-                 :DataLocation .
-
-
-###  http://www.solidityontology.oeg.upm.es#Override
-:Override rdf:type owl:NamedIndividual ,
-                   :FunctionBehaviour ,
-                   :ModifierBehaviour .
-
-
-###  http://www.solidityontology.oeg.upm.es#Payable
-:Payable rdf:type owl:NamedIndividual ,
-                  :FRBehaviour ,
-                  :FunctionBehaviour .
-
-
-###  http://www.solidityontology.oeg.upm.es#Private
-:Private rdf:type owl:NamedIndividual ,
-                  :Visibility ;
-         rdfs:comment "Defines a function/attribute that can only be called by the main contract itself" .
-
-
-###  http://www.solidityontology.oeg.upm.es#Public
-:Public rdf:type owl:NamedIndividual ,
-                 :Visibility ;
-        rdfs:comment "Defines a function/attribute that can be called from all potential parties." .
-
-
-###  http://www.solidityontology.oeg.upm.es#Pure
-:Pure rdf:type owl:NamedIndividual ,
-               :FunctionBehaviour .
-
-
-###  http://www.solidityontology.oeg.upm.es#Storage
-:Storage rdf:type owl:NamedIndividual ,
-                  :DataLocation .
-
-
-###  http://www.solidityontology.oeg.upm.es#View
-:View rdf:type owl:NamedIndividual ,
-               :FunctionBehaviour .
-
-
-###  http://www.solidityontology.oeg.upm.es#Virtual
-:Virtual rdf:type owl:NamedIndividual ,
-                  :FunctionBehaviour ,
-                  :ModifierBehaviour .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
+    <!-- http://www.solidityontology.oeg.upm.es#usingLibrary -->
+
+    <owl:ObjectProperty rdf:about="http://www.solidityontology.oeg.upm.es#usingLibrary">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#UsinForDirective"/>
+        <rdfs:range rdf:resource="http://www.solidityontology.oeg.upm.es#LibraryImplementation"/>
+        <rdfs:label>using Library</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:comment>There is a hierarchical mapping link between our ontology class and the EthOn ontology class, and an associative mapping link between our ontology class and the EthOn ontology class.</rdfs:comment>
+        <rdfs:label>skos:closeMatch</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasAttributeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasAttributeName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#AttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Attribute Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasCode">
+        <rdfs:label>has Code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasContractName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasContractName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Contract Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasEventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasEventName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#EventSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Event Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasFunctionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasFunctionName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Function Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasImports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasImports">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Imports</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasIndex">
+        <rdfs:label>has Index</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasInheritance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasInheritance">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Inheritance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasLenght -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasLenght">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayDimension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has Lenght</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasMemory">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#SingleMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has Memory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasMemoryM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasMemoryM">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#DualMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has MemoryM</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasMemoryN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasMemoryN">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#DualMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has MemoryN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasModifierName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasModifierName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Modifier Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasOption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasOption">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#EnumType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Option</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasParameterPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasParameterPosition">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has Parameter Position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasUsingForName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasUsingForName">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#UsinForDirective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has UsingFor Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasValue">
+        <rdfs:label>has Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasVersion">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#isAnonymous -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#isAnonymous">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#EventSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is Anonymous</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#isConstant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#isConstant">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#ValueSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is Constant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#isInmutable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#isInmutable">
+        <rdfs:domain rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is Inmutable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ethon.consensys.net/Contracts/Event -->
+
+    <owl:Class rdf:about="http://ethon.consensys.net/Contracts/Event">
+        <rdfs:label>ethonc:Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethon.consensys.net/Contracts/Function -->
+
+    <owl:Class rdf:about="http://ethon.consensys.net/Contracts/Function">
+        <rdfs:label>ethonc:Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethon.consensys.net/Contracts/Input -->
+
+    <owl:Class rdf:about="http://ethon.consensys.net/Contracts/Input">
+        <rdfs:label>ethonc:Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethon.consensys.net/Contracts/Output -->
+
+    <owl:Class rdf:about="http://ethon.consensys.net/Contracts/Output">
+        <rdfs:label>ethonc:Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Abstract -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Abstract">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasAbstractFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A contract which may have unimplemented functions</rdfs:comment>
+        <rdfs:label>Abstract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Address -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Address">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ElementaryType"/>
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasArrayType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Array Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ArrayDimension -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ArrayDimension">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasIndex"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasLenght"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Array Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ArrayType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ArrayType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasArrayDimension"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayDimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Array Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ArrayValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ArrayValue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasIndexArrayValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Array Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ArrayValueSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ArrayValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasArrayValue"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ArrayValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasIndex"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Array Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#AttributeSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#AttributeSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasAttributeName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Bool -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Bool">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ElementaryType"/>
+        <rdfs:label>Bool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#BoolValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#BoolValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Bool Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Bytes -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Bytes">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SingleMemoryType"/>
+        <rdfs:label>Bytes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#BytesValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#BytesValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Bytes Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Codeless Function Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#AttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasConstantType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This type of attributes cant have a value nor a visibility.</rdfs:comment>
+        <rdfs:label>Constant Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ConstantType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ConstantType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+        <rdfs:label>Constant Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ConstructorSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ConstructorSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasConstructorArguments"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Constructor Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ContractImplementation -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ContractImplementation">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#Implementation"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#AttributeSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasEvent"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#EventSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasUsingForDirective"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#UsinForDirective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasConstructor"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ConstructorSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFallbackFunction"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FallbackSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasInterface"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasReceiveFunction"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ReceiveSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#isAbstract"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Abstract"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasInheritance"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.solidityontology.oeg.upm.es#LibraryImplementation"/>
+        <rdfs:comment>A computer program that includes variables, complete functions, events and all the code that perform the logic to achieve the contract objective</rdfs:comment>
+        <rdfs:label>Contract Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#DataLocation -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#DataLocation">
+        <rdfs:label>Data location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#DualMemoryType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#DualMemoryType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MemoryType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasMemoryM"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasMemoryN"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Dual Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ElementaryType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ElementaryType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:label>Elementary Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#EnumType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#EnumType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasOption"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Enum Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#EventSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#EventSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasEventArguments"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ethon.consensys.net/Contracts/Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasEventName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#isAnonymous"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FRBehaviour -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FRBehaviour">
+        <rdfs:comment>Fallback / Receive behaviour</rdfs:comment>
+        <rdfs:label>Fallback Receive Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FRVisibility -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FRVisibility">
+        <rdfs:label>Fallback Receive Visibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FallbackSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FallbackSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFallbackVisibility"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FRVisibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFallbackVisibility"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FRBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Fallback Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FixedMxN -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FixedMxN">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#DualMemoryType"/>
+        <rdfs:label>FixedMxN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FixedValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FixedValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Fixed Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FunctionBehaviour -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FunctionBehaviour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#includes"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Function Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#FunctionSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#FunctionSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunctionArguments"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunctionReturn"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunctionVisibility"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ethon.consensys.net/Contracts/Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunctionName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Function Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#GenericValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#GenericValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:label>Generic Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Implementation -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Implementation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasImports"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasContractName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasVersion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Int -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Int">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SingleMemoryType"/>
+        <rdfs:label>Int</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#IntValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#IntValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Int Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Interface -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Interface">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasInterfaceFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A computer program that defines only the functions, in a way to improve the interaction between users and smart contracts, providing better accessibility, self-documentation and removing code duplication</rdfs:comment>
+        <rdfs:label>Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#LibraryImplementation -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#LibraryImplementation">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#Implementation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasEvent"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#EventSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Libraries are similar to contracts, but their purpose is that they are deployed only once at a specific address and for their code reuse</rdfs:comment>
+        <rdfs:label>Library Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#MapAttributeSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#MapAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasMapType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#MapType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Map Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#MapKeyType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#MapKeyType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+        <rdfs:label>Map Key Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#MapType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#MapType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasKeyMap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValueMap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Map Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#MemoryType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#MemoryType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:label>Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ModifierBehaviour -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ModifierBehaviour">
+        <rdfs:label>Modifier Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifierOverrideType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Modifier Override Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ModifierOverrideType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ModifierOverrideType">
+        <rdfs:label>Modifier Override Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ModifierSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ModifierSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifierArguments"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasOverrideReturn"/>
+                <owl:someValuesFrom rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifierBehaviour"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasModifierName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Modifier Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#NonConstantType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#NonConstantType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#Type"/>
+        <rdfs:label>Non Constant Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#AttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasNonConstantType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#NonConstantType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#includes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasAttributeValue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasAttributeVisibility"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ethon.consensys.net/Contracts/Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ethon.consensys.net/Contracts/Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ethon.consensys.net/Contracts/Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#isInmutable"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This type of attributes can have a value and change it, have a visibility and can be immutable</rdfs:comment>
+        <rdfs:label>Non Constant Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ParameterType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ParameterType">
+        <rdfs:label>Parameter Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Parameter Type With Data Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasParameterType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasParameterPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Parameter Variable Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ReceiveSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ReceiveSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasReceiveVisibility"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FRVisibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#FRBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasCode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Receive Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#SimpleValueSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ValueSpecification"/>
+        <rdfs:label>Simple Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification"/>
+        <rdfs:label>Simple Variable Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#SingleMemoryType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#SingleMemoryType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#MemoryType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasMemory"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Single Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#String -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#String">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ElementaryType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"/>
+        <rdfs:label>String</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#StringValue -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#StringValue">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>String Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#StructType -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#StructType">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierOverrideType"/>
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Struct Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Type -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Type">
+        <rdfs:label>Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#UfixedMxN -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#UfixedMxN">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#DualMemoryType"/>
+        <rdfs:label>UfixedMxN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Uint -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Uint">
+        <rdfs:subClassOf rdf:resource="http://www.solidityontology.oeg.upm.es#SingleMemoryType"/>
+        <rdfs:label>UInt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#UsinForDirective -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#UsinForDirective">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#usingLibrary"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.solidityontology.oeg.upm.es#LibraryImplementation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasUsingForName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Using For Directive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#ValueSpecification -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#ValueSpecification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#isConstant"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Visibility -->
+
+    <owl:Class rdf:about="http://www.solidityontology.oeg.upm.es#Visibility">
+        <rdfs:label>Visibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Calldata -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Calldata">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#External -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#External">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FRVisibility"/>
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:comment>Defines a function/attribute that can only be called from a third party.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Indexed -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Indexed">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Internal -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Internal">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:comment>Defines a function/attribute that can be called by the main contract itself, plus any derived contracts.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Memory -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Memory">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Override -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Override">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Payable -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Payable">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FRBehaviour"/>
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Private -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Private">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:comment>Defines a function/attribute that can only be called by the main contract itself</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Public -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Public">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#Visibility"/>
+        <rdfs:comment>Defines a function/attribute that can be called from all potential parties.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Pure -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Pure">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Storage">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#View -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#View">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.solidityontology.oeg.upm.es#Virtual -->
+
+    <owl:NamedIndividual rdf:about="http://www.solidityontology.oeg.upm.es#Virtual">
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#FunctionBehaviour"/>
+        <rdf:type rdf:resource="http://www.solidityontology.oeg.upm.es#ModifierBehaviour"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
