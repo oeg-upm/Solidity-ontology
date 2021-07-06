@@ -1,0 +1,1234 @@
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/2002/07/owl#versionIRI> <urn:absolute:1.0> .
+<http://www.solidityontology.oeg.upm.es> <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> .
+<http://www.solidityontology.oeg.upm.es> <http://purl.org/dc/terms/creator> "Andrea Cimmino" .
+<http://www.solidityontology.oeg.upm.es> <http://purl.org/dc/terms/creator> "Juan Cano-Benito" .
+<http://www.solidityontology.oeg.upm.es> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology explained" .
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/2000/01/rdf-schema#label> "Solidity Ontology" .
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/2002/07/owl#versionInfo> <https://oeg.fi.upm.es/> .
+<http://www.solidityontology.oeg.upm.es> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.solidityontology.oeg.upm.es#hasAbstractFunction
+<http://www.solidityontology.oeg.upm.es#hasAbstractFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasAbstractFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#Abstract> .
+<http://www.solidityontology.oeg.upm.es#hasAbstractFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAbstractFunction> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> .
+<http://www.solidityontology.oeg.upm.es#hasAbstractFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has Abstract Function" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasArrayDimension
+<http://www.solidityontology.oeg.upm.es#hasArrayDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasArrayDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayType> .
+<http://www.solidityontology.oeg.upm.es#hasArrayDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ArrayDimension> .
+<http://www.solidityontology.oeg.upm.es#hasArrayDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has Array Dimension" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasArrayType
+<http://www.solidityontology.oeg.upm.es#hasArrayType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasArrayType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasArrayType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ArrayType> .
+<http://www.solidityontology.oeg.upm.es#hasArrayType> <http://www.w3.org/2000/01/rdf-schema#label> "has Array Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasArrayValue
+<http://www.solidityontology.oeg.upm.es#hasArrayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasArrayValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasArrayValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ArrayValue> .
+<http://www.solidityontology.oeg.upm.es#hasArrayValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Array Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasAttribute
+<http://www.solidityontology.oeg.upm.es#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#AttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "has Attribute" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasAttributeValue
+<http://www.solidityontology.oeg.upm.es#hasAttributeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Attribute Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasAttributeVisibility
+<http://www.solidityontology.oeg.upm.es#hasAttributeVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeVisibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeVisibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeVisibility> <http://www.w3.org/2000/01/rdf-schema#label> "has Attribute Visibility" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute
+<http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#StructType> .
+<http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "has Constant Struct Attribute" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasConstantType
+<http://www.solidityontology.oeg.upm.es#hasConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasConstantType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasConstantType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ConstantType> .
+<http://www.solidityontology.oeg.upm.es#hasConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "has Constant Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasConstructor
+<http://www.solidityontology.oeg.upm.es#hasConstructor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasConstructor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasConstructor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ConstructorSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasConstructor> <http://www.w3.org/2000/01/rdf-schema#label> "has Constructor" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasConstructorArguments
+<http://www.solidityontology.oeg.upm.es#hasConstructorArguments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasConstructorArguments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ConstructorSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasConstructorArguments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasConstructorArguments> <http://www.w3.org/2000/01/rdf-schema#label> "has Constructor Arguments" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasEvent
+<http://www.solidityontology.oeg.upm.es#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has Event" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasEventArguments
+<http://www.solidityontology.oeg.upm.es#hasEventArguments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasEventArguments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#EventSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasEventArguments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasEventArguments> <http://www.w3.org/2000/01/rdf-schema#label> "has Event Arguments" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour
+<http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ReceiveSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FRBehaviour> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has Fallback Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFallbackFunction
+<http://www.solidityontology.oeg.upm.es#hasFallbackFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FallbackSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Contract has a Fallback Function" .
+<http://www.solidityontology.oeg.upm.es#hasFallbackFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has Fallback Function" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFallbackVisibility
+<http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ReceiveSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FRVisibility> .
+<http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> <http://www.w3.org/2000/01/rdf-schema#label> "has Fallback Visibility" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunction
+<http://www.solidityontology.oeg.upm.es#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunction> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> .
+<http://www.solidityontology.oeg.upm.es#hasFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has Function" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunctionArguments
+<http://www.solidityontology.oeg.upm.es#hasFunctionArguments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionArguments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionArguments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionArguments> <http://www.w3.org/2000/01/rdf-schema#label> "has Function Arguments" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour
+<http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has Function Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunctionReturn
+<http://www.solidityontology.oeg.upm.es#hasFunctionReturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionReturn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionReturn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionReturn> <http://www.w3.org/2000/01/rdf-schema#label> "has Function Return" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunctionVisibility
+<http://www.solidityontology.oeg.upm.es#hasFunctionVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionVisibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionVisibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionVisibility> <http://www.w3.org/2000/01/rdf-schema#label> "has Function Visibility" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasIndexArrayValue
+<http://www.solidityontology.oeg.upm.es#hasIndexArrayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasIndexArrayValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayValue> .
+<http://www.solidityontology.oeg.upm.es#hasIndexArrayValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasIndexArrayValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Index Array Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasInterface
+<http://www.solidityontology.oeg.upm.es#hasInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasInterface> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Interface> .
+<http://www.solidityontology.oeg.upm.es#hasInterface> <http://www.w3.org/2000/01/rdf-schema#label> "has Interface" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasInterfaceFunction
+<http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#Interface> .
+<http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has Interface Function" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasKeyMap
+<http://www.solidityontology.oeg.upm.es#hasKeyMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasKeyMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#MapType> .
+<http://www.solidityontology.oeg.upm.es#hasKeyMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#hasKeyMap> <http://www.w3.org/2000/01/rdf-schema#label> "has Key Map" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasMapType
+<http://www.solidityontology.oeg.upm.es#hasMapType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasMapType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#MapAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasMapType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#MapType> .
+<http://www.solidityontology.oeg.upm.es#hasMapType> <http://www.w3.org/2000/01/rdf-schema#label> "has Map Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasModifier
+<http://www.solidityontology.oeg.upm.es#hasModifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasModifier> <http://www.w3.org/2000/01/rdf-schema#label> "has Modifier" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasModifierArguments
+<http://www.solidityontology.oeg.upm.es#hasModifierArguments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasModifierArguments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasModifierArguments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasModifierArguments> <http://www.w3.org/2000/01/rdf-schema#label> "has Modifier Arguments" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasModifierBehaviour
+<http://www.solidityontology.oeg.upm.es#hasModifierBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasModifierBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasModifierBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ModifierBehaviour> .
+<http://www.solidityontology.oeg.upm.es#hasModifierBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has Modifier Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasModifierOverrideType
+<http://www.solidityontology.oeg.upm.es#hasModifierOverrideType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasModifierOverrideType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasModifierOverrideType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ModifierOverrideType> .
+<http://www.solidityontology.oeg.upm.es#hasModifierOverrideType> <http://www.w3.org/2000/01/rdf-schema#label> "Has Modifier Override Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute
+<http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#LibraryImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "has Non Constant Attribute" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasNonConstantType
+<http://www.solidityontology.oeg.upm.es#hasNonConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#hasNonConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "has Non Constant Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasOverrideReturn
+<http://www.solidityontology.oeg.upm.es#hasOverrideReturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasOverrideReturn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasOverrideReturn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasOverrideReturn> <http://www.w3.org/2000/01/rdf-schema#label> "has Override Return" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasParameterType
+<http://www.solidityontology.oeg.upm.es#hasParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasParameterType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasParameterType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#hasParameterType> <http://www.w3.org/2000/01/rdf-schema#label> "has Parameter Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation
+<http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> .
+<http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+<http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has Parameter Type With Data Location" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour
+<http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FallbackSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FRBehaviour> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has Receive Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasReceiveFunction
+<http://www.solidityontology.oeg.upm.es#hasReceiveFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#ReceiveSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Contract has a Receive Function" .
+<http://www.solidityontology.oeg.upm.es#hasReceiveFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has Receive Function" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasReceiveVisibility
+<http://www.solidityontology.oeg.upm.es#hasReceiveVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveVisibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FallbackSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveVisibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#FRVisibility> .
+<http://www.solidityontology.oeg.upm.es#hasReceiveVisibility> <http://www.w3.org/2000/01/rdf-schema#label> "has Receive Visibility" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasType
+<http://www.solidityontology.oeg.upm.es#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayType> .
+<http://www.solidityontology.oeg.upm.es#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "has Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasUsingForDirective
+<http://www.solidityontology.oeg.upm.es#hasUsingForDirective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#UsinForDirective> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#label> "has Using For Directive" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasValueMap
+<http://www.solidityontology.oeg.upm.es#hasValueMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#hasValueMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#MapType> .
+<http://www.solidityontology.oeg.upm.es#hasValueMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#hasValueMap> <http://www.w3.org/2000/01/rdf-schema#label> "has Value Map" .
+# 
+# http://www.solidityontology.oeg.upm.es#includes
+<http://www.solidityontology.oeg.upm.es#includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#includes> <http://www.w3.org/2000/01/rdf-schema#label> "includes" .
+# 
+# http://www.solidityontology.oeg.upm.es#isAbstract
+<http://www.solidityontology.oeg.upm.es#isAbstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#isAbstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#isAbstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#Abstract> .
+<http://www.solidityontology.oeg.upm.es#isAbstract> <http://www.w3.org/2000/01/rdf-schema#label> "is Abstract" .
+# 
+# http://www.solidityontology.oeg.upm.es#usingLibrary
+<http://www.solidityontology.oeg.upm.es#usingLibrary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.solidityontology.oeg.upm.es#usingLibrary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#UsinForDirective> .
+<http://www.solidityontology.oeg.upm.es#usingLibrary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.solidityontology.oeg.upm.es#LibraryImplementation> .
+<http://www.solidityontology.oeg.upm.es#usingLibrary> <http://www.w3.org/2000/01/rdf-schema#label> "using Library" .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#comment> "There is a hierarchical mapping link between our ontology class and the EthOn ontology class, and an associative mapping link between our ontology class and the EthOn ontology class." .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#label> "skos:closeMatch" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.solidityontology.oeg.upm.es#hasAttributeName
+<http://www.solidityontology.oeg.upm.es#hasAttributeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#AttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasAttributeName> <http://www.w3.org/2000/01/rdf-schema#label> "has Attribute Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasCode
+<http://www.solidityontology.oeg.upm.es#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "has Code" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasContractName
+<http://www.solidityontology.oeg.upm.es#hasContractName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasContractName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#Implementation> .
+<http://www.solidityontology.oeg.upm.es#hasContractName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasContractName> <http://www.w3.org/2000/01/rdf-schema#label> "has Contract Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasEventName
+<http://www.solidityontology.oeg.upm.es#hasEventName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasEventName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#EventSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasEventName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasEventName> <http://www.w3.org/2000/01/rdf-schema#label> "has Event Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasFunctionName
+<http://www.solidityontology.oeg.upm.es#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#label> "has Function Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasImports
+<http://www.solidityontology.oeg.upm.es#hasImports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasImports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#Implementation> .
+<http://www.solidityontology.oeg.upm.es#hasImports> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasImports> <http://www.w3.org/2000/01/rdf-schema#label> "has Imports" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasIndex
+<http://www.solidityontology.oeg.upm.es#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasIndex> <http://www.w3.org/2000/01/rdf-schema#label> "has Index" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasInheritance
+<http://www.solidityontology.oeg.upm.es#hasInheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ContractImplementation> .
+<http://www.solidityontology.oeg.upm.es#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#label> "has Inheritance" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasLenght
+<http://www.solidityontology.oeg.upm.es#hasLenght> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasLenght> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ArrayDimension> .
+<http://www.solidityontology.oeg.upm.es#hasLenght> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#hasLenght> <http://www.w3.org/2000/01/rdf-schema#label> "has Lenght" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasMemory
+<http://www.solidityontology.oeg.upm.es#hasMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasMemory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#SingleMemoryType> .
+<http://www.solidityontology.oeg.upm.es#hasMemory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#hasMemory> <http://www.w3.org/2000/01/rdf-schema#label> "has Memory" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasMemoryM
+<http://www.solidityontology.oeg.upm.es#hasMemoryM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryM> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#DualMemoryType> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryM> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryM> <http://www.w3.org/2000/01/rdf-schema#label> "has MemoryM" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasMemoryN
+<http://www.solidityontology.oeg.upm.es#hasMemoryN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#DualMemoryType> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#hasMemoryN> <http://www.w3.org/2000/01/rdf-schema#label> "has MemoryN" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasModifierName
+<http://www.solidityontology.oeg.upm.es#hasModifierName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasModifierName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasModifierName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasModifierName> <http://www.w3.org/2000/01/rdf-schema#label> "has Modifier Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasOption
+<http://www.solidityontology.oeg.upm.es#hasOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasOption> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#EnumType> .
+<http://www.solidityontology.oeg.upm.es#hasOption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasOption> <http://www.w3.org/2000/01/rdf-schema#label> "has Option" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasParameterPosition
+<http://www.solidityontology.oeg.upm.es#hasParameterPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasParameterPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#hasParameterPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#hasParameterPosition> <http://www.w3.org/2000/01/rdf-schema#label> "has Parameter Position" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasUsingForName
+<http://www.solidityontology.oeg.upm.es#hasUsingForName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#UsinForDirective> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasUsingForName> <http://www.w3.org/2000/01/rdf-schema#label> "has UsingFor Name" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasValue
+<http://www.solidityontology.oeg.upm.es#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#hasVersion
+<http://www.solidityontology.oeg.upm.es#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#Implementation> .
+<http://www.solidityontology.oeg.upm.es#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has Version" .
+# 
+# http://www.solidityontology.oeg.upm.es#isAnonymous
+<http://www.solidityontology.oeg.upm.es#isAnonymous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#isAnonymous> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#EventSpecification> .
+<http://www.solidityontology.oeg.upm.es#isAnonymous> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#isAnonymous> <http://www.w3.org/2000/01/rdf-schema#label> "is Anonymous" .
+# 
+# http://www.solidityontology.oeg.upm.es#isConstant
+<http://www.solidityontology.oeg.upm.es#isConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#isConstant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#ValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#isConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#isConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is Constant" .
+# 
+# http://www.solidityontology.oeg.upm.es#isInmutable
+<http://www.solidityontology.oeg.upm.es#isInmutable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.solidityontology.oeg.upm.es#isInmutable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#isInmutable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#isInmutable> <http://www.w3.org/2000/01/rdf-schema#label> "is Inmutable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ethon.consensys.net/Contracts/Event
+<http://ethon.consensys.net/Contracts/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ethon.consensys.net/Contracts/Event> <http://www.w3.org/2000/01/rdf-schema#label> "ethonc:Event" .
+# 
+# http://ethon.consensys.net/Contracts/Function
+<http://ethon.consensys.net/Contracts/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ethon.consensys.net/Contracts/Function> <http://www.w3.org/2000/01/rdf-schema#label> "ethonc:Function" .
+# 
+# http://ethon.consensys.net/Contracts/Input
+<http://ethon.consensys.net/Contracts/Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ethon.consensys.net/Contracts/Input> <http://www.w3.org/2000/01/rdf-schema#label> "ethonc:Input" .
+# 
+# http://ethon.consensys.net/Contracts/Output
+<http://ethon.consensys.net/Contracts/Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ethon.consensys.net/Contracts/Output> <http://www.w3.org/2000/01/rdf-schema#label> "ethonc:Output" .
+# 
+# http://www.solidityontology.oeg.upm.es#Abstract
+<http://www.solidityontology.oeg.upm.es#Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasAbstractFunction> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#Abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "A contract which may have unimplemented functions" .
+<http://www.solidityontology.oeg.upm.es#Abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Abstract" .
+# 
+# http://www.solidityontology.oeg.upm.es#Address
+<http://www.solidityontology.oeg.upm.es#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ElementaryType> .
+<http://www.solidityontology.oeg.upm.es#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address" .
+# 
+# http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification
+<http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasArrayType> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ArrayType> .
+<http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Array Attribute Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ArrayDimension
+<http://www.solidityontology.oeg.upm.es#ArrayDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ArrayDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasIndex> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.solidityontology.oeg.upm.es#ArrayDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasLenght> .
+_:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.solidityontology.oeg.upm.es#ArrayDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Array Dimension" .
+# 
+# http://www.solidityontology.oeg.upm.es#ArrayType
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> .
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasArrayDimension> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ArrayDimension> .
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasType> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#ArrayType> <http://www.w3.org/2000/01/rdf-schema#label> "Array Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ArrayValue
+<http://www.solidityontology.oeg.upm.es#ArrayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ArrayValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasIndexArrayValue> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#ArrayValue> <http://www.w3.org/2000/01/rdf-schema#label> "Array Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#ArrayValueSpecification
+<http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasArrayValue> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ArrayValue> .
+<http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasIndex> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.solidityontology.oeg.upm.es#ArrayValueSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Array Value Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#AttributeSpecification
+<http://www.solidityontology.oeg.upm.es#AttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#AttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasAttributeName> .
+_:genid10 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#AttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#Bool
+<http://www.solidityontology.oeg.upm.es#Bool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Bool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ElementaryType> .
+<http://www.solidityontology.oeg.upm.es#Bool> <http://www.w3.org/2000/01/rdf-schema#label> "Bool" .
+# 
+# http://www.solidityontology.oeg.upm.es#BoolValue
+<http://www.solidityontology.oeg.upm.es#BoolValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#BoolValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#BoolValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValue> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#BoolValue> <http://www.w3.org/2000/01/rdf-schema#label> "Bool Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#Bytes
+<http://www.solidityontology.oeg.upm.es#Bytes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Bytes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> .
+<http://www.solidityontology.oeg.upm.es#Bytes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SingleMemoryType> .
+<http://www.solidityontology.oeg.upm.es#Bytes> <http://www.w3.org/2000/01/rdf-schema#label> "Bytes" .
+# 
+# http://www.solidityontology.oeg.upm.es#BytesValue
+<http://www.solidityontology.oeg.upm.es#BytesValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#BytesValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#BytesValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValue> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#hexBinary> .
+<http://www.solidityontology.oeg.upm.es#BytesValue> <http://www.w3.org/2000/01/rdf-schema#label> "Bytes Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification
+<http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Codeless Function Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification
+<http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#AttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasConstantType> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ConstantType> .
+<http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "This type of attributes cant have a value nor a visibility." .
+<http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Constant Attribute Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ConstantType
+<http://www.solidityontology.oeg.upm.es#ConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ConstantType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#ConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "Constant Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ConstructorSpecification
+<http://www.solidityontology.oeg.upm.es#ConstructorSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ConstructorSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasConstructorArguments> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#ConstructorSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#ConstructorSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Constructor Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ContractImplementation
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#Implementation> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ModifierOverrideType> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasAttribute> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#AttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasEvent> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#EventSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunction> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifier> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasUsingForDirective> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#UsinForDirective> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasConstructor> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ConstructorSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFallbackFunction> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FallbackSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasInterface> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Interface> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasReceiveFunction> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ReceiveSpecification> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#isAbstract> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Abstract> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasInheritance> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.solidityontology.oeg.upm.es#LibraryImplementation> .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer program that includes variables, complete functions, events and all the code that perform the logic to achieve the contract objective" .
+<http://www.solidityontology.oeg.upm.es#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Implementation" .
+# 
+# http://www.solidityontology.oeg.upm.es#DataLocation
+<http://www.solidityontology.oeg.upm.es#DataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#DataLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Data location" .
+# 
+# http://www.solidityontology.oeg.upm.es#DualMemoryType
+<http://www.solidityontology.oeg.upm.es#DualMemoryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#DualMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MemoryType> .
+<http://www.solidityontology.oeg.upm.es#DualMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasMemoryM> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#DualMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasMemoryN> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#DualMemoryType> <http://www.w3.org/2000/01/rdf-schema#label> "Dual Memory Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ElementaryType
+<http://www.solidityontology.oeg.upm.es#ElementaryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ElementaryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#ElementaryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#ElementaryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#ElementaryType> <http://www.w3.org/2000/01/rdf-schema#label> "Elementary Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#EnumType
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ConstantType> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ModifierOverrideType> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasOption> .
+_:genid30 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#EnumType> <http://www.w3.org/2000/01/rdf-schema#label> "Enum Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#EventSpecification
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasEventArguments> .
+_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid32 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://ethon.consensys.net/Contracts/Event> .
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasEventName> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#isAnonymous> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#EventSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Event Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#FRBehaviour
+<http://www.solidityontology.oeg.upm.es#FRBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FRBehaviour> <http://www.w3.org/2000/01/rdf-schema#comment> "Fallback / Receive behaviour" .
+<http://www.solidityontology.oeg.upm.es#FRBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "Fallback Receive Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#FRVisibility
+<http://www.solidityontology.oeg.upm.es#FRVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FRVisibility> <http://www.w3.org/2000/01/rdf-schema#label> "Fallback Receive Visibility" .
+# 
+# http://www.solidityontology.oeg.upm.es#FallbackSpecification
+<http://www.solidityontology.oeg.upm.es#FallbackSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FallbackSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FRVisibility> .
+<http://www.solidityontology.oeg.upm.es#FallbackSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFallbackVisibility> .
+_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FRBehaviour> .
+<http://www.solidityontology.oeg.upm.es#FallbackSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid37 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#FallbackSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Fallback Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#FixedMxN
+<http://www.solidityontology.oeg.upm.es#FixedMxN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FixedMxN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#DualMemoryType> .
+<http://www.solidityontology.oeg.upm.es#FixedMxN> <http://www.w3.org/2000/01/rdf-schema#label> "FixedMxN" .
+# 
+# http://www.solidityontology.oeg.upm.es#FixedValue
+<http://www.solidityontology.oeg.upm.es#FixedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FixedValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#FixedValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValue> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.solidityontology.oeg.upm.es#FixedValue> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#FunctionBehaviour
+<http://www.solidityontology.oeg.upm.es#FunctionBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FunctionBehaviour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#includes> .
+_:genid39 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#FunctionBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "Function Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#FunctionSpecification
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunctionArguments> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunctionReturn> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunctionVisibility> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour> .
+_:genid43 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid44 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://ethon.consensys.net/Contracts/Function> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunctionName> .
+_:genid45 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#FunctionSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Function Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#GenericValue
+<http://www.solidityontology.oeg.upm.es#GenericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#GenericValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#GenericValue> <http://www.w3.org/2000/01/rdf-schema#label> "Generic Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#Implementation
+<http://www.solidityontology.oeg.upm.es#Implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasImports> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasContractName> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasVersion> .
+_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#Implementation> <http://www.w3.org/2000/01/rdf-schema#label> "Implementation" .
+# 
+# http://www.solidityontology.oeg.upm.es#Int
+<http://www.solidityontology.oeg.upm.es#Int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Int> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SingleMemoryType> .
+<http://www.solidityontology.oeg.upm.es#Int> <http://www.w3.org/2000/01/rdf-schema#label> "Int" .
+# 
+# http://www.solidityontology.oeg.upm.es#IntValue
+<http://www.solidityontology.oeg.upm.es#IntValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#IntValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#IntValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValue> .
+_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.solidityontology.oeg.upm.es#IntValue> <http://www.w3.org/2000/01/rdf-schema#label> "Int Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#Interface
+<http://www.solidityontology.oeg.upm.es#Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasInterfaceFunction> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#Interface> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer program that defines only the functions, in a way to improve the interaction between users and smart contracts, providing better accessibility, self-documentation and removing code duplication" .
+<http://www.solidityontology.oeg.upm.es#Interface> <http://www.w3.org/2000/01/rdf-schema#label> "Interface" .
+# 
+# http://www.solidityontology.oeg.upm.es#LibraryImplementation
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#Implementation> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasEvent> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#EventSpecification> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasFunction> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#FunctionSpecification> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifier> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ModifierSpecification> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Libraries are similar to contracts, but their purpose is that they are deployed only once at a specific address and for their code reuse" .
+<http://www.solidityontology.oeg.upm.es#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Library Implementation" .
+# 
+# http://www.solidityontology.oeg.upm.es#MapAttributeSpecification
+<http://www.solidityontology.oeg.upm.es#MapAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#MapAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#MapAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasMapType> .
+_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#MapType> .
+<http://www.solidityontology.oeg.upm.es#MapAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Map Attribute Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#MapKeyType
+<http://www.solidityontology.oeg.upm.es#MapKeyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#MapKeyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#MapKeyType> <http://www.w3.org/2000/01/rdf-schema#label> "Map Key Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#MapType
+<http://www.solidityontology.oeg.upm.es#MapType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#MapType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasKeyMap> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#MapType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValueMap> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#MapType> <http://www.w3.org/2000/01/rdf-schema#label> "Map Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#MemoryType
+<http://www.solidityontology.oeg.upm.es#MemoryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#MemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MapKeyType> .
+<http://www.solidityontology.oeg.upm.es#MemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#MemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#MemoryType> <http://www.w3.org/2000/01/rdf-schema#label> "Memory Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ModifierBehaviour
+<http://www.solidityontology.oeg.upm.es#ModifierBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ModifierBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "Modifier Behaviour" .
+# 
+# http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifierOverrideType> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ModifierOverrideType> .
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Modifier Override Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ModifierOverrideType
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ModifierOverrideType> <http://www.w3.org/2000/01/rdf-schema#label> "Modifier Override Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ModifierSpecification
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifierArguments> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasOverrideReturn> .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifierBehaviour> .
+_:genid62 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ModifierBehaviour> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasModifierName> .
+_:genid63 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid64 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#ModifierSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Modifier Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#NonConstantType
+<http://www.solidityontology.oeg.upm.es#NonConstantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#NonConstantType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#Type> .
+<http://www.solidityontology.oeg.upm.es#NonConstantType> <http://www.w3.org/2000/01/rdf-schema#label> "Non Constant Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#AttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasNonConstantType> .
+_:genid65 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#NonConstantType> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#includes> .
+_:genid66 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasAttributeValue> .
+_:genid67 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasAttributeVisibility> .
+_:genid68 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid69 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <http://ethon.consensys.net/Contracts/Function> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid70 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onClass> <http://ethon.consensys.net/Contracts/Input> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid71 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onClass> <http://ethon.consensys.net/Contracts/Output> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#isInmutable> .
+_:genid72 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "This type of attributes can have a value and change it, have a visibility and can be immutable" .
+<http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Non Constant Attribute Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ParameterType
+<http://www.solidityontology.oeg.upm.es#ParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ParameterType> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation
+<http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation> .
+_:genid73 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid73 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+<http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter Type With Data Location" .
+# 
+# http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification
+<http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasParameterType> .
+_:genid74 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ParameterType> .
+<http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasParameterPosition> .
+_:genid75 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter Variable Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#ReceiveSpecification
+<http://www.solidityontology.oeg.upm.es#ReceiveSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ReceiveSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasReceiveVisibility> .
+_:genid76 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FRVisibility> .
+<http://www.solidityontology.oeg.upm.es#ReceiveSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour> .
+_:genid77 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#FRBehaviour> .
+<http://www.solidityontology.oeg.upm.es#ReceiveSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasCode> .
+_:genid78 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid78 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#ReceiveSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Receive Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#SimpleValueSpecification
+<http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Value Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification
+<http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Variable Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#SingleMemoryType
+<http://www.solidityontology.oeg.upm.es#SingleMemoryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#SingleMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#MemoryType> .
+<http://www.solidityontology.oeg.upm.es#SingleMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasMemory> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.solidityontology.oeg.upm.es#SingleMemoryType> <http://www.w3.org/2000/01/rdf-schema#label> "Single Memory Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#String
+<http://www.solidityontology.oeg.upm.es#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#String> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ElementaryType> .
+<http://www.solidityontology.oeg.upm.es#String> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> .
+<http://www.solidityontology.oeg.upm.es#String> <http://www.w3.org/2000/01/rdf-schema#label> "String" .
+# 
+# http://www.solidityontology.oeg.upm.es#StringValue
+<http://www.solidityontology.oeg.upm.es#StringValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#StringValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SimpleValueSpecification> .
+<http://www.solidityontology.oeg.upm.es#StringValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasValue> .
+_:genid80 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#StringValue> <http://www.w3.org/2000/01/rdf-schema#label> "String Value" .
+# 
+# http://www.solidityontology.oeg.upm.es#StructType
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ConstantType> .
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ModifierOverrideType> .
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation> .
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute> .
+_:genid81 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification> .
+<http://www.solidityontology.oeg.upm.es#StructType> <http://www.w3.org/2000/01/rdf-schema#label> "Struct Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#Type
+<http://www.solidityontology.oeg.upm.es#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Type> <http://www.w3.org/2000/01/rdf-schema#label> "Type" .
+# 
+# http://www.solidityontology.oeg.upm.es#UfixedMxN
+<http://www.solidityontology.oeg.upm.es#UfixedMxN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#UfixedMxN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#DualMemoryType> .
+<http://www.solidityontology.oeg.upm.es#UfixedMxN> <http://www.w3.org/2000/01/rdf-schema#label> "UfixedMxN" .
+# 
+# http://www.solidityontology.oeg.upm.es#Uint
+<http://www.solidityontology.oeg.upm.es#Uint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Uint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.solidityontology.oeg.upm.es#SingleMemoryType> .
+<http://www.solidityontology.oeg.upm.es#Uint> <http://www.w3.org/2000/01/rdf-schema#label> "UInt" .
+# 
+# http://www.solidityontology.oeg.upm.es#UsinForDirective
+<http://www.solidityontology.oeg.upm.es#UsinForDirective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#UsinForDirective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#usingLibrary> .
+_:genid82 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onClass> <http://www.solidityontology.oeg.upm.es#LibraryImplementation> .
+<http://www.solidityontology.oeg.upm.es#UsinForDirective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#hasUsingForName> .
+_:genid83 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.solidityontology.oeg.upm.es#UsinForDirective> <http://www.w3.org/2000/01/rdf-schema#label> "Using For Directive" .
+# 
+# http://www.solidityontology.oeg.upm.es#ValueSpecification
+<http://www.solidityontology.oeg.upm.es#ValueSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#ValueSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.solidityontology.oeg.upm.es#isConstant> .
+_:genid84 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.solidityontology.oeg.upm.es#ValueSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Value Specification" .
+# 
+# http://www.solidityontology.oeg.upm.es#Visibility
+<http://www.solidityontology.oeg.upm.es#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.solidityontology.oeg.upm.es#Visibility> <http://www.w3.org/2000/01/rdf-schema#label> "Visibility" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.solidityontology.oeg.upm.es#Calldata
+<http://www.solidityontology.oeg.upm.es#Calldata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Calldata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+# 
+# http://www.solidityontology.oeg.upm.es#External
+<http://www.solidityontology.oeg.upm.es#External> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#External> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FRVisibility> .
+<http://www.solidityontology.oeg.upm.es#External> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#External> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a function/attribute that can only be called from a third party." .
+# 
+# http://www.solidityontology.oeg.upm.es#Indexed
+<http://www.solidityontology.oeg.upm.es#Indexed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Indexed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+# 
+# http://www.solidityontology.oeg.upm.es#Internal
+<http://www.solidityontology.oeg.upm.es#Internal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Internal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#Internal> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a function/attribute that can be called by the main contract itself, plus any derived contracts." .
+# 
+# http://www.solidityontology.oeg.upm.es#Memory
+<http://www.solidityontology.oeg.upm.es#Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+# 
+# http://www.solidityontology.oeg.upm.es#Override
+<http://www.solidityontology.oeg.upm.es#Override> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Override> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+<http://www.solidityontology.oeg.upm.es#Override> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#ModifierBehaviour> .
+# 
+# http://www.solidityontology.oeg.upm.es#Payable
+<http://www.solidityontology.oeg.upm.es#Payable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Payable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FRBehaviour> .
+<http://www.solidityontology.oeg.upm.es#Payable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+# 
+# http://www.solidityontology.oeg.upm.es#Private
+<http://www.solidityontology.oeg.upm.es#Private> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Private> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#Private> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a function/attribute that can only be called by the main contract itself" .
+# 
+# http://www.solidityontology.oeg.upm.es#Public
+<http://www.solidityontology.oeg.upm.es#Public> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Public> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#Visibility> .
+<http://www.solidityontology.oeg.upm.es#Public> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a function/attribute that can be called from all potential parties." .
+# 
+# http://www.solidityontology.oeg.upm.es#Pure
+<http://www.solidityontology.oeg.upm.es#Pure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Pure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+# 
+# http://www.solidityontology.oeg.upm.es#Storage
+<http://www.solidityontology.oeg.upm.es#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#DataLocation> .
+# 
+# http://www.solidityontology.oeg.upm.es#View
+<http://www.solidityontology.oeg.upm.es#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+# 
+# http://www.solidityontology.oeg.upm.es#Virtual
+<http://www.solidityontology.oeg.upm.es#Virtual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.solidityontology.oeg.upm.es#Virtual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#FunctionBehaviour> .
+<http://www.solidityontology.oeg.upm.es#Virtual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.solidityontology.oeg.upm.es#ModifierBehaviour> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
