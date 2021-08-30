@@ -719,6 +719,15 @@
     
 
 
+    <!-- http://www.solidityontology.oeg.upm.es#hasParameterName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.solidityontology.oeg.upm.es#hasParameterName">
+        <rdfs:label>has Parameter Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.solidityontology.oeg.upm.es#hasParameterPosition -->
 
 
@@ -1825,6 +1834,13 @@
                 <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasParameterPosition"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.solidityontology.oeg.upm.es#hasParameterName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Parameter Variable Specification</rdfs:label>
