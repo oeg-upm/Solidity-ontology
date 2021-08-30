@@ -148,6 +148,9 @@
     "SimpleVariableSpecification" : {
       "@id" : "http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification"
     },
+    "hasParameterName" : {
+      "@id" : "http://www.solidityontology.oeg.upm.es#hasParameterName"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },

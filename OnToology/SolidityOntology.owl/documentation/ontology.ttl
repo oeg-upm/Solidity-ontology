@@ -445,6 +445,11 @@
            rdfs:label "has Option" .
 
 
+###  http://www.solidityontology.oeg.upm.es#hasParameterName
+:hasParameterName rdf:type owl:DatatypeProperty ;
+                  rdfs:label "has Parameter Name" .
+
+
 ###  http://www.solidityontology.oeg.upm.es#hasParameterPosition
 :hasParameterPosition rdf:type owl:DatatypeProperty ;
                       rdfs:domain :ParameterVariableSpecification ;
@@ -1160,6 +1165,11 @@
                                                   owl:onProperty :hasParameterPosition ;
                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                   owl:onDataRange xsd:short
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasParameterName ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onDataRange xsd:string
                                                 ] ;
                                 rdfs:label "Parameter Variable Specification" .
 

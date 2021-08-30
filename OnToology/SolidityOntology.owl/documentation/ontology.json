@@ -878,6 +878,19 @@
 }, {
   "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.solidityontology.oeg.upm.es#hasParameterName"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#FRVisibility"
   } ],
@@ -889,7 +902,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -902,7 +915,7 @@
     "@id" : "http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -913,19 +926,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#hasCode"
-  } ]
-}, {
-  "@id" : "_:genid79",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#short"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.solidityontology.oeg.upm.es#hasMemory"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -944,6 +944,19 @@
   "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.solidityontology.oeg.upm.es#hasMemory"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -954,7 +967,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -967,7 +980,7 @@
     "@id" : "http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#LibraryImplementation"
@@ -980,7 +993,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -993,7 +1006,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -1692,6 +1705,8 @@
     "@id" : "_:genid74"
   }, {
     "@id" : "_:genid75"
+  }, {
+    "@id" : "_:genid76"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#Payable",
@@ -1718,11 +1733,11 @@
     "@value" : "Receive Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid76"
-  }, {
     "@id" : "_:genid77"
   }, {
     "@id" : "_:genid78"
+  }, {
+    "@id" : "_:genid79"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#SimpleValueSpecification",
@@ -1751,7 +1766,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#MemoryType"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid80"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#Storage",
@@ -1776,7 +1791,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#SimpleValueSpecification"
   }, {
-    "@id" : "_:genid80"
+    "@id" : "_:genid81"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#StructType",
@@ -1791,7 +1806,7 @@
   }, {
     "@id" : "http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"
   }, {
-    "@id" : "_:genid81"
+    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#Type",
@@ -1824,9 +1839,9 @@
     "@value" : "Using For Directive"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid82"
-  }, {
     "@id" : "_:genid83"
+  }, {
+    "@id" : "_:genid84"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#ValueSpecification",
@@ -1835,7 +1850,7 @@
     "@value" : "Value Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid84"
+    "@id" : "_:genid85"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#View",
@@ -2391,6 +2406,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification"
+  } ]
+}, {
+  "@id" : "http://www.solidityontology.oeg.upm.es#hasParameterName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Parameter Name"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#hasParameterPosition",
