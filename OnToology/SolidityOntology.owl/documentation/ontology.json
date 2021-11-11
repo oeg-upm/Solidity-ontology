@@ -1112,6 +1112,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.solidityontology.oeg.upm.es#ElementaryType"
+  }, {
+    "@id" : "http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation"
   } ]
 }, {
   "@id" : "http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification",

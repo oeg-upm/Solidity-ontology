@@ -533,7 +533,8 @@
 
 ###  http://www.solidityontology.oeg.upm.es#Address
 :Address rdf:type owl:Class ;
-         rdfs:subClassOf :ElementaryType ;
+         rdfs:subClassOf :ElementaryType ,
+                         :ParameterTypeWithDataLocation ;
          rdfs:label "Address" .
 
 
