@@ -1,13 +1,13 @@
-@prefix : <http://www.solidityontology.oeg.upm.es#> .
+@prefix : <https://w3id.org/def/SolidityOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.solidityontology.oeg.upm.es> .
+@base <https://w3id.org/def/SolidityOntology#> .
 
-<http://www.solidityontology.oeg.upm.es> rdf:type owl:Ontology ;
-                                          owl:versionIRI <urn:absolute:1.0> ;
+<https://w3id.org/def/SolidityOntology#> rdf:type owl:Ontology ;
+                                          owl:versionIRI <https://w3id.org/def/SolidityOntology#> ;
                                           <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> ,
                                                                              "Andrea Cimmino" ,
                                                                              "Juan Cano-Benito" ;
@@ -37,7 +37,13 @@
 #    Object Properties
 #################################################################
 
-###  http://www.solidityontology.oeg.upm.es#hasAbstractFunction
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:ObjectProperty ;
+                                                 rdfs:comment "There is a hierarchical mapping link between our ontology class and the EthOn ontology class, and an associative mapping link between our ontology class and the EthOn ontology class." ;
+                                                 rdfs:label "skos:closeMatch" .
+
+
+###  https://w3id.org/def/SolidityOntology#hasAbstractFunction
 :hasAbstractFunction rdf:type owl:ObjectProperty ;
                      rdfs:domain :Abstract ;
                      rdfs:range :CodelessFunctionSpecification ;
@@ -45,96 +51,96 @@
                      rdfs:label "has Abstract Function" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayDimension
+###  https://w3id.org/def/SolidityOntology#hasArrayDimension
 :hasArrayDimension rdf:type owl:ObjectProperty ;
                    rdfs:domain :ArrayType ;
                    rdfs:range :ArrayDimension ;
                    rdfs:label "has Array Dimension" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayType
+###  https://w3id.org/def/SolidityOntology#hasArrayType
 :hasArrayType rdf:type owl:ObjectProperty ;
               rdfs:domain :ArrayAttributeSpecification ;
               rdfs:range :ArrayType ;
               rdfs:label "has Array Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasArrayValue
+###  https://w3id.org/def/SolidityOntology#hasArrayValue
 :hasArrayValue rdf:type owl:ObjectProperty ;
                rdfs:domain :ArrayValueSpecification ;
                rdfs:range :ArrayValue ;
                rdfs:label "has Array Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasAttribute
+###  https://w3id.org/def/SolidityOntology#hasAttribute
 :hasAttribute rdf:type owl:ObjectProperty ;
               rdfs:domain :ContractImplementation ;
               rdfs:range :AttributeSpecification ;
               rdfs:label "has Attribute" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasAttributeValue
+###  https://w3id.org/def/SolidityOntology#hasAttributeValue
 :hasAttributeValue rdf:type owl:ObjectProperty ;
                    rdfs:domain :NonconstantAttributeSpecification ;
                    rdfs:range :ValueSpecification ;
                    rdfs:label "has Attribute Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasAttributeVisibility
+###  https://w3id.org/def/SolidityOntology#hasAttributeVisibility
 :hasAttributeVisibility rdf:type owl:ObjectProperty ;
                         rdfs:domain :NonconstantAttributeSpecification ;
                         rdfs:range :Visibility ;
                         rdfs:label "has Attribute Visibility" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasConstantStructAttribute
+###  https://w3id.org/def/SolidityOntology#hasConstantStructAttribute
 :hasConstantStructAttribute rdf:type owl:ObjectProperty ;
                             rdfs:domain :StructType ;
                             rdfs:range :ConstantAttributeSpecification ;
                             rdfs:label "has Constant Struct Attribute" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasConstantType
+###  https://w3id.org/def/SolidityOntology#hasConstantType
 :hasConstantType rdf:type owl:ObjectProperty ;
                  rdfs:domain :ConstantAttributeSpecification ;
                  rdfs:range :ConstantType ;
                  rdfs:label "has Constant Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasConstructor
+###  https://w3id.org/def/SolidityOntology#hasConstructor
 :hasConstructor rdf:type owl:ObjectProperty ;
                 rdfs:domain :ContractImplementation ;
                 rdfs:range :ConstructorSpecification ;
                 rdfs:label "has Constructor" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasConstructorArguments
+###  https://w3id.org/def/SolidityOntology#hasConstructorArguments
 :hasConstructorArguments rdf:type owl:ObjectProperty ;
                          rdfs:domain :ConstructorSpecification ;
                          rdfs:range :ParameterVariableSpecification ;
                          rdfs:label "has Constructor Arguments" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasEvent
+###  https://w3id.org/def/SolidityOntology#hasEvent
 :hasEvent rdf:type owl:ObjectProperty ;
           rdfs:label "has Event" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasEventArguments
+###  https://w3id.org/def/SolidityOntology#hasEventArguments
 :hasEventArguments rdf:type owl:ObjectProperty ;
                    rdfs:domain :EventSpecification ;
                    rdfs:range :ParameterVariableSpecification ;
                    rdfs:label "has Event Arguments" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackBehaviour
+###  https://w3id.org/def/SolidityOntology#hasFallbackBehaviour
 :hasFallbackBehaviour rdf:type owl:ObjectProperty ;
                       rdfs:domain :ReceiveSpecification ;
                       rdfs:range :FRBehaviour ;
                       rdfs:label "has Fallback Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackFunction
+###  https://w3id.org/def/SolidityOntology#hasFallbackFunction
 :hasFallbackFunction rdf:type owl:ObjectProperty ;
                      rdfs:domain :ContractImplementation ;
                      rdfs:range :FallbackSpecification ;
@@ -142,151 +148,151 @@
                      rdfs:label "has Fallback Function" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFallbackVisibility
+###  https://w3id.org/def/SolidityOntology#hasFallbackVisibility
 :hasFallbackVisibility rdf:type owl:ObjectProperty ;
                        rdfs:domain :ReceiveSpecification ;
                        rdfs:range :FRVisibility ;
                        rdfs:label "has Fallback Visibility" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunction
+###  https://w3id.org/def/SolidityOntology#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              owl:propertyDisjointWith :hasInterfaceFunction ;
              rdfs:label "has Function" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionArguments
+###  https://w3id.org/def/SolidityOntology#hasFunctionArguments
 :hasFunctionArguments rdf:type owl:ObjectProperty ;
                       rdfs:domain :FunctionSpecification ;
                       rdfs:range :ParameterVariableSpecification ;
                       rdfs:label "has Function Arguments" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionBehaviour
+###  https://w3id.org/def/SolidityOntology#hasFunctionBehaviour
 :hasFunctionBehaviour rdf:type owl:ObjectProperty ;
                       rdfs:domain :FunctionSpecification ;
                       rdfs:range :FunctionBehaviour ;
                       rdfs:label "has Function Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionReturn
+###  https://w3id.org/def/SolidityOntology#hasFunctionReturn
 :hasFunctionReturn rdf:type owl:ObjectProperty ;
                    rdfs:domain :FunctionSpecification ;
                    rdfs:range :ParameterVariableSpecification ;
                    rdfs:label "has Function Return" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionVisibility
+###  https://w3id.org/def/SolidityOntology#hasFunctionVisibility
 :hasFunctionVisibility rdf:type owl:ObjectProperty ;
                        rdfs:domain :FunctionSpecification ;
                        rdfs:range :Visibility ;
                        rdfs:label "has Function Visibility" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasIndexArrayValue
+###  https://w3id.org/def/SolidityOntology#hasIndexArrayValue
 :hasIndexArrayValue rdf:type owl:ObjectProperty ;
                     rdfs:domain :ArrayValue ;
                     rdfs:range :SimpleValueSpecification ;
                     rdfs:label "has Index Array Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasInterface
+###  https://w3id.org/def/SolidityOntology#hasInterface
 :hasInterface rdf:type owl:ObjectProperty ;
               rdfs:domain :ContractImplementation ;
               rdfs:range :Interface ;
               rdfs:label "has Interface" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasInterfaceFunction
+###  https://w3id.org/def/SolidityOntology#hasInterfaceFunction
 :hasInterfaceFunction rdf:type owl:ObjectProperty ;
                       rdfs:domain :Interface ;
                       rdfs:range :CodelessFunctionSpecification ;
                       rdfs:label "has Interface Function" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasKeyMap
+###  https://w3id.org/def/SolidityOntology#hasKeyMap
 :hasKeyMap rdf:type owl:ObjectProperty ;
            rdfs:domain :MapType ;
            rdfs:range :MapKeyType ;
            rdfs:label "has Key Map" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasMapType
+###  https://w3id.org/def/SolidityOntology#hasMapType
 :hasMapType rdf:type owl:ObjectProperty ;
             rdfs:domain :MapAttributeSpecification ;
             rdfs:range :MapType ;
             rdfs:label "has Map Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifier
+###  https://w3id.org/def/SolidityOntology#hasModifier
 :hasModifier rdf:type owl:ObjectProperty ;
              rdfs:label "has Modifier" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierArguments
+###  https://w3id.org/def/SolidityOntology#hasModifierArguments
 :hasModifierArguments rdf:type owl:ObjectProperty ;
                       rdfs:domain :ModifierSpecification ;
                       rdfs:range :ParameterVariableSpecification ;
                       rdfs:label "has Modifier Arguments" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierBehaviour
+###  https://w3id.org/def/SolidityOntology#hasModifierBehaviour
 :hasModifierBehaviour rdf:type owl:ObjectProperty ;
                       rdfs:domain :ModifierSpecification ;
                       rdfs:range :ModifierBehaviour ;
                       rdfs:label "has Modifier Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierOverrideType
+###  https://w3id.org/def/SolidityOntology#hasModifierOverrideType
 :hasModifierOverrideType rdf:type owl:ObjectProperty ;
                          rdfs:domain :ModifierOverrideSpecification ;
                          rdfs:range :ModifierOverrideType ;
                          rdfs:label "Has Modifier Override Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasNonConstantAttribute
+###  https://w3id.org/def/SolidityOntology#hasNonConstantAttribute
 :hasNonConstantAttribute rdf:type owl:ObjectProperty ;
                          rdfs:domain :LibraryImplementation ;
                          rdfs:range :NonconstantAttributeSpecification ;
                          rdfs:label "has Non Constant Attribute" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasNonConstantType
+###  https://w3id.org/def/SolidityOntology#hasNonConstantType
 :hasNonConstantType rdf:type owl:ObjectProperty ;
                     rdfs:domain :NonconstantAttributeSpecification ;
                     rdfs:range :NonConstantType ;
                     rdfs:label "has Non Constant Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasOverrideReturn
+###  https://w3id.org/def/SolidityOntology#hasOverrideReturn
 :hasOverrideReturn rdf:type owl:ObjectProperty ;
                    rdfs:domain :ModifierSpecification ;
                    rdfs:range :ModifierOverrideSpecification ;
                    rdfs:label "has Override Return" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterType
+###  https://w3id.org/def/SolidityOntology#hasParameterType
 :hasParameterType rdf:type owl:ObjectProperty ;
                   rdfs:domain :ParameterVariableSpecification ;
                   rdfs:range :ParameterType ;
                   rdfs:label "has Parameter Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterTypeWithDataLocation
+###  https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation
 :hasParameterTypeWithDataLocation rdf:type owl:ObjectProperty ;
                                   rdfs:domain :ParameterTypeWithDataLocation ;
                                   rdfs:range :DataLocation ;
                                   rdfs:label "has Parameter Type With Data Location" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveBehaviour
+###  https://w3id.org/def/SolidityOntology#hasReceiveBehaviour
 :hasReceiveBehaviour rdf:type owl:ObjectProperty ;
                      rdfs:domain :FallbackSpecification ;
                      rdfs:range :FRBehaviour ;
                      rdfs:label "has Receive Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveFunction
+###  https://w3id.org/def/SolidityOntology#hasReceiveFunction
 :hasReceiveFunction rdf:type owl:ObjectProperty ;
                     rdfs:domain :ContractImplementation ;
                     rdfs:range :ReceiveSpecification ;
@@ -294,203 +300,197 @@
                     rdfs:label "has Receive Function" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasReceiveVisibility
+###  https://w3id.org/def/SolidityOntology#hasReceiveVisibility
 :hasReceiveVisibility rdf:type owl:ObjectProperty ;
                       rdfs:domain :FallbackSpecification ;
                       rdfs:range :FRVisibility ;
                       rdfs:label "has Receive Visibility" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasType
+###  https://w3id.org/def/SolidityOntology#hasType
 :hasType rdf:type owl:ObjectProperty ;
          rdfs:domain :ArrayType ;
          rdfs:range :Type ;
          rdfs:label "has Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasUsingForDirective
+###  https://w3id.org/def/SolidityOntology#hasUsingForDirective
 :hasUsingForDirective rdf:type owl:ObjectProperty ;
                       rdfs:domain :ContractImplementation ;
                       rdfs:range :UsinForDirective ;
                       rdfs:label "has Using For Directive" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasValueMap
+###  https://w3id.org/def/SolidityOntology#hasValueMap
 :hasValueMap rdf:type owl:ObjectProperty ;
              rdfs:domain :MapType ;
              rdfs:range :Type ;
              rdfs:label "has Value Map" .
 
 
-###  http://www.solidityontology.oeg.upm.es#includes
+###  https://w3id.org/def/SolidityOntology#includes
 :includes rdf:type owl:ObjectProperty ;
           rdfs:label "includes" .
 
 
-###  http://www.solidityontology.oeg.upm.es#isAbstract
+###  https://w3id.org/def/SolidityOntology#isAbstract
 :isAbstract rdf:type owl:ObjectProperty ;
             rdfs:domain :ContractImplementation ;
             rdfs:range :Abstract ;
             rdfs:label "is Abstract" .
 
 
-###  http://www.solidityontology.oeg.upm.es#usingLibrary
+###  https://w3id.org/def/SolidityOntology#usingLibrary
 :usingLibrary rdf:type owl:ObjectProperty ;
               rdfs:domain :UsinForDirective ;
               rdfs:range :LibraryImplementation ;
               rdfs:label "using Library" .
 
 
-###  http://www.w3.org/2004/02/skos/core#closeMatch
-<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:ObjectProperty ;
-                                                 rdfs:comment "There is a hierarchical mapping link between our ontology class and the EthOn ontology class, and an associative mapping link between our ontology class and the EthOn ontology class." ;
-                                                 rdfs:label "skos:closeMatch" .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.solidityontology.oeg.upm.es#hasAttributeName
+###  https://w3id.org/def/SolidityOntology#hasAttributeName
 :hasAttributeName rdf:type owl:DatatypeProperty ;
                   rdfs:domain :AttributeSpecification ;
                   rdfs:range xsd:string ;
                   rdfs:label "has Attribute Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasCode
+###  https://w3id.org/def/SolidityOntology#hasCode
 :hasCode rdf:type owl:DatatypeProperty ;
          rdfs:label "has Code" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasContractName
+###  https://w3id.org/def/SolidityOntology#hasContractName
 :hasContractName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Implementation ;
                  rdfs:range xsd:string ;
                  rdfs:label "has Contract Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasEventName
+###  https://w3id.org/def/SolidityOntology#hasEventName
 :hasEventName rdf:type owl:DatatypeProperty ;
               rdfs:domain :EventSpecification ;
               rdfs:range xsd:string ;
               rdfs:label "has Event Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasFunctionName
+###  https://w3id.org/def/SolidityOntology#hasFunctionName
 :hasFunctionName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :FunctionSpecification ;
                  rdfs:range xsd:string ;
                  rdfs:label "has Function Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasImports
+###  https://w3id.org/def/SolidityOntology#hasImports
 :hasImports rdf:type owl:DatatypeProperty ;
             rdfs:domain :Implementation ;
             rdfs:range xsd:string ;
             rdfs:label "has Imports" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasIndex
+###  https://w3id.org/def/SolidityOntology#hasIndex
 :hasIndex rdf:type owl:DatatypeProperty ;
           rdfs:label "has Index" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasInheritance
+###  https://w3id.org/def/SolidityOntology#hasInheritance
 :hasInheritance rdf:type owl:DatatypeProperty ;
                 rdfs:domain :ContractImplementation ;
                 rdfs:range xsd:string ;
                 rdfs:label "has Inheritance" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasLenght
-:hasLenght rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/def/SolidityOntology#hasLength
+:hasLength rdf:type owl:DatatypeProperty ;
            rdfs:domain :ArrayDimension ;
            rdfs:range xsd:short ;
-           rdfs:label "has Lenght" .
+           rdfs:label "has Length" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasMemory
+###  https://w3id.org/def/SolidityOntology#hasMemory
 :hasMemory rdf:type owl:DatatypeProperty ;
            rdfs:domain :SingleMemoryType ;
            rdfs:range xsd:short ;
            rdfs:label "has Memory" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasMemoryM
+###  https://w3id.org/def/SolidityOntology#hasMemoryM
 :hasMemoryM rdf:type owl:DatatypeProperty ;
             rdfs:domain :DualMemoryType ;
             rdfs:range xsd:short ;
             rdfs:label "has MemoryM" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasMemoryN
+###  https://w3id.org/def/SolidityOntology#hasMemoryN
 :hasMemoryN rdf:type owl:DatatypeProperty ;
             rdfs:domain :DualMemoryType ;
             rdfs:range xsd:short ;
             rdfs:label "has MemoryN" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasModifierName
+###  https://w3id.org/def/SolidityOntology#hasModifierName
 :hasModifierName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :ModifierSpecification ;
                  rdfs:range xsd:string ;
                  rdfs:label "has Modifier Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasOption
+###  https://w3id.org/def/SolidityOntology#hasOption
 :hasOption rdf:type owl:DatatypeProperty ;
            rdfs:domain :EnumType ;
            rdfs:range xsd:string ;
            rdfs:label "has Option" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterName
+###  https://w3id.org/def/SolidityOntology#hasParameterName
 :hasParameterName rdf:type owl:DatatypeProperty ;
                   rdfs:label "has Parameter Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasParameterPosition
+###  https://w3id.org/def/SolidityOntology#hasParameterPosition
 :hasParameterPosition rdf:type owl:DatatypeProperty ;
                       rdfs:domain :ParameterVariableSpecification ;
                       rdfs:range xsd:short ;
                       rdfs:label "has Parameter Position" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasUsingForName
+###  https://w3id.org/def/SolidityOntology#hasUsingForName
 :hasUsingForName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :UsinForDirective ;
                  rdfs:range xsd:string ;
                  rdfs:label "has UsingFor Name" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasValue
+###  https://w3id.org/def/SolidityOntology#hasValue
 :hasValue rdf:type owl:DatatypeProperty ;
           rdfs:label "has Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#hasVersion
+###  https://w3id.org/def/SolidityOntology#hasVersion
 :hasVersion rdf:type owl:DatatypeProperty ;
             rdfs:domain :Implementation ;
             rdfs:range xsd:string ;
             rdfs:label "has Version" .
 
 
-###  http://www.solidityontology.oeg.upm.es#isAnonymous
+###  https://w3id.org/def/SolidityOntology#isAnonymous
 :isAnonymous rdf:type owl:DatatypeProperty ;
              rdfs:domain :EventSpecification ;
              rdfs:range xsd:boolean ;
              rdfs:label "is Anonymous" .
 
 
-###  http://www.solidityontology.oeg.upm.es#isConstant
+###  https://w3id.org/def/SolidityOntology#isConstant
 :isConstant rdf:type owl:DatatypeProperty ;
             rdfs:domain :ValueSpecification ;
             rdfs:range xsd:boolean ;
             rdfs:label "is Constant" .
 
 
-###  http://www.solidityontology.oeg.upm.es#isInmutable
+###  https://w3id.org/def/SolidityOntology#isInmutable
 :isInmutable rdf:type owl:DatatypeProperty ;
              rdfs:domain :NonconstantAttributeSpecification ;
              rdfs:range xsd:boolean ;
@@ -521,7 +521,7 @@
                                               rdfs:label "ethonc:Output" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Abstract
+###  https://w3id.org/def/SolidityOntology#Abstract
 :Abstract rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :hasAbstractFunction ;
@@ -531,13 +531,14 @@
           rdfs:label "Abstract" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Address
+###  https://w3id.org/def/SolidityOntology#Address
 :Address rdf:type owl:Class ;
-         rdfs:subClassOf :ElementaryType ;
+         rdfs:subClassOf :ElementaryType ,
+                         :ParameterTypeWithDataLocation ;
          rdfs:label "Address" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayAttributeSpecification
+###  https://w3id.org/def/SolidityOntology#ArrayAttributeSpecification
 :ArrayAttributeSpecification rdf:type owl:Class ;
                              rdfs:subClassOf :NonconstantAttributeSpecification ,
                                              [ rdf:type owl:Restriction ;
@@ -548,7 +549,7 @@
                              rdfs:label "Array Attribute Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayDimension
+###  https://w3id.org/def/SolidityOntology#ArrayDimension
 :ArrayDimension rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasIndex ;
@@ -556,14 +557,14 @@
                                   owl:onDataRange xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasLenght ;
+                                  owl:onProperty :hasLength ;
                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onDataRange xsd:integer
                                 ] ;
                 rdfs:label "Array Dimension" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayType
+###  https://w3id.org/def/SolidityOntology#ArrayType
 :ArrayType rdf:type owl:Class ;
            rdfs:subClassOf :NonConstantType ,
                            :ParameterTypeWithDataLocation ,
@@ -580,7 +581,7 @@
            rdfs:label "Array Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayValue
+###  https://w3id.org/def/SolidityOntology#ArrayValue
 :ArrayValue rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :hasIndexArrayValue ;
@@ -590,7 +591,7 @@
             rdfs:label "Array Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ArrayValueSpecification
+###  https://w3id.org/def/SolidityOntology#ArrayValueSpecification
 :ArrayValueSpecification rdf:type owl:Class ;
                          rdfs:subClassOf :ValueSpecification ,
                                          [ rdf:type owl:Restriction ;
@@ -606,7 +607,7 @@
                          rdfs:label "Array Value Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#AttributeSpecification
+###  https://w3id.org/def/SolidityOntology#AttributeSpecification
 :AttributeSpecification rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
                                           owl:onProperty :hasAttributeName ;
@@ -616,13 +617,13 @@
                         rdfs:label "Attribute Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Bool
+###  https://w3id.org/def/SolidityOntology#Bool
 :Bool rdf:type owl:Class ;
       rdfs:subClassOf :ElementaryType ;
       rdfs:label "Bool" .
 
 
-###  http://www.solidityontology.oeg.upm.es#BoolValue
+###  https://w3id.org/def/SolidityOntology#BoolValue
 :BoolValue rdf:type owl:Class ;
            rdfs:subClassOf :SimpleValueSpecification ,
                            [ rdf:type owl:Restriction ;
@@ -633,14 +634,14 @@
            rdfs:label "Bool Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Bytes
+###  https://w3id.org/def/SolidityOntology#Bytes
 :Bytes rdf:type owl:Class ;
        rdfs:subClassOf :ParameterTypeWithDataLocation ,
                        :SingleMemoryType ;
        rdfs:label "Bytes" .
 
 
-###  http://www.solidityontology.oeg.upm.es#BytesValue
+###  https://w3id.org/def/SolidityOntology#BytesValue
 :BytesValue rdf:type owl:Class ;
             rdfs:subClassOf :SimpleValueSpecification ,
                             [ rdf:type owl:Restriction ;
@@ -651,7 +652,7 @@
             rdfs:label "Bytes Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#CodelessFunctionSpecification
+###  https://w3id.org/def/SolidityOntology#CodelessFunctionSpecification
 :CodelessFunctionSpecification rdf:type owl:Class ;
                                rdfs:subClassOf :FunctionSpecification ,
                                                [ rdf:type owl:Restriction ;
@@ -662,7 +663,7 @@
                                rdfs:label "Codeless Function Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ConstantAttributeSpecification
+###  https://w3id.org/def/SolidityOntology#ConstantAttributeSpecification
 :ConstantAttributeSpecification rdf:type owl:Class ;
                                 rdfs:subClassOf :AttributeSpecification ,
                                                 [ rdf:type owl:Restriction ;
@@ -674,13 +675,13 @@
                                 rdfs:label "Constant Attribute Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ConstantType
+###  https://w3id.org/def/SolidityOntology#ConstantType
 :ConstantType rdf:type owl:Class ;
               rdfs:subClassOf :Type ;
               rdfs:label "Constant Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ConstructorSpecification
+###  https://w3id.org/def/SolidityOntology#ConstructorSpecification
 :ConstructorSpecification rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
                                             owl:onProperty :hasConstructorArguments ;
@@ -694,7 +695,7 @@
                           rdfs:label "Constructor Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ContractImplementation
+###  https://w3id.org/def/SolidityOntology#ContractImplementation
 :ContractImplementation rdf:type owl:Class ;
                         rdfs:subClassOf :Implementation ,
                                         :MapKeyType ,
@@ -756,12 +757,12 @@
                         rdfs:label "Contract Implementation" .
 
 
-###  http://www.solidityontology.oeg.upm.es#DataLocation
+###  https://w3id.org/def/SolidityOntology#DataLocation
 :DataLocation rdf:type owl:Class ;
               rdfs:label "Data location" .
 
 
-###  http://www.solidityontology.oeg.upm.es#DualMemoryType
+###  https://w3id.org/def/SolidityOntology#DualMemoryType
 :DualMemoryType rdf:type owl:Class ;
                 rdfs:subClassOf :MemoryType ,
                                 [ rdf:type owl:Restriction ;
@@ -777,7 +778,7 @@
                 rdfs:label "Dual Memory Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ElementaryType
+###  https://w3id.org/def/SolidityOntology#ElementaryType
 :ElementaryType rdf:type owl:Class ;
                 rdfs:subClassOf :MapKeyType ,
                                 :NonConstantType ,
@@ -785,7 +786,7 @@
                 rdfs:label "Elementary Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#EnumType
+###  https://w3id.org/def/SolidityOntology#EnumType
 :EnumType rdf:type owl:Class ;
           rdfs:subClassOf :ConstantType ,
                           :MapKeyType ,
@@ -799,7 +800,7 @@
           rdfs:label "Enum Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#EventSpecification
+###  https://w3id.org/def/SolidityOntology#EventSpecification
 :EventSpecification rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :hasEventArguments ;
@@ -824,18 +825,18 @@
                     rdfs:label "Event Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FRBehaviour
+###  https://w3id.org/def/SolidityOntology#FRBehaviour
 :FRBehaviour rdf:type owl:Class ;
              rdfs:comment "Fallback / Receive behaviour" ;
              rdfs:label "Fallback Receive Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FRVisibility
+###  https://w3id.org/def/SolidityOntology#FRVisibility
 :FRVisibility rdf:type owl:Class ;
               rdfs:label "Fallback Receive Visibility" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FallbackSpecification
+###  https://w3id.org/def/SolidityOntology#FallbackSpecification
 :FallbackSpecification rdf:type owl:Class ;
                        rdfs:subClassOf [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasFallbackVisibility ;
@@ -855,13 +856,13 @@
                        rdfs:label "Fallback Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FixedMxN
+###  https://w3id.org/def/SolidityOntology#FixedMxN
 :FixedMxN rdf:type owl:Class ;
           rdfs:subClassOf :DualMemoryType ;
           rdfs:label "FixedMxN" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FixedValue
+###  https://w3id.org/def/SolidityOntology#FixedValue
 :FixedValue rdf:type owl:Class ;
             rdfs:subClassOf :SimpleValueSpecification ,
                             [ rdf:type owl:Restriction ;
@@ -872,7 +873,7 @@
             rdfs:label "Fixed Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FunctionBehaviour
+###  https://w3id.org/def/SolidityOntology#FunctionBehaviour
 :FunctionBehaviour rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty :includes ;
@@ -882,7 +883,7 @@
                    rdfs:label "Function Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#FunctionSpecification
+###  https://w3id.org/def/SolidityOntology#FunctionSpecification
 :FunctionSpecification rdf:type owl:Class ;
                        rdfs:subClassOf [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasFunctionArguments ;
@@ -898,14 +899,14 @@
                                          owl:onClass :Visibility
                                        ] ,
                                        [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasFunctionBehaviour ;
-                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :FunctionBehaviour
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#closeMatch> ;
                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                          owl:onClass <http://ethon.consensys.net/Contracts/Function>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasFunctionBehaviour ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :FunctionBehaviour
                                        ] ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasFunctionName ;
@@ -920,13 +921,13 @@
                        rdfs:label "Function Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#GenericValue
+###  https://w3id.org/def/SolidityOntology#GenericValue
 :GenericValue rdf:type owl:Class ;
               rdfs:subClassOf :SimpleValueSpecification ;
               rdfs:label "Generic Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Implementation
+###  https://w3id.org/def/SolidityOntology#Implementation
 :Implementation rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasImports ;
@@ -945,13 +946,13 @@
                 rdfs:label "Implementation" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Int
+###  https://w3id.org/def/SolidityOntology#Int
 :Int rdf:type owl:Class ;
      rdfs:subClassOf :SingleMemoryType ;
      rdfs:label "Int" .
 
 
-###  http://www.solidityontology.oeg.upm.es#IntValue
+###  https://w3id.org/def/SolidityOntology#IntValue
 :IntValue rdf:type owl:Class ;
           rdfs:subClassOf :SimpleValueSpecification ,
                           [ rdf:type owl:Restriction ;
@@ -962,7 +963,7 @@
           rdfs:label "Int Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Interface
+###  https://w3id.org/def/SolidityOntology#Interface
 :Interface rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:onProperty :hasInterfaceFunction ;
@@ -972,7 +973,7 @@
            rdfs:label "Interface" .
 
 
-###  http://www.solidityontology.oeg.upm.es#LibraryImplementation
+###  https://w3id.org/def/SolidityOntology#LibraryImplementation
 :LibraryImplementation rdf:type owl:Class ;
                        rdfs:subClassOf :Implementation ,
                                        [ rdf:type owl:Restriction ;
@@ -995,7 +996,7 @@
                        rdfs:label "Library Implementation" .
 
 
-###  http://www.solidityontology.oeg.upm.es#MapAttributeSpecification
+###  https://w3id.org/def/SolidityOntology#MapAttributeSpecification
 :MapAttributeSpecification rdf:type owl:Class ;
                            rdfs:subClassOf :NonconstantAttributeSpecification ,
                                            [ rdf:type owl:Restriction ;
@@ -1006,13 +1007,13 @@
                            rdfs:label "Map Attribute Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#MapKeyType
+###  https://w3id.org/def/SolidityOntology#MapKeyType
 :MapKeyType rdf:type owl:Class ;
             rdfs:subClassOf :Type ;
             rdfs:label "Map Key Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#MapType
+###  https://w3id.org/def/SolidityOntology#MapType
 :MapType rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :hasKeyMap ;
@@ -1027,7 +1028,7 @@
          rdfs:label "Map Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#MemoryType
+###  https://w3id.org/def/SolidityOntology#MemoryType
 :MemoryType rdf:type owl:Class ;
             rdfs:subClassOf :MapKeyType ,
                             :NonConstantType ,
@@ -1035,12 +1036,12 @@
             rdfs:label "Memory Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ModifierBehaviour
+###  https://w3id.org/def/SolidityOntology#ModifierBehaviour
 :ModifierBehaviour rdf:type owl:Class ;
                    rdfs:label "Modifier Behaviour" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ModifierOverrideSpecification
+###  https://w3id.org/def/SolidityOntology#ModifierOverrideSpecification
 :ModifierOverrideSpecification rdf:type owl:Class ;
                                rdfs:subClassOf :NonconstantAttributeSpecification ,
                                                [ rdf:type owl:Restriction ;
@@ -1051,12 +1052,12 @@
                                rdfs:label "Modifier Override Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ModifierOverrideType
+###  https://w3id.org/def/SolidityOntology#ModifierOverrideType
 :ModifierOverrideType rdf:type owl:Class ;
                       rdfs:label "Modifier Override Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ModifierSpecification
+###  https://w3id.org/def/SolidityOntology#ModifierSpecification
 :ModifierSpecification rdf:type owl:Class ;
                        rdfs:subClassOf [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasModifierArguments ;
@@ -1084,13 +1085,13 @@
                        rdfs:label "Modifier Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#NonConstantType
+###  https://w3id.org/def/SolidityOntology#NonConstantType
 :NonConstantType rdf:type owl:Class ;
                  rdfs:subClassOf :Type ;
                  rdfs:label "Non Constant Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#NonconstantAttributeSpecification
+###  https://w3id.org/def/SolidityOntology#NonconstantAttributeSpecification
 :NonconstantAttributeSpecification rdf:type owl:Class ;
                                    rdfs:subClassOf :AttributeSpecification ,
                                                    [ rdf:type owl:Restriction ;
@@ -1102,16 +1103,6 @@
                                                      owl:onProperty :includes ;
                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                      owl:onClass :ConstantAttributeSpecification
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasAttributeValue ;
-                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass :ParameterVariableSpecification
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasAttributeVisibility ;
-                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass :Visibility
                                                    ] ,
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#closeMatch> ;
@@ -1129,6 +1120,16 @@
                                                      owl:onClass <http://ethon.consensys.net/Contracts/Output>
                                                    ] ,
                                                    [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasAttributeValue ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :ParameterVariableSpecification
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasAttributeVisibility ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :Visibility
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
                                                      owl:onProperty :isInmutable ;
                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                      owl:onDataRange xsd:boolean
@@ -1137,12 +1138,12 @@
                                    rdfs:label "Non Constant Attribute Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ParameterType
+###  https://w3id.org/def/SolidityOntology#ParameterType
 :ParameterType rdf:type owl:Class ;
                rdfs:label "Parameter Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ParameterTypeWithDataLocation
+###  https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation
 :ParameterTypeWithDataLocation rdf:type owl:Class ;
                                rdfs:subClassOf :ParameterType ,
                                                [ rdf:type owl:Restriction ;
@@ -1153,7 +1154,7 @@
                                rdfs:label "Parameter Type With Data Location" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ParameterVariableSpecification
+###  https://w3id.org/def/SolidityOntology#ParameterVariableSpecification
 :ParameterVariableSpecification rdf:type owl:Class ;
                                 rdfs:subClassOf :NonconstantAttributeSpecification ,
                                                 [ rdf:type owl:Restriction ;
@@ -1174,7 +1175,7 @@
                                 rdfs:label "Parameter Variable Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ReceiveSpecification
+###  https://w3id.org/def/SolidityOntology#ReceiveSpecification
 :ReceiveSpecification rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty :hasReceiveVisibility ;
@@ -1194,19 +1195,19 @@
                       rdfs:label "Receive Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#SimpleValueSpecification
+###  https://w3id.org/def/SolidityOntology#SimpleValueSpecification
 :SimpleValueSpecification rdf:type owl:Class ;
                           rdfs:subClassOf :ValueSpecification ;
                           rdfs:label "Simple Value Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#SimpleVariableSpecification
+###  https://w3id.org/def/SolidityOntology#SimpleVariableSpecification
 :SimpleVariableSpecification rdf:type owl:Class ;
                              rdfs:subClassOf :NonconstantAttributeSpecification ;
                              rdfs:label "Simple Variable Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#SingleMemoryType
+###  https://w3id.org/def/SolidityOntology#SingleMemoryType
 :SingleMemoryType rdf:type owl:Class ;
                   rdfs:subClassOf :MemoryType ,
                                   [ rdf:type owl:Restriction ;
@@ -1217,14 +1218,14 @@
                   rdfs:label "Single Memory Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#String
+###  https://w3id.org/def/SolidityOntology#String
 :String rdf:type owl:Class ;
         rdfs:subClassOf :ElementaryType ,
                         :ParameterTypeWithDataLocation ;
         rdfs:label "String" .
 
 
-###  http://www.solidityontology.oeg.upm.es#StringValue
+###  https://w3id.org/def/SolidityOntology#StringValue
 :StringValue rdf:type owl:Class ;
              rdfs:subClassOf :SimpleValueSpecification ,
                              [ rdf:type owl:Restriction ;
@@ -1235,7 +1236,7 @@
              rdfs:label "String Value" .
 
 
-###  http://www.solidityontology.oeg.upm.es#StructType
+###  https://w3id.org/def/SolidityOntology#StructType
 :StructType rdf:type owl:Class ;
             rdfs:subClassOf :ConstantType ,
                             :ModifierOverrideType ,
@@ -1248,24 +1249,24 @@
             rdfs:label "Struct Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Type
+###  https://w3id.org/def/SolidityOntology#Type
 :Type rdf:type owl:Class ;
       rdfs:label "Type" .
 
 
-###  http://www.solidityontology.oeg.upm.es#UfixedMxN
+###  https://w3id.org/def/SolidityOntology#UfixedMxN
 :UfixedMxN rdf:type owl:Class ;
            rdfs:subClassOf :DualMemoryType ;
            rdfs:label "UfixedMxN" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Uint
+###  https://w3id.org/def/SolidityOntology#Uint
 :Uint rdf:type owl:Class ;
       rdfs:subClassOf :SingleMemoryType ;
       rdfs:label "UInt" .
 
 
-###  http://www.solidityontology.oeg.upm.es#UsinForDirective
+###  https://w3id.org/def/SolidityOntology#UsinForDirective
 :UsinForDirective rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :usingLibrary ;
@@ -1280,7 +1281,7 @@
                   rdfs:label "Using For Directive" .
 
 
-###  http://www.solidityontology.oeg.upm.es#ValueSpecification
+###  https://w3id.org/def/SolidityOntology#ValueSpecification
 :ValueSpecification rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :isConstant ;
@@ -1290,7 +1291,7 @@
                     rdfs:label "Value Specification" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Visibility
+###  https://w3id.org/def/SolidityOntology#Visibility
 :Visibility rdf:type owl:Class ;
             rdfs:label "Visibility" .
 
@@ -1299,74 +1300,74 @@
 #    Individuals
 #################################################################
 
-###  http://www.solidityontology.oeg.upm.es#Calldata
+###  https://w3id.org/def/SolidityOntology#Calldata
 :Calldata rdf:type owl:NamedIndividual ,
                    :DataLocation .
 
 
-###  http://www.solidityontology.oeg.upm.es#External
+###  https://w3id.org/def/SolidityOntology#External
 :External rdf:type owl:NamedIndividual ,
                    :FRVisibility ,
                    :Visibility ;
           rdfs:comment "Defines a function/attribute that can only be called from a third party." .
 
 
-###  http://www.solidityontology.oeg.upm.es#Indexed
+###  https://w3id.org/def/SolidityOntology#Indexed
 :Indexed rdf:type owl:NamedIndividual ,
                   :DataLocation .
 
 
-###  http://www.solidityontology.oeg.upm.es#Internal
+###  https://w3id.org/def/SolidityOntology#Internal
 :Internal rdf:type owl:NamedIndividual ,
                    :Visibility ;
           rdfs:comment "Defines a function/attribute that can be called by the main contract itself, plus any derived contracts." .
 
 
-###  http://www.solidityontology.oeg.upm.es#Memory
+###  https://w3id.org/def/SolidityOntology#Memory
 :Memory rdf:type owl:NamedIndividual ,
                  :DataLocation .
 
 
-###  http://www.solidityontology.oeg.upm.es#Override
+###  https://w3id.org/def/SolidityOntology#Override
 :Override rdf:type owl:NamedIndividual ,
                    :FunctionBehaviour ,
                    :ModifierBehaviour .
 
 
-###  http://www.solidityontology.oeg.upm.es#Payable
+###  https://w3id.org/def/SolidityOntology#Payable
 :Payable rdf:type owl:NamedIndividual ,
                   :FRBehaviour ,
                   :FunctionBehaviour .
 
 
-###  http://www.solidityontology.oeg.upm.es#Private
+###  https://w3id.org/def/SolidityOntology#Private
 :Private rdf:type owl:NamedIndividual ,
                   :Visibility ;
          rdfs:comment "Defines a function/attribute that can only be called by the main contract itself" .
 
 
-###  http://www.solidityontology.oeg.upm.es#Public
+###  https://w3id.org/def/SolidityOntology#Public
 :Public rdf:type owl:NamedIndividual ,
                  :Visibility ;
         rdfs:comment "Defines a function/attribute that can be called from all potential parties." .
 
 
-###  http://www.solidityontology.oeg.upm.es#Pure
+###  https://w3id.org/def/SolidityOntology#Pure
 :Pure rdf:type owl:NamedIndividual ,
                :FunctionBehaviour .
 
 
-###  http://www.solidityontology.oeg.upm.es#Storage
+###  https://w3id.org/def/SolidityOntology#Storage
 :Storage rdf:type owl:NamedIndividual ,
                   :DataLocation .
 
 
-###  http://www.solidityontology.oeg.upm.es#View
+###  https://w3id.org/def/SolidityOntology#View
 :View rdf:type owl:NamedIndividual ,
                :FunctionBehaviour .
 
 
-###  http://www.solidityontology.oeg.upm.es#Virtual
+###  https://w3id.org/def/SolidityOntology#Virtual
 :Virtual rdf:type owl:NamedIndividual ,
                   :FunctionBehaviour ,
                   :ModifierBehaviour .
