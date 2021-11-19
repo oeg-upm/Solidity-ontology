@@ -1240,7 +1240,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityOntology#hasFallbackVisibility"/>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityOntology#hasFallbackBehaviour"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/def/SolidityOntology#FRBehaviour"/>
             </owl:Restriction>
