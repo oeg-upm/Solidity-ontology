@@ -1,0 +1,674 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sol: <https://w3id.org/def/SolidityOntology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:created a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+sol: a owl:Ontology ;
+    dc:created "2021-01-01"^^xsd:date ;
+    dc:creator "Andrea Cimmino",
+        "Juan Cano-Benito",
+        "Raúl García Castro" ;
+    dc:description "Brief description of your ontology."@en ;
+    dc:title "The example ontology"@en ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+sol:Address a owl:Class ;
+    rdfs:label "Address" ;
+    rdfs:subClassOf sol:ElementaryType,
+        sol:ParameterTypeWithDataLocation .
+
+sol:Bool a owl:Class ;
+    rdfs:label "Bool" ;
+    rdfs:subClassOf sol:ElementaryType .
+
+sol:Bytes a owl:Class ;
+    rdfs:label "Bytes" ;
+    rdfs:subClassOf sol:ParameterTypeWithDataLocation,
+        sol:SingleMemoryType .
+
+sol:Calldata a owl:NamedIndividual,
+        sol:DataLocation .
+
+sol:External a owl:NamedIndividual,
+        sol:FRBehaviour,
+        sol:Visibility .
+
+sol:FixedMxN a owl:Class ;
+    rdfs:label "Fixed Mx N" ;
+    rdfs:subClassOf sol:DualMemoryType .
+
+sol:Int a owl:Class ;
+    rdfs:label "Int" ;
+    rdfs:subClassOf sol:SingleMemoryType .
+
+sol:Internal a owl:NamedIndividual,
+        sol:Visibility .
+
+sol:Memory a owl:NamedIndividual,
+        sol:DataLocation .
+
+sol:Override a owl:NamedIndividual,
+        sol:FunctionBehaviour,
+        sol:ModifierBehaviour .
+
+sol:Payable a owl:NamedIndividual,
+        sol:FRBehaviour,
+        sol:FunctionBehaviour .
+
+sol:Private a owl:NamedIndividual,
+        sol:Visibility .
+
+sol:Public a owl:NamedIndividual,
+        sol:Visibility .
+
+sol:Pure a owl:NamedIndividual,
+        sol:FunctionBehaviour .
+
+sol:Storage a owl:NamedIndividual,
+        sol:DataLocation .
+
+sol:String a owl:Class ;
+    rdfs:label "String" ;
+    rdfs:subClassOf sol:ElementaryType,
+        sol:ParameterTypeWithDataLocation .
+
+sol:UfixedMxN a owl:Class ;
+    rdfs:label "Ufixed Mx N" ;
+    rdfs:subClassOf sol:DualMemoryType .
+
+sol:Uint a owl:Class ;
+    rdfs:label "Uint" ;
+    rdfs:subClassOf sol:SingleMemoryType .
+
+sol:View a owl:NamedIndividual,
+        sol:FunctionBehaviour .
+
+sol:Virtual a owl:NamedIndividual,
+        sol:FunctionBehaviour,
+        sol:ModifierBehaviour .
+
+sol:attributeName a owl:DatatypeProperty ;
+    rdfs:label "attribute name" ;
+    rdfs:domain sol:AttributeSpecification ;
+    rdfs:range xsd:string .
+
+sol:codelessFunctionCode a owl:DatatypeProperty ;
+    rdfs:label "codeless function code" ;
+    rdfs:domain sol:CodelessFunctionSpecification ;
+    rdfs:range xsd:string .
+
+sol:constructorCode a owl:DatatypeProperty ;
+    rdfs:label "constructor code" ;
+    rdfs:domain sol:ConstructorSpecification ;
+    rdfs:range xsd:string .
+
+sol:contractName a owl:DatatypeProperty ;
+    rdfs:label "contract name" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range xsd:string .
+
+sol:eventName a owl:DatatypeProperty ;
+    rdfs:label "event name" ;
+    rdfs:domain sol:EventSpecification ;
+    rdfs:range xsd:string .
+
+sol:fallbackCode a owl:DatatypeProperty ;
+    rdfs:label "fallback code" ;
+    rdfs:domain sol:FallbackSpecification ;
+    rdfs:range xsd:string .
+
+sol:functionCode a owl:DatatypeProperty ;
+    rdfs:label "function code" ;
+    rdfs:domain sol:FunctionSpecification ;
+    rdfs:range xsd:string .
+
+sol:functionName a owl:DatatypeProperty ;
+    rdfs:label "function name" ;
+    rdfs:domain sol:FunctionSpecification ;
+    rdfs:range xsd:string .
+
+sol:hasArrayDimension a owl:ObjectProperty ;
+    rdfs:label "has array dimension" ;
+    rdfs:domain sol:ArrayType ;
+    rdfs:range sol:ArrayDimension .
+
+sol:hasArrayValue a owl:ObjectProperty ;
+    rdfs:label "has array value" ;
+    rdfs:domain sol:ArrayValueSpecification ;
+    rdfs:range sol:ArrayValue .
+
+sol:hasAttributeValue a owl:ObjectProperty ;
+    rdfs:label "has attribute value" ;
+    rdfs:domain sol:NonConstantAttributeSpecification ;
+    rdfs:range sol:ValueSpecification .
+
+sol:hasAttributeVisibility a owl:ObjectProperty ;
+    rdfs:label "has attribute visibility" ;
+    rdfs:domain sol:NonConstantAttributeSpecification ;
+    rdfs:range sol:Visibility .
+
+sol:hasConstantAttribute a owl:ObjectProperty ;
+    rdfs:label "has constant attribute" ;
+    rdfs:domain sol:LibraryImplementation ;
+    rdfs:range sol:ContractAttributeSpecification .
+
+sol:hasConstantType a owl:ObjectProperty ;
+    rdfs:label "has constant type" ;
+    rdfs:domain sol:ContractAttributeSpecification ;
+    rdfs:range sol:ConstantType .
+
+sol:hasConstructorArguments a owl:ObjectProperty ;
+    rdfs:label "has constructor arguments" ;
+    rdfs:domain sol:ConstructorSpecification ;
+    rdfs:range sol:ParameterVariableSpecification .
+
+sol:hasContractAbstractFunction a owl:ObjectProperty ;
+    rdfs:label "has contract abstract function" ;
+    rdfs:domain sol:Abstract ;
+    rdfs:range sol:CodelessFunctionSpecification .
+
+sol:hasContractAttribute a owl:ObjectProperty ;
+    rdfs:label "has contract attribute" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:AttributeSpecification .
+
+sol:hasContractConstructor a owl:ObjectProperty ;
+    rdfs:label "has contract constructor" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:ConstructorSpecification .
+
+sol:hasContractFallback a owl:ObjectProperty ;
+    rdfs:label "has contract fallback" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:FallbackSpecification .
+
+sol:hasContractReceive a owl:ObjectProperty ;
+    rdfs:label "has contract receive" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:ReceiveSpecification .
+
+sol:hasContractUsingForDirective a owl:ObjectProperty ;
+    rdfs:label "has contract using for directive" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:UsingForDirective .
+
+sol:hasEventArguments a owl:ObjectProperty ;
+    rdfs:label "has event arguments" ;
+    rdfs:domain sol:EventSpecification ;
+    rdfs:range sol:ParameterVariableSpecification .
+
+sol:hasFallbackBehaviour a owl:ObjectProperty ;
+    rdfs:label "has fallback behaviour" ;
+    rdfs:domain sol:ReceiveSpecification ;
+    rdfs:range sol:FRBehaviour .
+
+sol:hasFallbackVisibility a owl:ObjectProperty ;
+    rdfs:label "has fallback visibility" ;
+    rdfs:domain sol:ReceiveSpecification ;
+    rdfs:range sol:FRBehaviour .
+
+sol:hasFunctionArguments a owl:ObjectProperty ;
+    rdfs:label "has function arguments" ;
+    rdfs:domain sol:FunctionSpecification ;
+    rdfs:range sol:ParameterVariableSpecification .
+
+sol:hasFunctionBehaviour a owl:ObjectProperty ;
+    rdfs:label "has function behaviour" ;
+    rdfs:domain sol:FunctionSpecification ;
+    rdfs:range sol:FunctionBehaviour .
+
+sol:hasFunctionReturn a owl:ObjectProperty ;
+    rdfs:label "has function return" ;
+    rdfs:domain sol:FunctionSpecification ;
+    rdfs:range sol:ParameterVariableSpecification .
+
+sol:hasImplementationEvent a owl:ObjectProperty ;
+    rdfs:label "has implementation event" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range sol:EventSpecification .
+
+sol:hasImplementationFunction a owl:ObjectProperty ;
+    rdfs:label "has implementation function" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range sol:FunctionSpecification .
+
+sol:hasImplementationModifier a owl:ObjectProperty ;
+    rdfs:label "has implementation modifier" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range sol:ModifierSpecification .
+
+sol:hasImplementationStructType a owl:ObjectProperty ;
+    rdfs:label "has implementation struct type" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range sol:StructType .
+
+sol:hasIndex a owl:DatatypeProperty ;
+    rdfs:label "has index" ;
+    rdfs:domain sol:ArrayValue ;
+    rdfs:range xsd:short .
+
+sol:hasIndexArrayValue a owl:ObjectProperty ;
+    rdfs:label "has index array value" ;
+    rdfs:domain sol:ArrayValue ;
+    rdfs:range sol:ArrayValueSpecification .
+
+sol:hasInterface a owl:ObjectProperty ;
+    rdfs:label "has interface" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range sol:Interface .
+
+sol:hasInterfaceFunction a owl:ObjectProperty ;
+    rdfs:label "has interface function" ;
+    rdfs:domain sol:Interface ;
+    rdfs:range sol:CodelessFunctionSpecification .
+
+sol:hasKeyMap a owl:ObjectProperty ;
+    rdfs:label "has key map" ;
+    rdfs:domain sol:MapType ;
+    rdfs:range sol:MapKeyType .
+
+sol:hasModifierArguments a owl:ObjectProperty ;
+    rdfs:label "has modifier arguments" ;
+    rdfs:domain sol:ModifierSpecification ;
+    rdfs:range sol:ParameterVariableSpecification .
+
+sol:hasModifierBehaviour a owl:ObjectProperty ;
+    rdfs:label "has modifier behaviour" ;
+    rdfs:domain sol:ModifierSpecification ;
+    rdfs:range sol:ModifierBehaviour .
+
+sol:hasModifierOverrideType a owl:ObjectProperty ;
+    rdfs:label "has modifier override type" ;
+    rdfs:domain sol:ModifierOverrideSpecification ;
+    rdfs:range sol:ModifierOverrideTipe .
+
+sol:hasNonConstantStructAttribute a owl:ObjectProperty ;
+    rdfs:label "has non constant struct attribute" ;
+    rdfs:domain sol:StructType ;
+    rdfs:range sol:NonConstantAttributeSpecification .
+
+sol:hasNonConstantType a owl:ObjectProperty ;
+    rdfs:label "has non constant type" ;
+    rdfs:domain sol:ArrayAttributeSpecification,
+        sol:MapAttributeSpecification,
+        sol:NonConstantAttributeSpecification ;
+    rdfs:range sol:ArrayType,
+        sol:MapType,
+        sol:NonConstantType .
+
+sol:hasOverrideReturn a owl:ObjectProperty ;
+    rdfs:label "has override return" ;
+    rdfs:domain sol:ModifierSpecification ;
+    rdfs:range sol:ModifierOverrideSpecification .
+
+sol:hasParameterName a owl:DatatypeProperty ;
+    rdfs:label "has parameter name" ;
+    rdfs:domain sol:ParameterVariableSpecification ;
+    rdfs:range xsd:string .
+
+sol:hasParameterPosition a owl:DatatypeProperty ;
+    rdfs:label "has parameter position" ;
+    rdfs:domain sol:ParameterVariableSpecification ;
+    rdfs:range xsd:short .
+
+sol:hasParameterType a owl:ObjectProperty ;
+    rdfs:label "has parameter type" ;
+    rdfs:domain sol:ParameterVariableSpecification ;
+    rdfs:range sol:ParameterType .
+
+sol:hasParameterTypeWithDataLocation a owl:ObjectProperty ;
+    rdfs:label "has parameter type with data location" ;
+    rdfs:domain sol:ParameterTypeWithDataLocation ;
+    rdfs:range sol:DataLocation .
+
+sol:hasReceiveBehaviour a owl:ObjectProperty ;
+    rdfs:label "has receive behaviour" ;
+    rdfs:domain sol:FallbackSpecification ;
+    rdfs:range sol:FRBehaviour .
+
+sol:hasReceiveVisibility a owl:ObjectProperty ;
+    rdfs:label "has receive visibility" ;
+    rdfs:domain sol:FallbackSpecification ;
+    rdfs:range sol:FRBehaviour .
+
+sol:hasType a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain sol:ArrayType ;
+    rdfs:range sol:Type .
+
+sol:hasValueMap a owl:ObjectProperty ;
+    rdfs:label "has value map" ;
+    rdfs:domain sol:MapType .
+
+sol:import a owl:DatatypeProperty ;
+    rdfs:label "import" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range xsd:string .
+
+sol:index a owl:DatatypeProperty ;
+    rdfs:label "index" ;
+    rdfs:domain sol:ArrayDimension ;
+    rdfs:range xsd:short .
+
+sol:inheritance a owl:DatatypeProperty ;
+    rdfs:label "inheritance" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range xsd:string .
+
+sol:isAbstract a owl:ObjectProperty ;
+    rdfs:label "is abstract" ;
+    rdfs:domain sol:ContractImplementation ;
+    rdfs:range sol:Abstract .
+
+sol:isAnonymous a owl:DatatypeProperty ;
+    rdfs:label "is anonymous" ;
+    rdfs:domain sol:EventSpecification ;
+    rdfs:range xsd:boolean .
+
+sol:isConstant a owl:DatatypeProperty ;
+    rdfs:label "is constant" ;
+    rdfs:domain sol:ValueSpecification ;
+    rdfs:range xsd:boolean .
+
+sol:isDefinedAs a owl:ObjectProperty ;
+    rdfs:label "is defined as" ;
+    rdfs:domain sol:FunctionBehaviour ;
+    rdfs:range sol:ModifierSpecification .
+
+sol:isInmutable a owl:DatatypeProperty ;
+    rdfs:label "is inmutable" ;
+    rdfs:domain sol:NonConstantAttributeSpecification ;
+    rdfs:range xsd:boolean .
+
+sol:isUsingLibrary a owl:ObjectProperty ;
+    rdfs:label "is using library" ;
+    rdfs:domain sol:UsingForDirective ;
+    rdfs:range sol:LibraryImplementation .
+
+sol:lenght a owl:DatatypeProperty ;
+    rdfs:label "lenght" ;
+    rdfs:domain sol:ArrayDimension ;
+    rdfs:range xsd:short .
+
+sol:memory a owl:DatatypeProperty ;
+    rdfs:label "memory" ;
+    rdfs:domain sol:SingleMemoryType ;
+    rdfs:range xsd:short .
+
+sol:memoryM a owl:DatatypeProperty ;
+    rdfs:label "memory m" ;
+    rdfs:domain sol:DualMemoryType ;
+    rdfs:range xsd:short .
+
+sol:memoryN a owl:DatatypeProperty ;
+    rdfs:label "memory n" ;
+    rdfs:domain sol:DualMemoryType ;
+    rdfs:range xsd:short .
+
+sol:modifierCode a owl:DatatypeProperty ;
+    rdfs:label "modifier code" ;
+    rdfs:domain sol:ModifierSpecification ;
+    rdfs:range xsd:string .
+
+sol:modifierName a owl:DatatypeProperty ;
+    rdfs:label "modifier name" ;
+    rdfs:domain sol:ModifierSpecification ;
+    rdfs:range xsd:string .
+
+sol:option a owl:DatatypeProperty ;
+    rdfs:label "option" ;
+    rdfs:domain sol:EnumType ;
+    rdfs:range xsd:string .
+
+sol:receiveCode a owl:DatatypeProperty ;
+    rdfs:label "receive code" ;
+    rdfs:domain sol:ReceiveSpecification ;
+    rdfs:range xsd:string .
+
+sol:simpleBool a owl:DatatypeProperty ;
+    rdfs:label "simple bool" ;
+    rdfs:domain sol:BoolValue ;
+    rdfs:range xsd:string .
+
+sol:simpleBytes a owl:DatatypeProperty ;
+    rdfs:label "simple bytes" ;
+    rdfs:domain sol:BytesValue ;
+    rdfs:range xsd:string .
+
+sol:simpleFixed a owl:DatatypeProperty ;
+    rdfs:label "simple fixed" ;
+    rdfs:domain sol:FixedValue ;
+    rdfs:range xsd:string .
+
+sol:simpleGeneric a owl:DatatypeProperty ;
+    rdfs:label "simple generic" ;
+    rdfs:domain sol:GenericValue ;
+    rdfs:range xsd:Literal .
+
+sol:simpleInt a owl:DatatypeProperty ;
+    rdfs:label "simple int" ;
+    rdfs:domain sol:IntValue ;
+    rdfs:range xsd:string .
+
+sol:simpleString a owl:DatatypeProperty ;
+    rdfs:label "simple string" ;
+    rdfs:domain sol:StringValue ;
+    rdfs:range xsd:string .
+
+sol:usingForName a owl:DatatypeProperty ;
+    rdfs:label "using for name" ;
+    rdfs:domain sol:UsingForDirective ;
+    rdfs:range xsd:string .
+
+sol:version a owl:DatatypeProperty ;
+    rdfs:label "version" ;
+    rdfs:domain sol:Implementation ;
+    rdfs:range xsd:string .
+
+sol:ArrayAttributeSpecification a owl:Class ;
+    rdfs:label "Array Attribute Specification" ;
+    rdfs:subClassOf sol:NonConstantAttributeSpecification .
+
+sol:BoolValue a owl:Class ;
+    rdfs:label "Bool Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:BytesValue a owl:Class ;
+    rdfs:label "Bytes Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:EnumType a owl:Class ;
+    rdfs:label "Enum Type" ;
+    rdfs:subClassOf sol:ConstantType,
+        sol:MapKeyType,
+        sol:ParameterType .
+
+sol:FixedValue a owl:Class ;
+    rdfs:label "Fixed Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:GenericValue a owl:Class ;
+    rdfs:label "Generic Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:IntValue a owl:Class ;
+    rdfs:label "Int Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:MapAttributeSpecification a owl:Class ;
+    rdfs:label "Map Attribute Specification" ;
+    rdfs:subClassOf sol:NonConstantAttributeSpecification .
+
+sol:StringValue a owl:Class ;
+    rdfs:label "String Value" ;
+    rdfs:subClassOf sol:SimpleValueSpecification .
+
+sol:Abstract a owl:Class ;
+    rdfs:label "Abstract" .
+
+sol:ArrayValueSpecification a owl:Class ;
+    rdfs:label "Array Value Specification" ;
+    rdfs:subClassOf sol:ValueSpecification .
+
+sol:ContractAttributeSpecification a owl:Class ;
+    rdfs:label "Contract Attribute Specification" ;
+    rdfs:subClassOf sol:AttributeSpecification .
+
+sol:Interface a owl:Class ;
+    rdfs:label "Interface" .
+
+sol:LibraryImplementation a owl:Class ;
+    rdfs:label "Library Implementation" ;
+    rdfs:subClassOf sol:Implementation .
+
+sol:MemoryType a owl:Class ;
+    rdfs:label "Memory Type" ;
+    rdfs:subClassOf sol:MapKeyType,
+        sol:NonConstantType,
+        sol:ParameterType .
+
+sol:ModifierOverrideSpecification a owl:Class ;
+    rdfs:label "Modifier Override Specification" ;
+    rdfs:subClassOf sol:NonConstantAttributeSpecification .
+
+sol:ModifierOverrideTipe a owl:Class ;
+    rdfs:label "Modifier Override Tipe" .
+
+sol:StructType a owl:Class ;
+    rdfs:label "Struct Type" ;
+    rdfs:subClassOf sol:ConstantType,
+        sol:ParameterTypeWithDataLocation .
+
+sol:ArrayDimension a owl:Class ;
+    rdfs:label "Array Dimension" .
+
+sol:ArrayType a owl:Class ;
+    rdfs:label "Array Type" ;
+    rdfs:subClassOf sol:NonConstantType,
+        sol:ParameterTypeWithDataLocation .
+
+sol:ArrayValue a owl:Class ;
+    rdfs:label "Array Value" .
+
+sol:CodelessFunctionSpecification a owl:Class ;
+    rdfs:label "Codeless Function Specification" .
+
+sol:ConstantType a owl:Class ;
+    rdfs:label "Constant Type" ;
+    rdfs:subClassOf sol:Type .
+
+sol:ConstructorSpecification a owl:Class ;
+    rdfs:label "Constructor Specification" .
+
+sol:ElementaryType a owl:Class ;
+    rdfs:label "Elementary Type" ;
+    rdfs:subClassOf sol:MapKeyType,
+        sol:NonConstantType,
+        sol:ParameterType .
+
+sol:MapType a owl:Class ;
+    rdfs:label "Map Type" .
+
+sol:ModifierBehaviour a owl:Class ;
+    rdfs:label "Modifier Behaviour" .
+
+sol:UsingForDirective a owl:Class ;
+    rdfs:label "Using For Directive" .
+
+sol:AttributeSpecification a owl:Class ;
+    rdfs:label "Attribute Specification" .
+
+sol:DataLocation a owl:Class ;
+    rdfs:label "Data Location" .
+
+sol:DualMemoryType a owl:Class ;
+    rdfs:label "Dual Memory Type" ;
+    rdfs:subClassOf sol:MemoryType .
+
+sol:EventSpecification a owl:Class ;
+    rdfs:label "Event Specification" .
+
+sol:FallbackSpecification a owl:Class ;
+    rdfs:label "Fallback Specification" .
+
+sol:ReceiveSpecification a owl:Class ;
+    rdfs:label "Receive Specification" .
+
+sol:SingleMemoryType a owl:Class ;
+    rdfs:label "Single Memory Type" ;
+    rdfs:subClassOf sol:MemoryType .
+
+sol:Type a owl:Class ;
+    rdfs:label "Type" .
+
+sol:ValueSpecification a owl:Class ;
+    rdfs:label "Value Specification" .
+
+sol:MapKeyType a owl:Class ;
+    rdfs:label "Map Key Type" ;
+    rdfs:subClassOf sol:ParameterTypeWithDataLocation,
+        sol:Type .
+
+sol:NonConstantType a owl:Class ;
+    rdfs:label "Non Constant Type" ;
+    rdfs:subClassOf sol:Type .
+
+sol:Visibility a owl:Class ;
+    rdfs:label "Visibility" .
+
+sol:FRBehaviour a owl:Class ;
+    rdfs:label "F R Behaviour" .
+
+sol:FunctionSpecification a owl:Class ;
+    rdfs:label "Function Specification" .
+
+sol:ParameterType a owl:Class ;
+    rdfs:label "Parameter Type" .
+
+sol:ContractImplementation a owl:Class ;
+    rdfs:label "Contract Implementation" ;
+    rdfs:subClassOf sol:Implementation .
+
+sol:FunctionBehaviour a owl:Class ;
+    rdfs:label "Function Behaviour" .
+
+sol:ModifierSpecification a owl:Class ;
+    rdfs:label "Modifier Specification" .
+
+sol:ParameterTypeWithDataLocation a owl:Class ;
+    rdfs:label "Parameter Type With Data Location" ;
+    rdfs:subClassOf sol:ParameterType .
+
+sol:SimpleValueSpecification a owl:Class ;
+    rdfs:label "Simple Value Specification" ;
+    rdfs:subClassOf sol:ValueSpecification .
+
+sol:ParameterVariableSpecification a owl:Class ;
+    rdfs:label "Parameter Variable Specification" ;
+    rdfs:subClassOf sol:NonConstantAttributeSpecification .
+
+sol:NonConstantAttributeSpecification a owl:Class ;
+    rdfs:label "Non Constant Attribute Specification" ;
+    rdfs:subClassOf sol:AttributeSpecification .
+
+sol:Implementation a owl:Class ;
+    rdfs:label "Implementation" ;
+    rdfs:subClassOf sol:MapKeyType,
+        sol:ModifierOverrideTipe,
+        sol:NonConstantType,
+        sol:ParameterType,
+        sol:SimpleValueSpecification .
+
