@@ -1,0 +1,61 @@
+{
+  "@context" : {
+    "message" : {
+      "@id" : "https://w3id.org/def/astrea#message"
+    },
+    "generatedShapesFrom" : {
+      "@id" : "https://w3id.org/def/astrea#generatedShapesFrom"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "contains" : {
+      "@id" : "https://w3id.org/def/astrea#contains"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "statusCode" : {
+      "@id" : "https://w3id.org/def/astrea#statusCode"
+    },
+    "ReportEntry" : {
+      "@id" : "https://w3id.org/def/astrea#ReportEntry"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property"
+    },
+    "maxInclusive" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxInclusive"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/ns/shacl#pattern"
+    },
+    "NodeShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype"
+    },
+    "minInclusive" : {
+      "@id" : "http://www.w3.org/ns/shacl#minInclusive"
+    },
+    "PropertyShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+    },
+    "ShapeReport" : {
+      "@id" : "https://w3id.org/def/astrea#ShapeReport"
+    }
+  }
+}
