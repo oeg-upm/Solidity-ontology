@@ -1,0 +1,2274 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#"
+     xmlns:astrea="https://w3id.org/def/astrea#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#maxInclusive -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#maxInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minInclusive -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#name -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#name"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeKind -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#nodeKind"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#pattern -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#pattern"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#contains -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#contains"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#generatedShapesFrom -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#generatedShapesFrom"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#message -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#message"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#statusCode -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#statusCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ReportEntry -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ReportEntry"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ShapeReport -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ShapeReport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://astrea.linkeddata.es/report -->
+
+
+    <NamedIndividual rdf:about="http://astrea.linkeddata.es/report">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ShapeReport"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a2a6b9cb9c258d353227a6f458f6aa82"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a3c9261198fb7bc19e372ec0b1dc4a0f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a66934a33107505c373ff037f9565503"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a793810b7e5c4eeea2119892937fc6c3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ae3cc8e250b95f7a4d5eba4d701961fa"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#af326bf3296a574e88a3dbc4160e5947"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b1094288151760301f1495bf294696ea"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b54486a74eaec7ef9884b65225dd11bf"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b57d425a1d6ce4acac74dd9417add2ce"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b5e5dbb9955d96b2e919e8186c93ba21"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c0d1bc315b60adb84872c8ebc435cc35"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c19a4950015edb765e74c229432a337a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c27cbd96cefaa0926ae7c25efa55e96f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c46b19340706dd5afe31a86b75474e8e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c49ef78ebbaf1d8584cde141b5a6fba5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c53e8cd1acec81d219c7768d99378b82"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c6d6e96f9b789b6f08f0b79f8863b76e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c74659907e4f3d7205d683d350a8275b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c82121648e8465f278b2e0b601d275aa"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c963e9ae8d45b573bbcd58f821b3f5ab"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c96ab643371603a2567aaaaa0025fd54"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c9d1ed2bbad59009ba6e251a1ac5b1c3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ca04428271a2989ee6b6df2df9996f2d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cb4df4de3b3bc2693f19cf3ef839b6b6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cf39bfa32cf2eaf9f205e1ce6f16ba24"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d09138b294128a70f0d9d1e043c9cf58"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d246ec37ef4688b6369efe10b4069cfc"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d35259d8146a36db93ea4691ad8a5e58"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d65667ab933f343aee7d8ee6c98ae029"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d91bf1e1bfd5b551eb6088ef7061e5de"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#dc35b834e509cfdcdcca12ecf0b56634"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#dd41482800602f90094f8c52c1c0f3b6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#dfbc69245f31fba26bd592dc1ec3ff60"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e09a2e6aec364053c741762b14c09c0a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e54709a82fc3bd8975cc6ca177988bc3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e5d1ea846e01df672e03c598745f3cf2"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e66fea1e5015a08f94185ab06b1955c0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e753a79bd45d5d78266635a3704871ed"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ed35aefcc9aa43bef42c4d5d1ba2db46"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ee5fe03349c01d118758dd8f88f7b413"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ef7e69ae1e005eb0527d2985d9e662ca"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#effb88a972b69d770603754a94964ff1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f2586f5822351a35965d7fd6f36c6d45"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f4acc8f2428fb367dae633cc51d5e1a5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f5fec3c3c24149d8feef874699ab6825"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f65dca40a09a8ae4f5e6ddd4c0683c18"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f6e72d41fc6858187149c5e259bc7904"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f847bc8e672a8b020e137b9fe31b7a95"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f94570cb13b7d410ee5112fc8cda37a7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fca78fddda071fe03e989ee25ab5ca64"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fcdb0ee02a0a96d99606ab91118a2e09"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fdbca23a82d4fc5ebc7ed095420664c8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#feac604057adcc79a8b8a9b9607b63d1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0bafbeb8692ff628f7119a551020958c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#05e3dc49d1b34b32451d5247e5c2052e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#051bc32a14492ca7826ab28491cade74"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#055b12b50f2ea3acd39d43b54f0c06fb"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#06390c37c730ed754254821df21ac56f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#08b8767464f581e42368f697a97d5aec"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#090ce0aea40b0ae8b26b647880e8c951"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1a7a4d2b2cc13d12672a0a34c2127354"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1e839cbe584d9bbaecd33320fc8583a3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1f4a5f47228bd934f28eadebc4e85acd"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#10384f2b44e06ffb59d4380ecc1b11a4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#15537684eb4592dee14407e46964c1b7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1587fcc5e7eca54a12d7644d216f98b5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1802dd32fb85155f95b9919bb3cce73a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#198e33fd8eeb673d3452092fa5ac7387"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#2efdfda13a170a12b3a8b54b78b8c936"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#22ceef46389070cbb06c76d55780020e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#25bb0c5ddd94bb69d616988df920d52e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#2613313c05107e61d29eb69dcf7e74b8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#27e2a70ffb75e684b4c06020565f4dae"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#29dedd762acd7268820b8eb35c7f67a4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3064a958129f70025d11112f303eb681"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#32ebbff46e773166a13144f0acf57826"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#36d5f694914d7939f59c4fdc67cfe890"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#38b9dda437c8836f2f1f5147c3de01f0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#384149acbe735f226a2e94978eb24db4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3997d7e95d2bd718b223a8f8206b6e60"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4a010fb2227bb077e571f056e16dca80"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4a06f2695d5a837c45a8591d915f5db8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4bcbf130da8840053c7720f453c4ceec"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4d861fe1365971d6c59a3aea8be0b7cb"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4ed2bc551e8abcb7c2728171be51df07"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#427bc3d13e9f099760fea214f14242e7"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#43ebb1828d4b4f20ee018263c382e27f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#44fcaa7e55d5e92fb8c6a1b00fbfa2d1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#45e9afad3646add23c8f2ffe2eef63ea"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#49295c6dcdbcbc611db1f886154e393e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5c9f7a2f6e8cf07375085423c7bb66c9"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5cf489b64bb88100ce8ac5f585f54fd4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5ef5033fcd406df401bd4060eacc207b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#50f7aa81c7573e11dc8825349d3b8057"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5035b1a03eb4fb541c2bdf0596023127"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#559ae4fd99e05efec93790601b553de0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5602b4b6166a9cbc1ff427779db54919"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#57f117e9006c21da7462065aebc70885"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6bff7b999f158e6ab18758b3139d875d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6e8591bf388f9c32f562684988881760"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#607023561da2c64d998bd1946a5a8a4f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#62ce18f0d32a48e7ca172b16334b92a0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#63aa0e9db646fb75cbd7dee32c320ffc"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#67dc4d67a1de3c071f31cf9284e4f373"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#68016f92b1d67714a6d92265f0e297de"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#68325ac9e18980455ca47c7e54df83b6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7b139e77dec617e7f50c642e6d3fc229"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7c5a971d03bb8f0ca2eaf77f28f23f3f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#73b38e54bc71e1f59a452de7d076adf6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#74f5453c604987c69902aa036ee1b725"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#74531a419b7ab7cff67efc90ce32e413"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7533720b0d81b3aef04de128ab79e45d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7631ad865e0f3c1c9884f8c98174cc79"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#765103b3150608bb16ac7f9541584dd4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#799cf992ed0c774055904c17e0507e7c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8a3036257919e9eae502118357673bf3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8c1e19fbdab4b4bf990b3de1d6888711"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8d2b41021f5b786064e93c551c3e96a3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8f3727a7822308a28b1cf07c08a79f3b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8f7de51b003a3c0e3669a445074daef5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#83ce2b9374ddfa38332937422776d474"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#883226922a59ee14b5bf525244b3acb1"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8937e74afd9c0feb8f29f2813f2a6cdd"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9a53ef5d06ab058391ab98e8d6f12f2e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9afd4d4ac02c81a4367b3c818e1dc424"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9ec6c3e95bc3860ba21f2dad7773556e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#91a331c66aaf2dc7c03edde7594a8f34"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#925939f7071be6a59bd54de5c3824b42"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#93ca8ee450744ff9a0f3b9cdec53d14b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#93186fdd7e12532018338e28ced26edc"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#936ef64239c11e939521125e32bf4d4d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9524f79f31b7c023535bc659e6db154f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9584a6b93ea13157b019e623d15c5389"/>
+        <astrea:generatedShapesFrom rdf:resource="https://astrea.linkeddata.es/report/0620946147"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/report/0620946147 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/report/0620946147">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ReportEntry"/>
+        <astrea:message>Shapes generated with no errors</astrea:message>
+        <astrea:statusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#int">200</astrea:statusCode>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a2a6b9cb9c258d353227a6f458f6aa82 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a2a6b9cb9c258d353227a6f458f6aa82">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Map Attribute Specification</rdfs:label>
+        <shacl:name>Map Attribute Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/MapAttributeSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a3c9261198fb7bc19e372ec0b1dc4a0f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a3c9261198fb7bc19e372ec0b1dc4a0f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Non Constant Attribute Specification</rdfs:label>
+        <shacl:name>Non Constant Attribute Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f5fec3c3c24149d8feef874699ab6825"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1e839cbe584d9bbaecd33320fc8583a3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#32ebbff46e773166a13144f0acf57826"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a66934a33107505c373ff037f9565503 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a66934a33107505c373ff037f9565503">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Dual Memory Type</rdfs:label>
+        <shacl:name>Dual Memory Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d09138b294128a70f0d9d1e043c9cf58"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#9524f79f31b7c023535bc659e6db154f"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/DualMemoryType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a793810b7e5c4eeea2119892937fc6c3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a793810b7e5c4eeea2119892937fc6c3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Contract Implementation</rdfs:label>
+        <shacl:name>Contract Implementation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f2586f5822351a35965d7fd6f36c6d45"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3997d7e95d2bd718b223a8f8206b6e60"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#4a06f2695d5a837c45a8591d915f5db8"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#43ebb1828d4b4f20ee018263c382e27f"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#559ae4fd99e05efec93790601b553de0"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#8d2b41021f5b786064e93c551c3e96a3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#9584a6b93ea13157b019e623d15c5389"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ae3cc8e250b95f7a4d5eba4d701961fa -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ae3cc8e250b95f7a4d5eba4d701961fa">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is constant</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:name>is constant</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isConstant"/>
+        <shacl:pattern>true|false|0|1</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#af326bf3296a574e88a3dbc4160e5947 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#af326bf3296a574e88a3dbc4160e5947">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has array value</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValue"/>
+        <shacl:name>has array value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasArrayValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b1094288151760301f1495bf294696ea -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b1094288151760301f1495bf294696ea">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has interface</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/Interface"/>
+        <shacl:name>has interface</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasInterface"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b54486a74eaec7ef9884b65225dd11bf -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b54486a74eaec7ef9884b65225dd11bf">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>index</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>index</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/index"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b57d425a1d6ce4acac74dd9417add2ce -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b57d425a1d6ce4acac74dd9417add2ce">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>modifier code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>modifier code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/modifierCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b5e5dbb9955d96b2e919e8186c93ba21 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b5e5dbb9955d96b2e919e8186c93ba21">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Library Implementation</rdfs:label>
+        <shacl:name>Library Implementation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#fcdb0ee02a0a96d99606ab91118a2e09"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/LibraryImplementation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c0d1bc315b60adb84872c8ebc435cc35 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c0d1bc315b60adb84872c8ebc435cc35">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has modifier behaviour</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ModifierBehaviour"/>
+        <shacl:name>has modifier behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasModifierBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c19a4950015edb765e74c229432a337a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c19a4950015edb765e74c229432a337a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+        <shacl:name>has type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c27cbd96cefaa0926ae7c25efa55e96f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c27cbd96cefaa0926ae7c25efa55e96f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Ufixed Mx N</rdfs:label>
+        <shacl:name>Ufixed Mx N</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/UfixedMxN"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c46b19340706dd5afe31a86b75474e8e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c46b19340706dd5afe31a86b75474e8e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has value map</rdfs:label>
+        <shacl:name>has value map</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c49ef78ebbaf1d8584cde141b5a6fba5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c49ef78ebbaf1d8584cde141b5a6fba5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Attribute Specification</rdfs:label>
+        <shacl:name>Attribute Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cf39bfa32cf2eaf9f205e1ce6f16ba24"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c53e8cd1acec81d219c7768d99378b82 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c53e8cd1acec81d219c7768d99378b82">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Fixed Value</rdfs:label>
+        <shacl:name>Fixed Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#090ce0aea40b0ae8b26b647880e8c951"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FixedValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c6d6e96f9b789b6f08f0b79f8863b76e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c6d6e96f9b789b6f08f0b79f8863b76e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Modifier Override Tipe</rdfs:label>
+        <shacl:name>Modifier Override Tipe</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideTipe"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c74659907e4f3d7205d683d350a8275b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c74659907e4f3d7205d683d350a8275b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has implementation struct type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/StructType"/>
+        <shacl:name>has implementation struct type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasImplementationStructType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c82121648e8465f278b2e0b601d275aa -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c82121648e8465f278b2e0b601d275aa">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has implementation function</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <shacl:name>has implementation function</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasImplementationFunction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c963e9ae8d45b573bbcd58f821b3f5ab -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c963e9ae8d45b573bbcd58f821b3f5ab">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>String Value</rdfs:label>
+        <shacl:name>String Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#607023561da2c64d998bd1946a5a8a4f"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/StringValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c96ab643371603a2567aaaaa0025fd54 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c96ab643371603a2567aaaaa0025fd54">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has override return</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification"/>
+        <shacl:name>has override return</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasOverrideReturn"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c9d1ed2bbad59009ba6e251a1ac5b1c3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c9d1ed2bbad59009ba6e251a1ac5b1c3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has function return</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <shacl:name>has function return</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasFunctionReturn"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ca04428271a2989ee6b6df2df9996f2d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ca04428271a2989ee6b6df2df9996f2d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Receive Specification</rdfs:label>
+        <shacl:name>Receive Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#57f117e9006c21da7462065aebc70885"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#74f5453c604987c69902aa036ee1b725"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#8a3036257919e9eae502118357673bf3"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cb4df4de3b3bc2693f19cf3ef839b6b6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cb4df4de3b3bc2693f19cf3ef839b6b6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Map Key Type</rdfs:label>
+        <shacl:name>Map Key Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cf39bfa32cf2eaf9f205e1ce6f16ba24 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cf39bfa32cf2eaf9f205e1ce6f16ba24">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>attribute name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>attribute name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/attributeName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d09138b294128a70f0d9d1e043c9cf58 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d09138b294128a70f0d9d1e043c9cf58">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>memory m</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>memory m</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/memoryM"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d246ec37ef4688b6369efe10b4069cfc -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d246ec37ef4688b6369efe10b4069cfc">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>function name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>function name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/functionName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d35259d8146a36db93ea4691ad8a5e58 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d35259d8146a36db93ea4691ad8a5e58">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has index array value</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValueSpecification"/>
+        <shacl:name>has index array value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasIndexArrayValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d65667ab933f343aee7d8ee6c98ae029 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d65667ab933f343aee7d8ee6c98ae029">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Value Specification</rdfs:label>
+        <shacl:name>Value Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#ae3cc8e250b95f7a4d5eba4d701961fa"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d91bf1e1bfd5b551eb6088ef7061e5de -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d91bf1e1bfd5b551eb6088ef7061e5de">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Bytes Value</rdfs:label>
+        <shacl:name>Bytes Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#799cf992ed0c774055904c17e0507e7c"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/BytesValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#dc35b834e509cfdcdcca12ecf0b56634 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#dc35b834e509cfdcdcca12ecf0b56634">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Function Behaviour</rdfs:label>
+        <shacl:name>Function Behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#7631ad865e0f3c1c9884f8c98174cc79"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#dd41482800602f90094f8c52c1c0f3b6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#dd41482800602f90094f8c52c1c0f3b6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Implementation</rdfs:label>
+        <shacl:name>Implementation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b1094288151760301f1495bf294696ea"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c74659907e4f3d7205d683d350a8275b"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c82121648e8465f278b2e0b601d275aa"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#05e3dc49d1b34b32451d5247e5c2052e"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1f4a5f47228bd934f28eadebc4e85acd"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#15537684eb4592dee14407e46964c1b7"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#29dedd762acd7268820b8eb35c7f67a4"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#93ca8ee450744ff9a0f3b9cdec53d14b"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#dfbc69245f31fba26bd592dc1ec3ff60 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#dfbc69245f31fba26bd592dc1ec3ff60">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Visibility</rdfs:label>
+        <shacl:name>Visibility</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e09a2e6aec364053c741762b14c09c0a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e09a2e6aec364053c741762b14c09c0a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>lenght</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>lenght</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/lenght"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e54709a82fc3bd8975cc6ca177988bc3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e54709a82fc3bd8975cc6ca177988bc3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple generic</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#Literal"/>
+        <shacl:name>simple generic</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleGeneric"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e5d1ea846e01df672e03c598745f3cf2 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e5d1ea846e01df672e03c598745f3cf2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has key map</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <shacl:name>has key map</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasKeyMap"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e66fea1e5015a08f94185ab06b1955c0 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e66fea1e5015a08f94185ab06b1955c0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Struct Type</rdfs:label>
+        <shacl:name>Struct Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#45e9afad3646add23c8f2ffe2eef63ea"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/StructType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#e753a79bd45d5d78266635a3704871ed -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#e753a79bd45d5d78266635a3704871ed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Bool Value</rdfs:label>
+        <shacl:name>Bool Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#936ef64239c11e939521125e32bf4d4d"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/BoolValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ed35aefcc9aa43bef42c4d5d1ba2db46 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ed35aefcc9aa43bef42c4d5d1ba2db46">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Function Specification</rdfs:label>
+        <shacl:name>Function Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c9d1ed2bbad59009ba6e251a1ac5b1c3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d246ec37ef4688b6369efe10b4069cfc"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#ef7e69ae1e005eb0527d2985d9e662ca"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#427bc3d13e9f099760fea214f14242e7"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#765103b3150608bb16ac7f9541584dd4"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ee5fe03349c01d118758dd8f88f7b413 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ee5fe03349c01d118758dd8f88f7b413">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has interface function</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+        <shacl:name>has interface function</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasInterfaceFunction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ef7e69ae1e005eb0527d2985d9e662ca -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ef7e69ae1e005eb0527d2985d9e662ca">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has function arguments</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <shacl:name>has function arguments</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasFunctionArguments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#effb88a972b69d770603754a94964ff1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#effb88a972b69d770603754a94964ff1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Constant Type</rdfs:label>
+        <shacl:name>Constant Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ConstantType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f2586f5822351a35965d7fd6f36c6d45 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f2586f5822351a35965d7fd6f36c6d45">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract receive</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+        <shacl:name>has contract receive</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractReceive"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f4acc8f2428fb367dae633cc51d5e1a5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f4acc8f2428fb367dae633cc51d5e1a5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Constructor Specification</rdfs:label>
+        <shacl:name>Constructor Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#22ceef46389070cbb06c76d55780020e"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#5c9f7a2f6e8cf07375085423c7bb66c9"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ConstructorSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f5fec3c3c24149d8feef874699ab6825 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f5fec3c3c24149d8feef874699ab6825">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has attribute visibility</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+        <shacl:name>has attribute visibility</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasAttributeVisibility"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f65dca40a09a8ae4f5e6ddd4c0683c18 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f65dca40a09a8ae4f5e6ddd4c0683c18">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>memory</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>memory</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/memory"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f6e72d41fc6858187149c5e259bc7904 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f6e72d41fc6858187149c5e259bc7904">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Array Value Specification</rdfs:label>
+        <shacl:name>Array Value Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#af326bf3296a574e88a3dbc4160e5947"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValueSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f847bc8e672a8b020e137b9fe31b7a95 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f847bc8e672a8b020e137b9fe31b7a95">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Array Dimension</rdfs:label>
+        <shacl:name>Array Dimension</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b54486a74eaec7ef9884b65225dd11bf"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#e09a2e6aec364053c741762b14c09c0a"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ArrayDimension"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f94570cb13b7d410ee5112fc8cda37a7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f94570cb13b7d410ee5112fc8cda37a7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Fixed Mx N</rdfs:label>
+        <shacl:name>Fixed Mx N</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FixedMxN"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#fca78fddda071fe03e989ee25ab5ca64 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fca78fddda071fe03e989ee25ab5ca64">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>modifier name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>modifier name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/modifierName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#fcdb0ee02a0a96d99606ab91118a2e09 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fcdb0ee02a0a96d99606ab91118a2e09">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has constant attribute</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ContractAttributeSpecification"/>
+        <shacl:name>has constant attribute</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasConstantAttribute"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#fdbca23a82d4fc5ebc7ed095420664c8 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fdbca23a82d4fc5ebc7ed095420664c8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Generic Value</rdfs:label>
+        <shacl:name>Generic Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#e54709a82fc3bd8975cc6ca177988bc3"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/GenericValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#feac604057adcc79a8b8a9b9607b63d1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#feac604057adcc79a8b8a9b9607b63d1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Address</rdfs:label>
+        <shacl:name>Address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Address"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#0bafbeb8692ff628f7119a551020958c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#0bafbeb8692ff628f7119a551020958c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Enum Type</rdfs:label>
+        <shacl:name>Enum Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#27e2a70ffb75e684b4c06020565f4dae"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/EnumType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#05e3dc49d1b34b32451d5247e5c2052e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#05e3dc49d1b34b32451d5247e5c2052e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>version</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>version</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/version"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#051bc32a14492ca7826ab28491cade74 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#051bc32a14492ca7826ab28491cade74">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Int Value</rdfs:label>
+        <shacl:name>Int Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#74531a419b7ab7cff67efc90ce32e413"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/IntValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#055b12b50f2ea3acd39d43b54f0c06fb -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#055b12b50f2ea3acd39d43b54f0c06fb">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has parameter type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <shacl:name>has parameter type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasParameterType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#06390c37c730ed754254821df21ac56f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#06390c37c730ed754254821df21ac56f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Interface</rdfs:label>
+        <shacl:name>Interface</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#ee5fe03349c01d118758dd8f88f7b413"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Interface"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#08b8767464f581e42368f697a97d5aec -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#08b8767464f581e42368f697a97d5aec">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has parameter name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>has parameter name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasParameterName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#090ce0aea40b0ae8b26b647880e8c951 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#090ce0aea40b0ae8b26b647880e8c951">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple fixed</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>simple fixed</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleFixed"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1a7a4d2b2cc13d12672a0a34c2127354 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1a7a4d2b2cc13d12672a0a34c2127354">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Bool</rdfs:label>
+        <shacl:name>Bool</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Bool"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1e839cbe584d9bbaecd33320fc8583a3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1e839cbe584d9bbaecd33320fc8583a3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is inmutable</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:name>is inmutable</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isInmutable"/>
+        <shacl:pattern>true|false|0|1</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1f4a5f47228bd934f28eadebc4e85acd -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1f4a5f47228bd934f28eadebc4e85acd">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has implementation event</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+        <shacl:name>has implementation event</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasImplementationEvent"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#10384f2b44e06ffb59d4380ecc1b11a4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#10384f2b44e06ffb59d4380ecc1b11a4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>using for name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>using for name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/usingForName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#15537684eb4592dee14407e46964c1b7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#15537684eb4592dee14407e46964c1b7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has implementation modifier</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <shacl:name>has implementation modifier</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasImplementationModifier"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1587fcc5e7eca54a12d7644d216f98b5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1587fcc5e7eca54a12d7644d216f98b5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Event Specification</rdfs:label>
+        <shacl:name>Event Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#5ef5033fcd406df401bd4060eacc207b"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#63aa0e9db646fb75cbd7dee32c320ffc"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#73b38e54bc71e1f59a452de7d076adf6"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#1802dd32fb85155f95b9919bb3cce73a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1802dd32fb85155f95b9919bb3cce73a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Parameter Type</rdfs:label>
+        <shacl:name>Parameter Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#198e33fd8eeb673d3452092fa5ac7387 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#198e33fd8eeb673d3452092fa5ac7387">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Type</rdfs:label>
+        <shacl:name>Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has non constant type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ArrayType"/>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/MapType"/>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <shacl:name>has non constant type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasNonConstantType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#2efdfda13a170a12b3a8b54b78b8c936 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#2efdfda13a170a12b3a8b54b78b8c936">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has parameter type with data location</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+        <shacl:name>has parameter type with data location</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasParameterTypeWithDataLocation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#22ceef46389070cbb06c76d55780020e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#22ceef46389070cbb06c76d55780020e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has constructor arguments</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <shacl:name>has constructor arguments</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasConstructorArguments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#25bb0c5ddd94bb69d616988df920d52e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#25bb0c5ddd94bb69d616988df920d52e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Array Value</rdfs:label>
+        <shacl:name>Array Value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d35259d8146a36db93ea4691ad8a5e58"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#384149acbe735f226a2e94978eb24db4"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#2613313c05107e61d29eb69dcf7e74b8 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#2613313c05107e61d29eb69dcf7e74b8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Parameter Variable Specification</rdfs:label>
+        <shacl:name>Parameter Variable Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#055b12b50f2ea3acd39d43b54f0c06fb"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#08b8767464f581e42368f697a97d5aec"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#4d861fe1365971d6c59a3aea8be0b7cb"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#27e2a70ffb75e684b4c06020565f4dae -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#27e2a70ffb75e684b4c06020565f4dae">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>option</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>option</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/option"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#29dedd762acd7268820b8eb35c7f67a4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#29dedd762acd7268820b8eb35c7f67a4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>contract name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>contract name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/contractName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3064a958129f70025d11112f303eb681 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3064a958129f70025d11112f303eb681">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract abstract function</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+        <shacl:name>has contract abstract function</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractAbstractFunction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#32ebbff46e773166a13144f0acf57826 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#32ebbff46e773166a13144f0acf57826">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has attribute value</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+        <shacl:name>has attribute value</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasAttributeValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#36d5f694914d7939f59c4fdc67cfe890 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#36d5f694914d7939f59c4fdc67cfe890">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Parameter Type With Data Location</rdfs:label>
+        <shacl:name>Parameter Type With Data Location</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#2efdfda13a170a12b3a8b54b78b8c936"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#38b9dda437c8836f2f1f5147c3de01f0 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#38b9dda437c8836f2f1f5147c3de01f0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Single Memory Type</rdfs:label>
+        <shacl:name>Single Memory Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f65dca40a09a8ae4f5e6ddd4c0683c18"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/SingleMemoryType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#384149acbe735f226a2e94978eb24db4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#384149acbe735f226a2e94978eb24db4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has index</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>has index</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasIndex"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3997d7e95d2bd718b223a8f8206b6e60 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3997d7e95d2bd718b223a8f8206b6e60">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract using for directive</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/UsingForDirective"/>
+        <shacl:name>has contract using for directive</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractUsingForDirective"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4a010fb2227bb077e571f056e16dca80 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4a010fb2227bb077e571f056e16dca80">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has constant type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ConstantType"/>
+        <shacl:name>has constant type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasConstantType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4a06f2695d5a837c45a8591d915f5db8 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4a06f2695d5a837c45a8591d915f5db8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is abstract</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/Abstract"/>
+        <shacl:name>is abstract</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isAbstract"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4bcbf130da8840053c7720f453c4ceec -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4bcbf130da8840053c7720f453c4ceec">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Memory Type</rdfs:label>
+        <shacl:name>Memory Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/MemoryType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4d861fe1365971d6c59a3aea8be0b7cb -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4d861fe1365971d6c59a3aea8be0b7cb">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has parameter position</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>has parameter position</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasParameterPosition"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#4ed2bc551e8abcb7c2728171be51df07 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#4ed2bc551e8abcb7c2728171be51df07">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Fallback Specification</rdfs:label>
+        <shacl:name>Fallback Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#50f7aa81c7573e11dc8825349d3b8057"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#7b139e77dec617e7f50c642e6d3fc229"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#93186fdd7e12532018338e28ced26edc"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#427bc3d13e9f099760fea214f14242e7 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#427bc3d13e9f099760fea214f14242e7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>function code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>function code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/functionCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#43ebb1828d4b4f20ee018263c382e27f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#43ebb1828d4b4f20ee018263c382e27f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract constructor</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ConstructorSpecification"/>
+        <shacl:name>has contract constructor</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractConstructor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#44fcaa7e55d5e92fb8c6a1b00fbfa2d1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#44fcaa7e55d5e92fb8c6a1b00fbfa2d1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Int</rdfs:label>
+        <shacl:name>Int</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Int"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#45e9afad3646add23c8f2ffe2eef63ea -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#45e9afad3646add23c8f2ffe2eef63ea">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has non constant struct attribute</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <shacl:name>has non constant struct attribute</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasNonConstantStructAttribute"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#49295c6dcdbcbc611db1f886154e393e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#49295c6dcdbcbc611db1f886154e393e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Elementary Type</rdfs:label>
+        <shacl:name>Elementary Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ElementaryType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5c9f7a2f6e8cf07375085423c7bb66c9 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5c9f7a2f6e8cf07375085423c7bb66c9">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>constructor code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>constructor code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/constructorCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5cf489b64bb88100ce8ac5f585f54fd4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5cf489b64bb88100ce8ac5f585f54fd4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Data Location</rdfs:label>
+        <shacl:name>Data Location</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5ef5033fcd406df401bd4060eacc207b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5ef5033fcd406df401bd4060eacc207b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is anonymous</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:name>is anonymous</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isAnonymous"/>
+        <shacl:pattern>true|false|0|1</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#50f7aa81c7573e11dc8825349d3b8057 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#50f7aa81c7573e11dc8825349d3b8057">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has receive behaviour</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <shacl:name>has receive behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasReceiveBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5035b1a03eb4fb541c2bdf0596023127 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5035b1a03eb4fb541c2bdf0596023127">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Bytes</rdfs:label>
+        <shacl:name>Bytes</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Bytes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#559ae4fd99e05efec93790601b553de0 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#559ae4fd99e05efec93790601b553de0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract fallback</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+        <shacl:name>has contract fallback</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractFallback"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5602b4b6166a9cbc1ff427779db54919 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5602b4b6166a9cbc1ff427779db54919">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Modifier Specification</rdfs:label>
+        <shacl:name>Modifier Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b57d425a1d6ce4acac74dd9417add2ce"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c0d1bc315b60adb84872c8ebc435cc35"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c96ab643371603a2567aaaaa0025fd54"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#fca78fddda071fe03e989ee25ab5ca64"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#7533720b0d81b3aef04de128ab79e45d"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#57f117e9006c21da7462065aebc70885 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#57f117e9006c21da7462065aebc70885">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has fallback visibility</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <shacl:name>has fallback visibility</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasFallbackVisibility"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#6bff7b999f158e6ab18758b3139d875d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#6bff7b999f158e6ab18758b3139d875d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has modifier override type</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideTipe"/>
+        <shacl:name>has modifier override type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasModifierOverrideType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#6e8591bf388f9c32f562684988881760 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#6e8591bf388f9c32f562684988881760">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Codeless Function Specification</rdfs:label>
+        <shacl:name>Codeless Function Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#83ce2b9374ddfa38332937422776d474"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#607023561da2c64d998bd1946a5a8a4f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#607023561da2c64d998bd1946a5a8a4f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple string</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>simple string</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleString"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#62ce18f0d32a48e7ca172b16334b92a0 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#62ce18f0d32a48e7ca172b16334b92a0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>String</rdfs:label>
+        <shacl:name>String</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/String"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#63aa0e9db646fb75cbd7dee32c320ffc -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#63aa0e9db646fb75cbd7dee32c320ffc">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has event arguments</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <shacl:name>has event arguments</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasEventArguments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#67dc4d67a1de3c071f31cf9284e4f373 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#67dc4d67a1de3c071f31cf9284e4f373">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Uint</rdfs:label>
+        <shacl:name>Uint</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Uint"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#68016f92b1d67714a6d92265f0e297de -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#68016f92b1d67714a6d92265f0e297de">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>F R Behaviour</rdfs:label>
+        <shacl:name>F R Behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#68325ac9e18980455ca47c7e54df83b6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#68325ac9e18980455ca47c7e54df83b6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Modifier Override Specification</rdfs:label>
+        <shacl:name>Modifier Override Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#6bff7b999f158e6ab18758b3139d875d"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7b139e77dec617e7f50c642e6d3fc229 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7b139e77dec617e7f50c642e6d3fc229">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>fallback code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>fallback code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/fallbackCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7c5a971d03bb8f0ca2eaf77f28f23f3f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7c5a971d03bb8f0ca2eaf77f28f23f3f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Array Type</rdfs:label>
+        <shacl:name>Array Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c19a4950015edb765e74c229432a337a"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#9afd4d4ac02c81a4367b3c818e1dc424"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ArrayType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#73b38e54bc71e1f59a452de7d076adf6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#73b38e54bc71e1f59a452de7d076adf6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>event name</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>event name</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/eventName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#74f5453c604987c69902aa036ee1b725 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#74f5453c604987c69902aa036ee1b725">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has fallback behaviour</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <shacl:name>has fallback behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasFallbackBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#74531a419b7ab7cff67efc90ce32e413 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#74531a419b7ab7cff67efc90ce32e413">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple int</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>simple int</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleInt"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7533720b0d81b3aef04de128ab79e45d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7533720b0d81b3aef04de128ab79e45d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has modifier arguments</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <shacl:name>has modifier arguments</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasModifierArguments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#7631ad865e0f3c1c9884f8c98174cc79 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#7631ad865e0f3c1c9884f8c98174cc79">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is defined as</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <shacl:name>is defined as</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isDefinedAs"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#765103b3150608bb16ac7f9541584dd4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#765103b3150608bb16ac7f9541584dd4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has function behaviour</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+        <shacl:name>has function behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasFunctionBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#799cf992ed0c774055904c17e0507e7c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#799cf992ed0c774055904c17e0507e7c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple bytes</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>simple bytes</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleBytes"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8a3036257919e9eae502118357673bf3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8a3036257919e9eae502118357673bf3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>receive code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>receive code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/receiveCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8c1e19fbdab4b4bf990b3de1d6888711 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8c1e19fbdab4b4bf990b3de1d6888711">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Contract Attribute Specification</rdfs:label>
+        <shacl:name>Contract Attribute Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#4a010fb2227bb077e571f056e16dca80"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ContractAttributeSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8d2b41021f5b786064e93c551c3e96a3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8d2b41021f5b786064e93c551c3e96a3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has contract attribute</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+        <shacl:name>has contract attribute</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasContractAttribute"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8f3727a7822308a28b1cf07c08a79f3b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8f3727a7822308a28b1cf07c08a79f3b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Simple Value Specification</rdfs:label>
+        <shacl:name>Simple Value Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8f7de51b003a3c0e3669a445074daef5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8f7de51b003a3c0e3669a445074daef5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Map Type</rdfs:label>
+        <shacl:name>Map Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#e5d1ea846e01df672e03c598745f3cf2"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/MapType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#83ce2b9374ddfa38332937422776d474 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#83ce2b9374ddfa38332937422776d474">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>codeless function code</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>codeless function code</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/codelessFunctionCode"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#883226922a59ee14b5bf525244b3acb1 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#883226922a59ee14b5bf525244b3acb1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>is using library</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/LibraryImplementation"/>
+        <shacl:name>is using library</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/isUsingLibrary"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#8937e74afd9c0feb8f29f2813f2a6cdd -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#8937e74afd9c0feb8f29f2813f2a6cdd">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Abstract</rdfs:label>
+        <shacl:name>Abstract</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3064a958129f70025d11112f303eb681"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/Abstract"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9a53ef5d06ab058391ab98e8d6f12f2e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9a53ef5d06ab058391ab98e8d6f12f2e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Modifier Behaviour</rdfs:label>
+        <shacl:name>Modifier Behaviour</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ModifierBehaviour"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9afd4d4ac02c81a4367b3c818e1dc424 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9afd4d4ac02c81a4367b3c818e1dc424">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has array dimension</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/ArrayDimension"/>
+        <shacl:name>has array dimension</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasArrayDimension"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9ec6c3e95bc3860ba21f2dad7773556e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9ec6c3e95bc3860ba21f2dad7773556e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Array Attribute Specification</rdfs:label>
+        <shacl:name>Array Attribute Specification</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#2bcf739a582166db440499421363ca9c"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/ArrayAttributeSpecification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#91a331c66aaf2dc7c03edde7594a8f34 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#91a331c66aaf2dc7c03edde7594a8f34">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Using For Directive</rdfs:label>
+        <shacl:name>Using For Directive</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#10384f2b44e06ffb59d4380ecc1b11a4"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#883226922a59ee14b5bf525244b3acb1"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/UsingForDirective"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#925939f7071be6a59bd54de5c3824b42 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#925939f7071be6a59bd54de5c3824b42">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Non Constant Type</rdfs:label>
+        <shacl:name>Non Constant Type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#93ca8ee450744ff9a0f3b9cdec53d14b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#93ca8ee450744ff9a0f3b9cdec53d14b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>import</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>import</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/import"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#93186fdd7e12532018338e28ced26edc -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#93186fdd7e12532018338e28ced26edc">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has receive visibility</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <shacl:name>has receive visibility</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/hasReceiveVisibility"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#936ef64239c11e939521125e32bf4d4d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#936ef64239c11e939521125e32bf4d4d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>simple bool</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>simple bool</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/simpleBool"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9524f79f31b7c023535bc659e6db154f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9524f79f31b7c023535bc659e6db154f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>memory n</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <shacl:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</shacl:maxInclusive>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-32768</shacl:minInclusive>
+        <shacl:name>memory n</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/memoryN"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#9584a6b93ea13157b019e623d15c5389 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#9584a6b93ea13157b019e623d15c5389">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>inheritance</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>inheritance</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://w3id.org/def/SolidityOntology/inheritance"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
