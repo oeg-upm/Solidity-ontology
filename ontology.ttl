@@ -1,674 +1,1018 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix : <https://w3id.org/def/SolidityOntology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sol: <https://w3id.org/def/SolidityOntology/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/SolidityOntology/> .
 
-dc:created a owl:AnnotationProperty .
+<https://w3id.org/def/SolidityOntology/> rdf:type owl:Ontology ;
+                                          dc:creator "Andrea Cimmino" ,
+                                                     "Juan Cano-Benito" ,
+                                                     "http://www.garcia-castro.com/foaf.rdf#me" ;
+                                          dc:description "This ontology aims at modelling the Solidity smart contract language."@en ;
+                                          dc:title "Solidity ontology"@en ;
+                                          owl:versionInfo 1.1 ;
+                                          mod:createdWith <https://chowlk.linkeddata.es/> .
 
-dc:creator a owl:AnnotationProperty .
+#################################################################
+#    Annotation properties
+#################################################################
 
-dc:description a owl:AnnotationProperty .
+###  http://purl.org/dc/elements/1.1/created
+dc:created rdf:type owl:AnnotationProperty .
 
-dc:title a owl:AnnotationProperty .
 
-owl:versionInfo a owl:AnnotationProperty .
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
 
-sol: a owl:Ontology ;
-    dc:created "2021-01-01"^^xsd:date ;
-    dc:creator "Andrea Cimmino",
-        "Juan Cano-Benito",
-        "Raúl García Castro" ;
-    dc:description "Brief description of your ontology."@en ;
-    dc:title "The example ontology"@en ;
-    owl:versionInfo "0.0.1" ;
-    mod:createdWith <https://chowlk.linkeddata.es/> .
 
-sol:Address a owl:Class ;
-    rdfs:label "Address" ;
-    rdfs:subClassOf sol:ElementaryType,
-        sol:ParameterTypeWithDataLocation .
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
 
-sol:Bool a owl:Class ;
-    rdfs:label "Bool" ;
-    rdfs:subClassOf sol:ElementaryType .
 
-sol:Bytes a owl:Class ;
-    rdfs:label "Bytes" ;
-    rdfs:subClassOf sol:ParameterTypeWithDataLocation,
-        sol:SingleMemoryType .
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
 
-sol:Calldata a owl:NamedIndividual,
-        sol:DataLocation .
 
-sol:External a owl:NamedIndividual,
-        sol:FRBehaviour,
-        sol:Visibility .
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
 
-sol:FixedMxN a owl:Class ;
-    rdfs:label "Fixed Mx N" ;
-    rdfs:subClassOf sol:DualMemoryType .
-
-sol:Int a owl:Class ;
-    rdfs:label "Int" ;
-    rdfs:subClassOf sol:SingleMemoryType .
-
-sol:Internal a owl:NamedIndividual,
-        sol:Visibility .
 
-sol:Memory a owl:NamedIndividual,
-        sol:DataLocation .
-
-sol:Override a owl:NamedIndividual,
-        sol:FunctionBehaviour,
-        sol:ModifierBehaviour .
-
-sol:Payable a owl:NamedIndividual,
-        sol:FRBehaviour,
-        sol:FunctionBehaviour .
-
-sol:Private a owl:NamedIndividual,
-        sol:Visibility .
-
-sol:Public a owl:NamedIndividual,
-        sol:Visibility .
-
-sol:Pure a owl:NamedIndividual,
-        sol:FunctionBehaviour .
-
-sol:Storage a owl:NamedIndividual,
-        sol:DataLocation .
-
-sol:String a owl:Class ;
-    rdfs:label "String" ;
-    rdfs:subClassOf sol:ElementaryType,
-        sol:ParameterTypeWithDataLocation .
-
-sol:UfixedMxN a owl:Class ;
-    rdfs:label "Ufixed Mx N" ;
-    rdfs:subClassOf sol:DualMemoryType .
-
-sol:Uint a owl:Class ;
-    rdfs:label "Uint" ;
-    rdfs:subClassOf sol:SingleMemoryType .
-
-sol:View a owl:NamedIndividual,
-        sol:FunctionBehaviour .
-
-sol:Virtual a owl:NamedIndividual,
-        sol:FunctionBehaviour,
-        sol:ModifierBehaviour .
-
-sol:attributeName a owl:DatatypeProperty ;
-    rdfs:label "attribute name" ;
-    rdfs:domain sol:AttributeSpecification ;
-    rdfs:range xsd:string .
-
-sol:codelessFunctionCode a owl:DatatypeProperty ;
-    rdfs:label "codeless function code" ;
-    rdfs:domain sol:CodelessFunctionSpecification ;
-    rdfs:range xsd:string .
-
-sol:constructorCode a owl:DatatypeProperty ;
-    rdfs:label "constructor code" ;
-    rdfs:domain sol:ConstructorSpecification ;
-    rdfs:range xsd:string .
-
-sol:contractName a owl:DatatypeProperty ;
-    rdfs:label "contract name" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range xsd:string .
-
-sol:eventName a owl:DatatypeProperty ;
-    rdfs:label "event name" ;
-    rdfs:domain sol:EventSpecification ;
-    rdfs:range xsd:string .
-
-sol:fallbackCode a owl:DatatypeProperty ;
-    rdfs:label "fallback code" ;
-    rdfs:domain sol:FallbackSpecification ;
-    rdfs:range xsd:string .
-
-sol:functionCode a owl:DatatypeProperty ;
-    rdfs:label "function code" ;
-    rdfs:domain sol:FunctionSpecification ;
-    rdfs:range xsd:string .
-
-sol:functionName a owl:DatatypeProperty ;
-    rdfs:label "function name" ;
-    rdfs:domain sol:FunctionSpecification ;
-    rdfs:range xsd:string .
-
-sol:hasArrayDimension a owl:ObjectProperty ;
-    rdfs:label "has array dimension" ;
-    rdfs:domain sol:ArrayType ;
-    rdfs:range sol:ArrayDimension .
-
-sol:hasArrayValue a owl:ObjectProperty ;
-    rdfs:label "has array value" ;
-    rdfs:domain sol:ArrayValueSpecification ;
-    rdfs:range sol:ArrayValue .
-
-sol:hasAttributeValue a owl:ObjectProperty ;
-    rdfs:label "has attribute value" ;
-    rdfs:domain sol:NonConstantAttributeSpecification ;
-    rdfs:range sol:ValueSpecification .
-
-sol:hasAttributeVisibility a owl:ObjectProperty ;
-    rdfs:label "has attribute visibility" ;
-    rdfs:domain sol:NonConstantAttributeSpecification ;
-    rdfs:range sol:Visibility .
-
-sol:hasConstantAttribute a owl:ObjectProperty ;
-    rdfs:label "has constant attribute" ;
-    rdfs:domain sol:LibraryImplementation ;
-    rdfs:range sol:ContractAttributeSpecification .
-
-sol:hasConstantType a owl:ObjectProperty ;
-    rdfs:label "has constant type" ;
-    rdfs:domain sol:ContractAttributeSpecification ;
-    rdfs:range sol:ConstantType .
-
-sol:hasConstructorArguments a owl:ObjectProperty ;
-    rdfs:label "has constructor arguments" ;
-    rdfs:domain sol:ConstructorSpecification ;
-    rdfs:range sol:ParameterVariableSpecification .
-
-sol:hasContractAbstractFunction a owl:ObjectProperty ;
-    rdfs:label "has contract abstract function" ;
-    rdfs:domain sol:Abstract ;
-    rdfs:range sol:CodelessFunctionSpecification .
-
-sol:hasContractAttribute a owl:ObjectProperty ;
-    rdfs:label "has contract attribute" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:AttributeSpecification .
-
-sol:hasContractConstructor a owl:ObjectProperty ;
-    rdfs:label "has contract constructor" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:ConstructorSpecification .
-
-sol:hasContractFallback a owl:ObjectProperty ;
-    rdfs:label "has contract fallback" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:FallbackSpecification .
-
-sol:hasContractReceive a owl:ObjectProperty ;
-    rdfs:label "has contract receive" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:ReceiveSpecification .
-
-sol:hasContractUsingForDirective a owl:ObjectProperty ;
-    rdfs:label "has contract using for directive" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:UsingForDirective .
-
-sol:hasEventArguments a owl:ObjectProperty ;
-    rdfs:label "has event arguments" ;
-    rdfs:domain sol:EventSpecification ;
-    rdfs:range sol:ParameterVariableSpecification .
-
-sol:hasFallbackBehaviour a owl:ObjectProperty ;
-    rdfs:label "has fallback behaviour" ;
-    rdfs:domain sol:ReceiveSpecification ;
-    rdfs:range sol:FRBehaviour .
-
-sol:hasFallbackVisibility a owl:ObjectProperty ;
-    rdfs:label "has fallback visibility" ;
-    rdfs:domain sol:ReceiveSpecification ;
-    rdfs:range sol:FRBehaviour .
-
-sol:hasFunctionArguments a owl:ObjectProperty ;
-    rdfs:label "has function arguments" ;
-    rdfs:domain sol:FunctionSpecification ;
-    rdfs:range sol:ParameterVariableSpecification .
-
-sol:hasFunctionBehaviour a owl:ObjectProperty ;
-    rdfs:label "has function behaviour" ;
-    rdfs:domain sol:FunctionSpecification ;
-    rdfs:range sol:FunctionBehaviour .
-
-sol:hasFunctionReturn a owl:ObjectProperty ;
-    rdfs:label "has function return" ;
-    rdfs:domain sol:FunctionSpecification ;
-    rdfs:range sol:ParameterVariableSpecification .
-
-sol:hasImplementationEvent a owl:ObjectProperty ;
-    rdfs:label "has implementation event" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range sol:EventSpecification .
-
-sol:hasImplementationFunction a owl:ObjectProperty ;
-    rdfs:label "has implementation function" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range sol:FunctionSpecification .
-
-sol:hasImplementationModifier a owl:ObjectProperty ;
-    rdfs:label "has implementation modifier" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range sol:ModifierSpecification .
-
-sol:hasImplementationStructType a owl:ObjectProperty ;
-    rdfs:label "has implementation struct type" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range sol:StructType .
-
-sol:hasIndex a owl:DatatypeProperty ;
-    rdfs:label "has index" ;
-    rdfs:domain sol:ArrayValue ;
-    rdfs:range xsd:short .
-
-sol:hasIndexArrayValue a owl:ObjectProperty ;
-    rdfs:label "has index array value" ;
-    rdfs:domain sol:ArrayValue ;
-    rdfs:range sol:ArrayValueSpecification .
-
-sol:hasInterface a owl:ObjectProperty ;
-    rdfs:label "has interface" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range sol:Interface .
-
-sol:hasInterfaceFunction a owl:ObjectProperty ;
-    rdfs:label "has interface function" ;
-    rdfs:domain sol:Interface ;
-    rdfs:range sol:CodelessFunctionSpecification .
-
-sol:hasKeyMap a owl:ObjectProperty ;
-    rdfs:label "has key map" ;
-    rdfs:domain sol:MapType ;
-    rdfs:range sol:MapKeyType .
-
-sol:hasModifierArguments a owl:ObjectProperty ;
-    rdfs:label "has modifier arguments" ;
-    rdfs:domain sol:ModifierSpecification ;
-    rdfs:range sol:ParameterVariableSpecification .
-
-sol:hasModifierBehaviour a owl:ObjectProperty ;
-    rdfs:label "has modifier behaviour" ;
-    rdfs:domain sol:ModifierSpecification ;
-    rdfs:range sol:ModifierBehaviour .
-
-sol:hasModifierOverrideType a owl:ObjectProperty ;
-    rdfs:label "has modifier override type" ;
-    rdfs:domain sol:ModifierOverrideSpecification ;
-    rdfs:range sol:ModifierOverrideTipe .
-
-sol:hasNonConstantStructAttribute a owl:ObjectProperty ;
-    rdfs:label "has non constant struct attribute" ;
-    rdfs:domain sol:StructType ;
-    rdfs:range sol:NonConstantAttributeSpecification .
-
-sol:hasNonConstantType a owl:ObjectProperty ;
-    rdfs:label "has non constant type" ;
-    rdfs:domain sol:ArrayAttributeSpecification,
-        sol:MapAttributeSpecification,
-        sol:NonConstantAttributeSpecification ;
-    rdfs:range sol:ArrayType,
-        sol:MapType,
-        sol:NonConstantType .
-
-sol:hasOverrideReturn a owl:ObjectProperty ;
-    rdfs:label "has override return" ;
-    rdfs:domain sol:ModifierSpecification ;
-    rdfs:range sol:ModifierOverrideSpecification .
-
-sol:hasParameterName a owl:DatatypeProperty ;
-    rdfs:label "has parameter name" ;
-    rdfs:domain sol:ParameterVariableSpecification ;
-    rdfs:range xsd:string .
-
-sol:hasParameterPosition a owl:DatatypeProperty ;
-    rdfs:label "has parameter position" ;
-    rdfs:domain sol:ParameterVariableSpecification ;
-    rdfs:range xsd:short .
-
-sol:hasParameterType a owl:ObjectProperty ;
-    rdfs:label "has parameter type" ;
-    rdfs:domain sol:ParameterVariableSpecification ;
-    rdfs:range sol:ParameterType .
-
-sol:hasParameterTypeWithDataLocation a owl:ObjectProperty ;
-    rdfs:label "has parameter type with data location" ;
-    rdfs:domain sol:ParameterTypeWithDataLocation ;
-    rdfs:range sol:DataLocation .
-
-sol:hasReceiveBehaviour a owl:ObjectProperty ;
-    rdfs:label "has receive behaviour" ;
-    rdfs:domain sol:FallbackSpecification ;
-    rdfs:range sol:FRBehaviour .
-
-sol:hasReceiveVisibility a owl:ObjectProperty ;
-    rdfs:label "has receive visibility" ;
-    rdfs:domain sol:FallbackSpecification ;
-    rdfs:range sol:FRBehaviour .
-
-sol:hasType a owl:ObjectProperty ;
-    rdfs:label "has type" ;
-    rdfs:domain sol:ArrayType ;
-    rdfs:range sol:Type .
-
-sol:hasValueMap a owl:ObjectProperty ;
-    rdfs:label "has value map" ;
-    rdfs:domain sol:MapType .
-
-sol:import a owl:DatatypeProperty ;
-    rdfs:label "import" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range xsd:string .
-
-sol:index a owl:DatatypeProperty ;
-    rdfs:label "index" ;
-    rdfs:domain sol:ArrayDimension ;
-    rdfs:range xsd:short .
-
-sol:inheritance a owl:DatatypeProperty ;
-    rdfs:label "inheritance" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range xsd:string .
-
-sol:isAbstract a owl:ObjectProperty ;
-    rdfs:label "is abstract" ;
-    rdfs:domain sol:ContractImplementation ;
-    rdfs:range sol:Abstract .
-
-sol:isAnonymous a owl:DatatypeProperty ;
-    rdfs:label "is anonymous" ;
-    rdfs:domain sol:EventSpecification ;
-    rdfs:range xsd:boolean .
-
-sol:isConstant a owl:DatatypeProperty ;
-    rdfs:label "is constant" ;
-    rdfs:domain sol:ValueSpecification ;
-    rdfs:range xsd:boolean .
-
-sol:isDefinedAs a owl:ObjectProperty ;
-    rdfs:label "is defined as" ;
-    rdfs:domain sol:FunctionBehaviour ;
-    rdfs:range sol:ModifierSpecification .
-
-sol:isInmutable a owl:DatatypeProperty ;
-    rdfs:label "is inmutable" ;
-    rdfs:domain sol:NonConstantAttributeSpecification ;
-    rdfs:range xsd:boolean .
-
-sol:isUsingLibrary a owl:ObjectProperty ;
-    rdfs:label "is using library" ;
-    rdfs:domain sol:UsingForDirective ;
-    rdfs:range sol:LibraryImplementation .
-
-sol:lenght a owl:DatatypeProperty ;
-    rdfs:label "lenght" ;
-    rdfs:domain sol:ArrayDimension ;
-    rdfs:range xsd:short .
-
-sol:memory a owl:DatatypeProperty ;
-    rdfs:label "memory" ;
-    rdfs:domain sol:SingleMemoryType ;
-    rdfs:range xsd:short .
-
-sol:memoryM a owl:DatatypeProperty ;
-    rdfs:label "memory m" ;
-    rdfs:domain sol:DualMemoryType ;
-    rdfs:range xsd:short .
-
-sol:memoryN a owl:DatatypeProperty ;
-    rdfs:label "memory n" ;
-    rdfs:domain sol:DualMemoryType ;
-    rdfs:range xsd:short .
-
-sol:modifierCode a owl:DatatypeProperty ;
-    rdfs:label "modifier code" ;
-    rdfs:domain sol:ModifierSpecification ;
-    rdfs:range xsd:string .
-
-sol:modifierName a owl:DatatypeProperty ;
-    rdfs:label "modifier name" ;
-    rdfs:domain sol:ModifierSpecification ;
-    rdfs:range xsd:string .
-
-sol:option a owl:DatatypeProperty ;
-    rdfs:label "option" ;
-    rdfs:domain sol:EnumType ;
-    rdfs:range xsd:string .
-
-sol:receiveCode a owl:DatatypeProperty ;
-    rdfs:label "receive code" ;
-    rdfs:domain sol:ReceiveSpecification ;
-    rdfs:range xsd:string .
-
-sol:simpleBool a owl:DatatypeProperty ;
-    rdfs:label "simple bool" ;
-    rdfs:domain sol:BoolValue ;
-    rdfs:range xsd:string .
-
-sol:simpleBytes a owl:DatatypeProperty ;
-    rdfs:label "simple bytes" ;
-    rdfs:domain sol:BytesValue ;
-    rdfs:range xsd:string .
-
-sol:simpleFixed a owl:DatatypeProperty ;
-    rdfs:label "simple fixed" ;
-    rdfs:domain sol:FixedValue ;
-    rdfs:range xsd:string .
-
-sol:simpleGeneric a owl:DatatypeProperty ;
-    rdfs:label "simple generic" ;
-    rdfs:domain sol:GenericValue ;
-    rdfs:range xsd:Literal .
-
-sol:simpleInt a owl:DatatypeProperty ;
-    rdfs:label "simple int" ;
-    rdfs:domain sol:IntValue ;
-    rdfs:range xsd:string .
-
-sol:simpleString a owl:DatatypeProperty ;
-    rdfs:label "simple string" ;
-    rdfs:domain sol:StringValue ;
-    rdfs:range xsd:string .
-
-sol:usingForName a owl:DatatypeProperty ;
-    rdfs:label "using for name" ;
-    rdfs:domain sol:UsingForDirective ;
-    rdfs:range xsd:string .
-
-sol:version a owl:DatatypeProperty ;
-    rdfs:label "version" ;
-    rdfs:domain sol:Implementation ;
-    rdfs:range xsd:string .
-
-sol:ArrayAttributeSpecification a owl:Class ;
-    rdfs:label "Array Attribute Specification" ;
-    rdfs:subClassOf sol:NonConstantAttributeSpecification .
-
-sol:BoolValue a owl:Class ;
-    rdfs:label "Bool Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:BytesValue a owl:Class ;
-    rdfs:label "Bytes Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:EnumType a owl:Class ;
-    rdfs:label "Enum Type" ;
-    rdfs:subClassOf sol:ConstantType,
-        sol:MapKeyType,
-        sol:ParameterType .
-
-sol:FixedValue a owl:Class ;
-    rdfs:label "Fixed Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:GenericValue a owl:Class ;
-    rdfs:label "Generic Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:IntValue a owl:Class ;
-    rdfs:label "Int Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:MapAttributeSpecification a owl:Class ;
-    rdfs:label "Map Attribute Specification" ;
-    rdfs:subClassOf sol:NonConstantAttributeSpecification .
-
-sol:StringValue a owl:Class ;
-    rdfs:label "String Value" ;
-    rdfs:subClassOf sol:SimpleValueSpecification .
-
-sol:Abstract a owl:Class ;
-    rdfs:label "Abstract" .
-
-sol:ArrayValueSpecification a owl:Class ;
-    rdfs:label "Array Value Specification" ;
-    rdfs:subClassOf sol:ValueSpecification .
-
-sol:ContractAttributeSpecification a owl:Class ;
-    rdfs:label "Contract Attribute Specification" ;
-    rdfs:subClassOf sol:AttributeSpecification .
-
-sol:Interface a owl:Class ;
-    rdfs:label "Interface" .
-
-sol:LibraryImplementation a owl:Class ;
-    rdfs:label "Library Implementation" ;
-    rdfs:subClassOf sol:Implementation .
-
-sol:MemoryType a owl:Class ;
-    rdfs:label "Memory Type" ;
-    rdfs:subClassOf sol:MapKeyType,
-        sol:NonConstantType,
-        sol:ParameterType .
-
-sol:ModifierOverrideSpecification a owl:Class ;
-    rdfs:label "Modifier Override Specification" ;
-    rdfs:subClassOf sol:NonConstantAttributeSpecification .
-
-sol:ModifierOverrideTipe a owl:Class ;
-    rdfs:label "Modifier Override Tipe" .
-
-sol:StructType a owl:Class ;
-    rdfs:label "Struct Type" ;
-    rdfs:subClassOf sol:ConstantType,
-        sol:ParameterTypeWithDataLocation .
-
-sol:ArrayDimension a owl:Class ;
-    rdfs:label "Array Dimension" .
-
-sol:ArrayType a owl:Class ;
-    rdfs:label "Array Type" ;
-    rdfs:subClassOf sol:NonConstantType,
-        sol:ParameterTypeWithDataLocation .
-
-sol:ArrayValue a owl:Class ;
-    rdfs:label "Array Value" .
-
-sol:CodelessFunctionSpecification a owl:Class ;
-    rdfs:label "Codeless Function Specification" .
-
-sol:ConstantType a owl:Class ;
-    rdfs:label "Constant Type" ;
-    rdfs:subClassOf sol:Type .
-
-sol:ConstructorSpecification a owl:Class ;
-    rdfs:label "Constructor Specification" .
-
-sol:ElementaryType a owl:Class ;
-    rdfs:label "Elementary Type" ;
-    rdfs:subClassOf sol:MapKeyType,
-        sol:NonConstantType,
-        sol:ParameterType .
-
-sol:MapType a owl:Class ;
-    rdfs:label "Map Type" .
-
-sol:ModifierBehaviour a owl:Class ;
-    rdfs:label "Modifier Behaviour" .
-
-sol:UsingForDirective a owl:Class ;
-    rdfs:label "Using For Directive" .
-
-sol:AttributeSpecification a owl:Class ;
-    rdfs:label "Attribute Specification" .
-
-sol:DataLocation a owl:Class ;
-    rdfs:label "Data Location" .
-
-sol:DualMemoryType a owl:Class ;
-    rdfs:label "Dual Memory Type" ;
-    rdfs:subClassOf sol:MemoryType .
-
-sol:EventSpecification a owl:Class ;
-    rdfs:label "Event Specification" .
-
-sol:FallbackSpecification a owl:Class ;
-    rdfs:label "Fallback Specification" .
-
-sol:ReceiveSpecification a owl:Class ;
-    rdfs:label "Receive Specification" .
-
-sol:SingleMemoryType a owl:Class ;
-    rdfs:label "Single Memory Type" ;
-    rdfs:subClassOf sol:MemoryType .
-
-sol:Type a owl:Class ;
-    rdfs:label "Type" .
-
-sol:ValueSpecification a owl:Class ;
-    rdfs:label "Value Specification" .
-
-sol:MapKeyType a owl:Class ;
-    rdfs:label "Map Key Type" ;
-    rdfs:subClassOf sol:ParameterTypeWithDataLocation,
-        sol:Type .
-
-sol:NonConstantType a owl:Class ;
-    rdfs:label "Non Constant Type" ;
-    rdfs:subClassOf sol:Type .
-
-sol:Visibility a owl:Class ;
-    rdfs:label "Visibility" .
-
-sol:FRBehaviour a owl:Class ;
-    rdfs:label "F R Behaviour" .
-
-sol:FunctionSpecification a owl:Class ;
-    rdfs:label "Function Specification" .
-
-sol:ParameterType a owl:Class ;
-    rdfs:label "Parameter Type" .
-
-sol:ContractImplementation a owl:Class ;
-    rdfs:label "Contract Implementation" ;
-    rdfs:subClassOf sol:Implementation .
-
-sol:FunctionBehaviour a owl:Class ;
-    rdfs:label "Function Behaviour" .
-
-sol:ModifierSpecification a owl:Class ;
-    rdfs:label "Modifier Specification" .
-
-sol:ParameterTypeWithDataLocation a owl:Class ;
-    rdfs:label "Parameter Type With Data Location" ;
-    rdfs:subClassOf sol:ParameterType .
-
-sol:SimpleValueSpecification a owl:Class ;
-    rdfs:label "Simple Value Specification" ;
-    rdfs:subClassOf sol:ValueSpecification .
-
-sol:ParameterVariableSpecification a owl:Class ;
-    rdfs:label "Parameter Variable Specification" ;
-    rdfs:subClassOf sol:NonConstantAttributeSpecification .
-
-sol:NonConstantAttributeSpecification a owl:Class ;
-    rdfs:label "Non Constant Attribute Specification" ;
-    rdfs:subClassOf sol:AttributeSpecification .
-
-sol:Implementation a owl:Class ;
-    rdfs:label "Implementation" ;
-    rdfs:subClassOf sol:MapKeyType,
-        sol:ModifierOverrideTipe,
-        sol:NonConstantType,
-        sol:ParameterType,
-        sol:SimpleValueSpecification .
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
 
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/SolidityOntology/hasArrayDimension
+sol:hasArrayDimension rdf:type owl:ObjectProperty ;
+                      rdfs:domain sol:ArrayType ;
+                      rdfs:range sol:ArrayDimension ;
+                      rdfs:label "has array dimension" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasArrayValue
+sol:hasArrayValue rdf:type owl:ObjectProperty ;
+                  rdfs:domain sol:ArrayValueSpecification ;
+                  rdfs:range sol:ArrayValue ;
+                  rdfs:label "has array value" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasAttributeValue
+sol:hasAttributeValue rdf:type owl:ObjectProperty ;
+                      rdfs:domain sol:NonConstantAttributeSpecification ;
+                      rdfs:range sol:ValueSpecification ;
+                      rdfs:label "has attribute value" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasAttributeVisibility
+sol:hasAttributeVisibility rdf:type owl:ObjectProperty ;
+                           rdfs:domain sol:NonConstantAttributeSpecification ;
+                           rdfs:range sol:Visibility ;
+                           rdfs:label "has attribute visibility" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasConstantAttribute
+sol:hasConstantAttribute rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:LibraryImplementation ;
+                         rdfs:range sol:ContractAttributeSpecification ;
+                         rdfs:label "has constant attribute" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasConstantType
+sol:hasConstantType rdf:type owl:ObjectProperty ;
+                    rdfs:domain sol:ContractAttributeSpecification ;
+                    rdfs:range sol:ConstantType ;
+                    rdfs:label "has constant type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasConstructorArguments
+sol:hasConstructorArguments rdf:type owl:ObjectProperty ;
+                            rdfs:domain sol:ConstructorSpecification ;
+                            rdfs:range sol:ParameterVariableSpecification ;
+                            rdfs:label "has constructor arguments" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractAbstractFunction
+sol:hasContractAbstractFunction rdf:type owl:ObjectProperty ;
+                                rdfs:domain sol:Abstract ;
+                                rdfs:range sol:CodelessFunctionSpecification ;
+                                rdfs:label "has contract abstract function" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractAttribute
+sol:hasContractAttribute rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:ContractImplementation ;
+                         rdfs:range sol:AttributeSpecification ;
+                         rdfs:label "has contract attribute" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractConstructor
+sol:hasContractConstructor rdf:type owl:ObjectProperty ;
+                           rdfs:domain sol:ContractImplementation ;
+                           rdfs:range sol:ConstructorSpecification ;
+                           rdfs:label "has contract constructor" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractFallback
+sol:hasContractFallback rdf:type owl:ObjectProperty ;
+                        rdfs:domain sol:ContractImplementation ;
+                        rdfs:range sol:FallbackSpecification ;
+                        rdfs:label "has contract fallback" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractReceive
+sol:hasContractReceive rdf:type owl:ObjectProperty ;
+                       rdfs:domain sol:ContractImplementation ;
+                       rdfs:range sol:ReceiveSpecification ;
+                       rdfs:label "has contract receive" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasContractUsingForDirective
+sol:hasContractUsingForDirective rdf:type owl:ObjectProperty ;
+                                 rdfs:domain sol:ContractImplementation ;
+                                 rdfs:range sol:UsingForDirective ;
+                                 rdfs:label "has contract using for directive" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasEventArguments
+sol:hasEventArguments rdf:type owl:ObjectProperty ;
+                      rdfs:domain sol:EventSpecification ;
+                      rdfs:range sol:ParameterVariableSpecification ;
+                      rdfs:label "has event arguments" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasFallbackBehaviour
+sol:hasFallbackBehaviour rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:ReceiveSpecification ;
+                         rdfs:range sol:FRBehaviour ;
+                         rdfs:label "has fallback behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasFallbackVisibility
+sol:hasFallbackVisibility rdf:type owl:ObjectProperty ;
+                          rdfs:domain sol:ReceiveSpecification ;
+                          rdfs:range sol:FRBehaviour ;
+                          rdfs:label "has fallback visibility" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasFunctionArguments
+sol:hasFunctionArguments rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:FunctionSpecification ;
+                         rdfs:range sol:ParameterVariableSpecification ;
+                         rdfs:label "has function arguments" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasFunctionBehaviour
+sol:hasFunctionBehaviour rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:FunctionSpecification ;
+                         rdfs:range sol:FunctionBehaviour ;
+                         rdfs:label "has function behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasFunctionReturn
+sol:hasFunctionReturn rdf:type owl:ObjectProperty ;
+                      rdfs:domain sol:FunctionSpecification ;
+                      rdfs:range sol:ParameterVariableSpecification ;
+                      rdfs:label "has function return" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasImplementationEvent
+sol:hasImplementationEvent rdf:type owl:ObjectProperty ;
+                           rdfs:domain sol:Implementation ;
+                           rdfs:range sol:EventSpecification ;
+                           rdfs:label "has implementation event" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasImplementationFunction
+sol:hasImplementationFunction rdf:type owl:ObjectProperty ;
+                              rdfs:domain sol:Implementation ;
+                              rdfs:range sol:FunctionSpecification ;
+                              rdfs:label "has implementation function" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasImplementationModifier
+sol:hasImplementationModifier rdf:type owl:ObjectProperty ;
+                              rdfs:domain sol:Implementation ;
+                              rdfs:range sol:ModifierSpecification ;
+                              rdfs:label "has implementation modifier" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasImplementationStructType
+sol:hasImplementationStructType rdf:type owl:ObjectProperty ;
+                                rdfs:domain sol:Implementation ;
+                                rdfs:range sol:StructType ;
+                                rdfs:label "has implementation struct type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasIndexArrayValue
+sol:hasIndexArrayValue rdf:type owl:ObjectProperty ;
+                       rdfs:domain sol:ArrayValue ;
+                       rdfs:range sol:ArrayValueSpecification ;
+                       rdfs:label "has index array value" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasInterface
+sol:hasInterface rdf:type owl:ObjectProperty ;
+                 rdfs:domain sol:Implementation ;
+                 rdfs:range sol:Interface ;
+                 rdfs:label "has interface" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasInterfaceFunction
+sol:hasInterfaceFunction rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:Interface ;
+                         rdfs:range sol:CodelessFunctionSpecification ;
+                         rdfs:label "has interface function" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasKeyMap
+sol:hasKeyMap rdf:type owl:ObjectProperty ;
+              rdfs:domain sol:MapType ;
+              rdfs:range sol:MapKeyType ;
+              rdfs:label "has key map" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasModifierArguments
+sol:hasModifierArguments rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:ModifierSpecification ;
+                         rdfs:range sol:ParameterVariableSpecification ;
+                         rdfs:label "has modifier arguments" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasModifierBehaviour
+sol:hasModifierBehaviour rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:ModifierSpecification ;
+                         rdfs:range sol:ModifierBehaviour ;
+                         rdfs:label "has modifier behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasModifierOverrideType
+sol:hasModifierOverrideType rdf:type owl:ObjectProperty ;
+                            rdfs:domain sol:ModifierOverrideSpecification ;
+                            rdfs:range sol:ModifierOverrideTipe ;
+                            rdfs:label "has modifier override type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasNonConstantStructAttribute
+sol:hasNonConstantStructAttribute rdf:type owl:ObjectProperty ;
+                                  rdfs:domain sol:StructType ;
+                                  rdfs:range sol:NonConstantAttributeSpecification ;
+                                  rdfs:label "has non constant struct attribute" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasNonConstantType
+sol:hasNonConstantType rdf:type owl:ObjectProperty ;
+                       rdfs:domain sol:ArrayAttributeSpecification ,
+                                   sol:MapAttributeSpecification ,
+                                   sol:NonConstantAttributeSpecification ;
+                       rdfs:range sol:ArrayType ,
+                                  sol:MapType ,
+                                  sol:NonConstantType ;
+                       rdfs:label "has non constant type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasOverrideReturn
+sol:hasOverrideReturn rdf:type owl:ObjectProperty ;
+                      rdfs:domain sol:ModifierSpecification ;
+                      rdfs:range sol:ModifierOverrideSpecification ;
+                      rdfs:label "has override return" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasParameterType
+sol:hasParameterType rdf:type owl:ObjectProperty ;
+                     rdfs:domain sol:ParameterVariableSpecification ;
+                     rdfs:range sol:ParameterType ;
+                     rdfs:label "has parameter type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasParameterTypeWithDataLocation
+sol:hasParameterTypeWithDataLocation rdf:type owl:ObjectProperty ;
+                                     rdfs:domain sol:ParameterTypeWithDataLocation ;
+                                     rdfs:range sol:DataLocation ;
+                                     rdfs:label "has parameter type with data location" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasReceiveBehaviour
+sol:hasReceiveBehaviour rdf:type owl:ObjectProperty ;
+                        rdfs:domain sol:FallbackSpecification ;
+                        rdfs:range sol:FRBehaviour ;
+                        rdfs:label "has receive behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasReceiveVisibility
+sol:hasReceiveVisibility rdf:type owl:ObjectProperty ;
+                         rdfs:domain sol:FallbackSpecification ;
+                         rdfs:range sol:FRBehaviour ;
+                         rdfs:label "has receive visibility" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasType
+sol:hasType rdf:type owl:ObjectProperty ;
+            rdfs:domain sol:ArrayType ;
+            rdfs:range sol:Type ;
+            rdfs:label "has type" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasValueMap
+sol:hasValueMap rdf:type owl:ObjectProperty ;
+                rdfs:domain sol:MapType ;
+                rdfs:label "has value map" .
+
+
+###  https://w3id.org/def/SolidityOntology/isAbstract
+sol:isAbstract rdf:type owl:ObjectProperty ;
+               rdfs:domain sol:ContractImplementation ;
+               rdfs:range sol:Abstract ;
+               rdfs:label "is abstract" .
+
+
+###  https://w3id.org/def/SolidityOntology/isDefinedAs
+sol:isDefinedAs rdf:type owl:ObjectProperty ;
+                rdfs:domain sol:FunctionBehaviour ;
+                rdfs:range sol:ModifierSpecification ;
+                rdfs:label "is defined as" .
+
+
+###  https://w3id.org/def/SolidityOntology/isUsingLibrary
+sol:isUsingLibrary rdf:type owl:ObjectProperty ;
+                   rdfs:domain sol:UsingForDirective ;
+                   rdfs:range sol:LibraryImplementation ;
+                   rdfs:label "is using library" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleGeneric
+sol:simpleGeneric rdf:type owl:ObjectProperty ;
+                  rdfs:domain sol:GenericValue ;
+                  rdfs:range xsd:Literal .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/SolidityOntology/attributeName
+sol:attributeName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain sol:AttributeSpecification ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "attribute name" .
+
+
+###  https://w3id.org/def/SolidityOntology/codelessFunctionCode
+sol:codelessFunctionCode rdf:type owl:DatatypeProperty ;
+                         rdfs:domain sol:CodelessFunctionSpecification ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "codeless function code" .
+
+
+###  https://w3id.org/def/SolidityOntology/constructorCode
+sol:constructorCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain sol:ConstructorSpecification ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "constructor code" .
+
+
+###  https://w3id.org/def/SolidityOntology/contractName
+sol:contractName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:Implementation ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "contract name" .
+
+
+###  https://w3id.org/def/SolidityOntology/eventName
+sol:eventName rdf:type owl:DatatypeProperty ;
+              rdfs:domain sol:EventSpecification ;
+              rdfs:range xsd:string ;
+              rdfs:label "event name" .
+
+
+###  https://w3id.org/def/SolidityOntology/fallbackCode
+sol:fallbackCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:FallbackSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "fallback code" .
+
+
+###  https://w3id.org/def/SolidityOntology/functionCode
+sol:functionCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:FunctionSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "function code" .
+
+
+###  https://w3id.org/def/SolidityOntology/functionName
+sol:functionName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:FunctionSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "function name" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasIndex
+sol:hasIndex rdf:type owl:DatatypeProperty ;
+             rdfs:domain sol:ArrayValue ;
+             rdfs:range xsd:short ;
+             rdfs:label "has index" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasParameterName
+sol:hasParameterName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain sol:ParameterVariableSpecification ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "has parameter name" .
+
+
+###  https://w3id.org/def/SolidityOntology/hasParameterPosition
+sol:hasParameterPosition rdf:type owl:DatatypeProperty ;
+                         rdfs:domain sol:ParameterVariableSpecification ;
+                         rdfs:range xsd:short ;
+                         rdfs:label "has parameter position" .
+
+
+###  https://w3id.org/def/SolidityOntology/import
+sol:import rdf:type owl:DatatypeProperty ;
+           rdfs:domain sol:Implementation ;
+           rdfs:range xsd:string ;
+           rdfs:label "import" .
+
+
+###  https://w3id.org/def/SolidityOntology/index
+sol:index rdf:type owl:DatatypeProperty ;
+          rdfs:domain sol:ArrayDimension ;
+          rdfs:range xsd:short ;
+          rdfs:label "index" .
+
+
+###  https://w3id.org/def/SolidityOntology/inheritance
+sol:inheritance rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:ContractImplementation ;
+                rdfs:range xsd:string ;
+                rdfs:label "inheritance" .
+
+
+###  https://w3id.org/def/SolidityOntology/isAnonymous
+sol:isAnonymous rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:EventSpecification ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "is anonymous" .
+
+
+###  https://w3id.org/def/SolidityOntology/isConstant
+sol:isConstant rdf:type owl:DatatypeProperty ;
+               rdfs:domain sol:ValueSpecification ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "is constant" .
+
+
+###  https://w3id.org/def/SolidityOntology/isInmutable
+sol:isInmutable rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:NonConstantAttributeSpecification ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "is inmutable" .
+
+
+###  https://w3id.org/def/SolidityOntology/lenght
+sol:lenght rdf:type owl:DatatypeProperty ;
+           rdfs:domain sol:ArrayDimension ;
+           rdfs:range xsd:short ;
+           rdfs:label "lenght" .
+
+
+###  https://w3id.org/def/SolidityOntology/memory
+sol:memory rdf:type owl:DatatypeProperty ;
+           rdfs:domain sol:SingleMemoryType ;
+           rdfs:range xsd:short ;
+           rdfs:label "memory" .
+
+
+###  https://w3id.org/def/SolidityOntology/memoryM
+sol:memoryM rdf:type owl:DatatypeProperty ;
+            rdfs:domain sol:DualMemoryType ;
+            rdfs:range xsd:short ;
+            rdfs:label "memory m" .
+
+
+###  https://w3id.org/def/SolidityOntology/memoryN
+sol:memoryN rdf:type owl:DatatypeProperty ;
+            rdfs:domain sol:DualMemoryType ;
+            rdfs:range xsd:short ;
+            rdfs:label "memory n" .
+
+
+###  https://w3id.org/def/SolidityOntology/modifierCode
+sol:modifierCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:ModifierSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "modifier code" .
+
+
+###  https://w3id.org/def/SolidityOntology/modifierName
+sol:modifierName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:ModifierSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "modifier name" .
+
+
+###  https://w3id.org/def/SolidityOntology/option
+sol:option rdf:type owl:DatatypeProperty ;
+           rdfs:domain sol:EnumType ;
+           rdfs:range xsd:string ;
+           rdfs:label "option" .
+
+
+###  https://w3id.org/def/SolidityOntology/receiveCode
+sol:receiveCode rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:ReceiveSpecification ;
+                rdfs:range xsd:string ;
+                rdfs:label "receive code" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleBool
+sol:simpleBool rdf:type owl:DatatypeProperty ;
+               rdfs:domain sol:BoolValue ;
+               rdfs:range xsd:string ;
+               rdfs:label "simple bool" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleBytes
+sol:simpleBytes rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:BytesValue ;
+                rdfs:range xsd:string ;
+                rdfs:label "simple bytes" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleFixed
+sol:simpleFixed rdf:type owl:DatatypeProperty ;
+                rdfs:domain sol:FixedValue ;
+                rdfs:range xsd:string ;
+                rdfs:label "simple fixed" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleGeneric
+sol:simpleGeneric rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleInt
+sol:simpleInt rdf:type owl:DatatypeProperty ;
+              rdfs:domain sol:IntValue ;
+              rdfs:range xsd:string ;
+              rdfs:label "simple int" .
+
+
+###  https://w3id.org/def/SolidityOntology/simpleString
+sol:simpleString rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:StringValue ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "simple string" .
+
+
+###  https://w3id.org/def/SolidityOntology/usingForName
+sol:usingForName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sol:UsingForDirective ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "using for name" .
+
+
+###  https://w3id.org/def/SolidityOntology/version
+sol:version rdf:type owl:DatatypeProperty ;
+            rdfs:domain sol:Implementation ;
+            rdfs:range xsd:string ;
+            rdfs:label "version" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#Literal
+xsd:Literal rdf:type owl:Class .
+
+
+###  https://w3id.org/def/SolidityOntology/Abstract
+sol:Abstract rdf:type owl:Class ;
+             rdfs:label "Abstract" .
+
+
+###  https://w3id.org/def/SolidityOntology/Address
+sol:Address rdf:type owl:Class ;
+            rdfs:subClassOf sol:ElementaryType ,
+                            sol:ParameterTypeWithDataLocation ;
+            rdfs:label "Address" .
+
+
+###  https://w3id.org/def/SolidityOntology/ArrayAttributeSpecification
+sol:ArrayAttributeSpecification rdf:type owl:Class ;
+                                rdfs:subClassOf sol:NonConstantAttributeSpecification ;
+                                rdfs:label "Array Attribute Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ArrayDimension
+sol:ArrayDimension rdf:type owl:Class ;
+                   rdfs:label "Array Dimension" .
+
+
+###  https://w3id.org/def/SolidityOntology/ArrayType
+sol:ArrayType rdf:type owl:Class ;
+              rdfs:subClassOf sol:NonConstantType ,
+                              sol:ParameterTypeWithDataLocation ;
+              rdfs:label "Array Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ArrayValue
+sol:ArrayValue rdf:type owl:Class ;
+               rdfs:label "Array Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/ArrayValueSpecification
+sol:ArrayValueSpecification rdf:type owl:Class ;
+                            rdfs:subClassOf sol:ValueSpecification ;
+                            rdfs:label "Array Value Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/AttributeSpecification
+sol:AttributeSpecification rdf:type owl:Class ;
+                           rdfs:label "Attribute Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/Bool
+sol:Bool rdf:type owl:Class ;
+         rdfs:subClassOf sol:ElementaryType ;
+         rdfs:label "Bool" .
+
+
+###  https://w3id.org/def/SolidityOntology/BoolValue
+sol:BoolValue rdf:type owl:Class ;
+              rdfs:subClassOf sol:SimpleValueSpecification ;
+              rdfs:label "Bool Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/Bytes
+sol:Bytes rdf:type owl:Class ;
+          rdfs:subClassOf sol:ParameterTypeWithDataLocation ,
+                          sol:SingleMemoryType ;
+          rdfs:label "Bytes" .
+
+
+###  https://w3id.org/def/SolidityOntology/BytesValue
+sol:BytesValue rdf:type owl:Class ;
+               rdfs:subClassOf sol:SimpleValueSpecification ;
+               rdfs:label "Bytes Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification
+sol:CodelessFunctionSpecification rdf:type owl:Class ;
+                                  rdfs:label "Codeless Function Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ConstantType
+sol:ConstantType rdf:type owl:Class ;
+                 rdfs:subClassOf sol:Type ;
+                 rdfs:label "Constant Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ConstructorSpecification
+sol:ConstructorSpecification rdf:type owl:Class ;
+                             rdfs:label "Constructor Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ContractAttributeSpecification
+sol:ContractAttributeSpecification rdf:type owl:Class ;
+                                   rdfs:subClassOf sol:AttributeSpecification ;
+                                   rdfs:label "Contract Attribute Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ContractImplementation
+sol:ContractImplementation rdf:type owl:Class ;
+                           rdfs:subClassOf sol:Implementation ;
+                           rdfs:label "Contract Implementation" .
+
+
+###  https://w3id.org/def/SolidityOntology/DataLocation
+sol:DataLocation rdf:type owl:Class ;
+                 rdfs:label "Data Location" .
+
+
+###  https://w3id.org/def/SolidityOntology/DualMemoryType
+sol:DualMemoryType rdf:type owl:Class ;
+                   rdfs:subClassOf sol:MemoryType ;
+                   rdfs:label "Dual Memory Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ElementaryType
+sol:ElementaryType rdf:type owl:Class ;
+                   rdfs:subClassOf sol:MapKeyType ,
+                                   sol:NonConstantType ,
+                                   sol:ParameterType ;
+                   rdfs:label "Elementary Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/EnumType
+sol:EnumType rdf:type owl:Class ;
+             rdfs:subClassOf sol:ConstantType ,
+                             sol:MapKeyType ,
+                             sol:ParameterType ;
+             rdfs:label "Enum Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/EventSpecification
+sol:EventSpecification rdf:type owl:Class ;
+                       rdfs:label "Event Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/FRBehaviour
+sol:FRBehaviour rdf:type owl:Class ;
+                rdfs:label "F R Behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/FallbackSpecification
+sol:FallbackSpecification rdf:type owl:Class ;
+                          rdfs:label "Fallback Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/FixedMxN
+sol:FixedMxN rdf:type owl:Class ;
+             rdfs:subClassOf sol:DualMemoryType ;
+             rdfs:label "Fixed Mx N" .
+
+
+###  https://w3id.org/def/SolidityOntology/FixedValue
+sol:FixedValue rdf:type owl:Class ;
+               rdfs:subClassOf sol:SimpleValueSpecification ;
+               rdfs:label "Fixed Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/FunctionBehaviour
+sol:FunctionBehaviour rdf:type owl:Class ;
+                      rdfs:label "Function Behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/FunctionSpecification
+sol:FunctionSpecification rdf:type owl:Class ;
+                          rdfs:label "Function Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/GenericValue
+sol:GenericValue rdf:type owl:Class ;
+                 rdfs:subClassOf sol:SimpleValueSpecification ;
+                 rdfs:label "Generic Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/Implementation
+sol:Implementation rdf:type owl:Class ;
+                   rdfs:subClassOf sol:MapKeyType ,
+                                   sol:ModifierOverrideTipe ,
+                                   sol:NonConstantType ,
+                                   sol:ParameterType ,
+                                   sol:SimpleValueSpecification ;
+                   rdfs:label "Implementation" .
+
+
+###  https://w3id.org/def/SolidityOntology/Int
+sol:Int rdf:type owl:Class ;
+        rdfs:subClassOf sol:SingleMemoryType ;
+        rdfs:label "Int" .
+
+
+###  https://w3id.org/def/SolidityOntology/IntValue
+sol:IntValue rdf:type owl:Class ;
+             rdfs:subClassOf sol:SimpleValueSpecification ;
+             rdfs:label "Int Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/Interface
+sol:Interface rdf:type owl:Class ;
+              rdfs:label "Interface" .
+
+
+###  https://w3id.org/def/SolidityOntology/LibraryImplementation
+sol:LibraryImplementation rdf:type owl:Class ;
+                          rdfs:subClassOf sol:Implementation ;
+                          rdfs:label "Library Implementation" .
+
+
+###  https://w3id.org/def/SolidityOntology/MapAttributeSpecification
+sol:MapAttributeSpecification rdf:type owl:Class ;
+                              rdfs:subClassOf sol:NonConstantAttributeSpecification ;
+                              rdfs:label "Map Attribute Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/MapKeyType
+sol:MapKeyType rdf:type owl:Class ;
+               rdfs:subClassOf sol:ParameterTypeWithDataLocation ,
+                               sol:Type ;
+               rdfs:label "Map Key Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/MapType
+sol:MapType rdf:type owl:Class ;
+            rdfs:label "Map Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/MemoryType
+sol:MemoryType rdf:type owl:Class ;
+               rdfs:subClassOf sol:MapKeyType ,
+                               sol:NonConstantType ,
+                               sol:ParameterType ;
+               rdfs:label "Memory Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ModifierBehaviour
+sol:ModifierBehaviour rdf:type owl:Class ;
+                      rdfs:label "Modifier Behaviour" .
+
+
+###  https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification
+sol:ModifierOverrideSpecification rdf:type owl:Class ;
+                                  rdfs:subClassOf sol:NonConstantAttributeSpecification ;
+                                  rdfs:label "Modifier Override Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ModifierOverrideTipe
+sol:ModifierOverrideTipe rdf:type owl:Class ;
+                         rdfs:label "Modifier Override Tipe" .
+
+
+###  https://w3id.org/def/SolidityOntology/ModifierSpecification
+sol:ModifierSpecification rdf:type owl:Class ;
+                          rdfs:label "Modifier Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification
+sol:NonConstantAttributeSpecification rdf:type owl:Class ;
+                                      rdfs:subClassOf sol:AttributeSpecification ;
+                                      rdfs:label "Non Constant Attribute Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/NonConstantType
+sol:NonConstantType rdf:type owl:Class ;
+                    rdfs:subClassOf sol:Type ;
+                    rdfs:label "Non Constant Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ParameterType
+sol:ParameterType rdf:type owl:Class ;
+                  rdfs:label "Parameter Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation
+sol:ParameterTypeWithDataLocation rdf:type owl:Class ;
+                                  rdfs:subClassOf sol:ParameterType ;
+                                  rdfs:label "Parameter Type With Data Location" .
+
+
+###  https://w3id.org/def/SolidityOntology/ParameterVariableSpecification
+sol:ParameterVariableSpecification rdf:type owl:Class ;
+                                   rdfs:subClassOf sol:NonConstantAttributeSpecification ;
+                                   rdfs:label "Parameter Variable Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/ReceiveSpecification
+sol:ReceiveSpecification rdf:type owl:Class ;
+                         rdfs:label "Receive Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/SimpleValueSpecification
+sol:SimpleValueSpecification rdf:type owl:Class ;
+                             rdfs:subClassOf sol:ValueSpecification ;
+                             rdfs:label "Simple Value Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/SingleMemoryType
+sol:SingleMemoryType rdf:type owl:Class ;
+                     rdfs:subClassOf sol:MemoryType ;
+                     rdfs:label "Single Memory Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/String
+sol:String rdf:type owl:Class ;
+           rdfs:subClassOf sol:ElementaryType ,
+                           sol:ParameterTypeWithDataLocation ;
+           rdfs:label "String" .
+
+
+###  https://w3id.org/def/SolidityOntology/StringValue
+sol:StringValue rdf:type owl:Class ;
+                rdfs:subClassOf sol:SimpleValueSpecification ;
+                rdfs:label "String Value" .
+
+
+###  https://w3id.org/def/SolidityOntology/StructType
+sol:StructType rdf:type owl:Class ;
+               rdfs:subClassOf sol:ConstantType ,
+                               sol:ParameterTypeWithDataLocation ;
+               rdfs:label "Struct Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/Type
+sol:Type rdf:type owl:Class ;
+         rdfs:label "Type" .
+
+
+###  https://w3id.org/def/SolidityOntology/UfixedMxN
+sol:UfixedMxN rdf:type owl:Class ;
+              rdfs:subClassOf sol:DualMemoryType ;
+              rdfs:label "Ufixed Mx N" .
+
+
+###  https://w3id.org/def/SolidityOntology/Uint
+sol:Uint rdf:type owl:Class ;
+         rdfs:subClassOf sol:SingleMemoryType ;
+         rdfs:label "Uint" .
+
+
+###  https://w3id.org/def/SolidityOntology/UsingForDirective
+sol:UsingForDirective rdf:type owl:Class ;
+                      rdfs:label "Using For Directive" .
+
+
+###  https://w3id.org/def/SolidityOntology/ValueSpecification
+sol:ValueSpecification rdf:type owl:Class ;
+                       rdfs:label "Value Specification" .
+
+
+###  https://w3id.org/def/SolidityOntology/Visibility
+sol:Visibility rdf:type owl:Class ;
+               rdfs:label "Visibility" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/SolidityOntology/Calldata
+sol:Calldata rdf:type owl:NamedIndividual ,
+                      sol:DataLocation .
+
+
+###  https://w3id.org/def/SolidityOntology/External
+sol:External rdf:type owl:NamedIndividual ,
+                      sol:FRBehaviour ,
+                      sol:Visibility .
+
+
+###  https://w3id.org/def/SolidityOntology/Internal
+sol:Internal rdf:type owl:NamedIndividual ,
+                      sol:Visibility .
+
+
+###  https://w3id.org/def/SolidityOntology/Memory
+sol:Memory rdf:type owl:NamedIndividual ,
+                    sol:DataLocation .
+
+
+###  https://w3id.org/def/SolidityOntology/Override
+sol:Override rdf:type owl:NamedIndividual ,
+                      sol:FunctionBehaviour ,
+                      sol:ModifierBehaviour .
+
+
+###  https://w3id.org/def/SolidityOntology/Payable
+sol:Payable rdf:type owl:NamedIndividual ,
+                     sol:FRBehaviour ,
+                     sol:FunctionBehaviour .
+
+
+###  https://w3id.org/def/SolidityOntology/Private
+sol:Private rdf:type owl:NamedIndividual ,
+                     sol:Visibility .
+
+
+###  https://w3id.org/def/SolidityOntology/Public
+sol:Public rdf:type owl:NamedIndividual ,
+                    sol:Visibility .
+
+
+###  https://w3id.org/def/SolidityOntology/Pure
+sol:Pure rdf:type owl:NamedIndividual ,
+                  sol:FunctionBehaviour .
+
+
+###  https://w3id.org/def/SolidityOntology/Storage
+sol:Storage rdf:type owl:NamedIndividual ,
+                     sol:DataLocation .
+
+
+###  https://w3id.org/def/SolidityOntology/View
+sol:View rdf:type owl:NamedIndividual ,
+                  sol:FunctionBehaviour .
+
+
+###  https://w3id.org/def/SolidityOntology/Virtual
+sol:Virtual rdf:type owl:NamedIndividual ,
+                     sol:FunctionBehaviour ,
+                     sol:ModifierBehaviour .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+sol:simpleGeneric rdfs:label "simple generic" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
