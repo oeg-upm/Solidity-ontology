@@ -1,11 +1,10 @@
 <https://w3id.org/def/SolidityOntology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/created> "2021-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/creator> "Andrea Cimmino" .
 <https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" .
-<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/creator> "Raúl García Castro" .
-<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/description> "Brief description of your ontology."@en .
-<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/title> "The example ontology"@en .
-<https://w3id.org/def/SolidityOntology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/creator> "http://www.garcia-castro.com/foaf.rdf#me" .
+<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the Solidity smart contract language."@en .
+<https://w3id.org/def/SolidityOntology/> <http://purl.org/dc/elements/1.1/title> "Solidity ontology"@en .
+<https://w3id.org/def/SolidityOntology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/SolidityOntology/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
@@ -33,18 +32,6 @@
 # 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Datatypes
-# #
-# #################################################################
-# 
-# 
-# http://www.w3.org/2001/XMLSchema#date
-<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -314,7 +301,6 @@
 <https://w3id.org/def/SolidityOntology/simpleGeneric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SolidityOntology/simpleGeneric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology/GenericValue> .
 <https://w3id.org/def/SolidityOntology/simpleGeneric> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Literal> .
-<http://www.w3.org/2001/XMLSchema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -530,6 +516,7 @@
 # 
 # 
 # http://www.w3.org/2001/XMLSchema#Literal
+<http://www.w3.org/2001/XMLSchema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/SolidityOntology/Abstract
 <https://w3id.org/def/SolidityOntology/Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

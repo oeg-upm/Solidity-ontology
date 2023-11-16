@@ -7,13 +7,12 @@
 @base <https://w3id.org/def/SolidityOntology/> .
 
 <https://w3id.org/def/SolidityOntology/> rdf:type owl:Ontology ;
-                                          <http://purl.org/dc/elements/1.1/created> "2021-01-01"^^xsd:date ;
                                           <http://purl.org/dc/elements/1.1/creator> "Andrea Cimmino" ,
                                                                                     "Juan Cano-Benito" ,
-                                                                                    "Raúl García Castro" ;
-                                          <http://purl.org/dc/elements/1.1/description> "Brief description of your ontology."@en ;
-                                          <http://purl.org/dc/elements/1.1/title> "The example ontology"@en ;
-                                          owl:versionInfo "0.0.1" ;
+                                                                                    "http://www.garcia-castro.com/foaf.rdf#me" ;
+                                          <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the Solidity smart contract language."@en ;
+                                          <http://purl.org/dc/elements/1.1/title> "Solidity ontology"@en ;
+                                          owl:versionInfo 1.1 ;
                                           <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 
 #################################################################
@@ -42,14 +41,6 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################

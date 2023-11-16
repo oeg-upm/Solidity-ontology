@@ -14,35 +14,29 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#Literal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/SolidityOntology/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-01-01"
-  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Andrea Cimmino"
   }, {
     "@value" : "Juan Cano-Benito"
   }, {
-    "@value" : "Raúl García Castro"
+    "@value" : "http://www.garcia-castro.com/foaf.rdf#me"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "Brief description of your ontology."
+    "@value" : "This ontology aims at modelling the Solidity smart contract language."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "The example ontology"
+    "@value" : "Solidity ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.1"
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.1"
   } ],
   "https://w3id.org/mod#createdWith" : [ {
     "@id" : "https://chowlk.linkeddata.es/"
