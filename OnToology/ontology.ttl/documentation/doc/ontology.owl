@@ -9,13 +9,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/def/SolidityOntology/">
-        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</dc:created>
         <dc:creator>Andrea Cimmino</dc:creator>
         <dc:creator>Juan Cano-Benito</dc:creator>
-        <dc:creator>Raúl García Castro</dc:creator>
-        <dc:description xml:lang="en">Brief description of your ontology.</dc:description>
-        <dc:title xml:lang="en">The example ontology</dc:title>
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <dc:creator>http://www.garcia-castro.com/foaf.rdf#me</dc:creator>
+        <dc:description xml:lang="en">This ontology aims at modelling the Solidity smart contract language.</dc:description>
+        <dc:title xml:lang="en">Solidity ontology</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
     </owl:Ontology>
     
@@ -72,25 +71,6 @@
 
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
