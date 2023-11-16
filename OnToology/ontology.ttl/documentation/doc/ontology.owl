@@ -1,0 +1,1699 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/SolidityOntology/"
+     xml:base="https://w3id.org/def/SolidityOntology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/def/SolidityOntology/">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</dc:created>
+        <dc:creator>Andrea Cimmino</dc:creator>
+        <dc:creator>Juan Cano-Benito</dc:creator>
+        <dc:creator>Raúl García Castro</dc:creator>
+        <dc:description xml:lang="en">Brief description of your ontology.</dc:description>
+        <dc:title xml:lang="en">The example ontology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasArrayDimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasArrayDimension">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ArrayDimension"/>
+        <rdfs:label>has array dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasArrayValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasArrayValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValueSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValue"/>
+        <rdfs:label>has array value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasAttributeValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasAttributeValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+        <rdfs:label>has attribute value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasAttributeVisibility -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasAttributeVisibility">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+        <rdfs:label>has attribute visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasConstantAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasConstantAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/LibraryImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ContractAttributeSpecification"/>
+        <rdfs:label>has constant attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasConstantType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasConstantType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractAttributeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ConstantType"/>
+        <rdfs:label>has constant type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasConstructorArguments -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasConstructorArguments">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ConstructorSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:label>has constructor arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractAbstractFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractAbstractFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Abstract"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+        <rdfs:label>has contract abstract function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+        <rdfs:label>has contract attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractConstructor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractConstructor">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ConstructorSpecification"/>
+        <rdfs:label>has contract constructor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractFallback -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractFallback">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+        <rdfs:label>has contract fallback</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractReceive -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractReceive">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+        <rdfs:label>has contract receive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasContractUsingForDirective -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasContractUsingForDirective">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/UsingForDirective"/>
+        <rdfs:label>has contract using for directive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasEventArguments -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasEventArguments">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:label>has event arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasFallbackBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasFallbackBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdfs:label>has fallback behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasFallbackVisibility -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasFallbackVisibility">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdfs:label>has fallback visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasFunctionArguments -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasFunctionArguments">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:label>has function arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasFunctionBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasFunctionBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+        <rdfs:label>has function behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasFunctionReturn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasFunctionReturn">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:label>has function return</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasImplementationEvent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasImplementationEvent">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+        <rdfs:label>has implementation event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasImplementationFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasImplementationFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:label>has implementation function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasImplementationModifier -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasImplementationModifier">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:label>has implementation modifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasImplementationStructType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasImplementationStructType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/StructType"/>
+        <rdfs:label>has implementation struct type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasIndexArrayValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasIndexArrayValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValue"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValueSpecification"/>
+        <rdfs:label>has index array value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasInterface -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasInterface">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/Interface"/>
+        <rdfs:label>has interface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasInterfaceFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasInterfaceFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Interface"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+        <rdfs:label>has interface function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasKeyMap -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasKeyMap">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/MapType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <rdfs:label>has key map</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasModifierArguments -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasModifierArguments">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:label>has modifier arguments</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasModifierBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasModifierBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ModifierBehaviour"/>
+        <rdfs:label>has modifier behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasModifierOverrideType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasModifierOverrideType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideTipe"/>
+        <rdfs:label>has modifier override type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasNonConstantStructAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasNonConstantStructAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/StructType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:label>has non constant struct attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasNonConstantType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasNonConstantType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayAttributeSpecification"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/MapAttributeSpecification"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ArrayType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/MapType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <rdfs:label>has non constant type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasOverrideReturn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasOverrideReturn">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification"/>
+        <rdfs:label>has override return</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasParameterType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasParameterType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:label>has parameter type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasParameterTypeWithDataLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasParameterTypeWithDataLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+        <rdfs:label>has parameter type with data location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasReceiveBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasReceiveBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdfs:label>has receive behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasReceiveVisibility -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasReceiveVisibility">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdfs:label>has receive visibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+        <rdfs:label>has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasValueMap -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/hasValueMap">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/MapType"/>
+        <rdfs:label>has value map</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isAbstract -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/isAbstract">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/Abstract"/>
+        <rdfs:label>is abstract</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isDefinedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/isDefinedAs">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:label>is defined as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isUsingLibrary -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/isUsingLibrary">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/UsingForDirective"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityOntology/LibraryImplementation"/>
+        <rdfs:label>is using library</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleGeneric -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleGeneric">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/GenericValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Literal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/attributeName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/attributeName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>attribute name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/codelessFunctionCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/codelessFunctionCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>codeless function code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/constructorCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/constructorCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ConstructorSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>constructor code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/contractName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/contractName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>contract name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/eventName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/eventName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>event name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/fallbackCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/fallbackCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FallbackSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>fallback code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/functionCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/functionCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>function code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/functionName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/functionName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FunctionSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>function name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/hasIndex">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has index</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasParameterName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/hasParameterName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has parameter name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/hasParameterPosition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/hasParameterPosition">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>has parameter position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/import -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/import">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>import</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/index -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/index">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayDimension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>index</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/inheritance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/inheritance">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ContractImplementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>inheritance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isAnonymous -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/isAnonymous">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/EventSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is anonymous</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isConstant -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/isConstant">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is constant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/isInmutable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/isInmutable">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is inmutable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/lenght -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/lenght">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ArrayDimension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>lenght</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/memory -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/memory">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/SingleMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>memory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/memoryM -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/memoryM">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/DualMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>memory m</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/memoryN -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/memoryN">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/DualMemoryType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:label>memory n</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/modifierCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/modifierCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modifier code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/modifierName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/modifierName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ModifierSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modifier name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/option -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/option">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/EnumType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>option</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/receiveCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/receiveCode">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/ReceiveSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>receive code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleBool -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleBool">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/BoolValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>simple bool</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleBytes -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleBytes">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/BytesValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>simple bytes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleFixed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleFixed">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/FixedValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>simple fixed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleGeneric -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleGeneric"/>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleInt -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleInt">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/IntValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>simple int</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/simpleString -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/simpleString">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/StringValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>simple string</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/usingForName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/usingForName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/UsingForDirective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>using for name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/version -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityOntology/version">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Literal -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Literal"/>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Abstract -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Abstract">
+        <rdfs:label>Abstract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Address -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ElementaryType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ArrayAttributeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ArrayAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:label>Array Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ArrayDimension -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ArrayDimension">
+        <rdfs:label>Array Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ArrayType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ArrayType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:label>Array Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ArrayValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ArrayValue">
+        <rdfs:label>Array Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ArrayValueSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ArrayValueSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+        <rdfs:label>Array Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/AttributeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/AttributeSpecification">
+        <rdfs:label>Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Bool -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Bool">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ElementaryType"/>
+        <rdfs:label>Bool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/BoolValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/BoolValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Bool Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Bytes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Bytes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SingleMemoryType"/>
+        <rdfs:label>Bytes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/BytesValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/BytesValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Bytes Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/CodelessFunctionSpecification">
+        <rdfs:label>Codeless Function Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ConstantType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ConstantType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+        <rdfs:label>Constant Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ConstructorSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ConstructorSpecification">
+        <rdfs:label>Constructor Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ContractAttributeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ContractAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+        <rdfs:label>Contract Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ContractImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ContractImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:label>Contract Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/DataLocation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/DataLocation">
+        <rdfs:label>Data Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/DualMemoryType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/DualMemoryType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MemoryType"/>
+        <rdfs:label>Dual Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ElementaryType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ElementaryType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:label>Elementary Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/EnumType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/EnumType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:label>Enum Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/EventSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/EventSpecification">
+        <rdfs:label>Event Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FRBehaviour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FRBehaviour">
+        <rdfs:label>F R Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FallbackSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FallbackSpecification">
+        <rdfs:label>Fallback Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FixedMxN -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FixedMxN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/DualMemoryType"/>
+        <rdfs:label>Fixed Mx N</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FixedValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FixedValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Fixed Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FunctionBehaviour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FunctionBehaviour">
+        <rdfs:label>Function Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/FunctionSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/FunctionSpecification">
+        <rdfs:label>Function Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/GenericValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/GenericValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Generic Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Implementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Implementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ModifierOverrideTipe"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Int -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Int">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SingleMemoryType"/>
+        <rdfs:label>Int</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/IntValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/IntValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>Int Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Interface -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Interface">
+        <rdfs:label>Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/LibraryImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/LibraryImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/Implementation"/>
+        <rdfs:label>Library Implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/MapAttributeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/MapAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:label>Map Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/MapKeyType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/MapKeyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+        <rdfs:label>Map Key Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/MapType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/MapType">
+        <rdfs:label>Map Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/MemoryType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/MemoryType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MapKeyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:label>Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ModifierBehaviour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ModifierBehaviour">
+        <rdfs:label>Modifier Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ModifierOverrideSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:label>Modifier Override Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ModifierOverrideTipe -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ModifierOverrideTipe">
+        <rdfs:label>Modifier Override Tipe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ModifierSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ModifierSpecification">
+        <rdfs:label>Modifier Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/AttributeSpecification"/>
+        <rdfs:label>Non Constant Attribute Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/NonConstantType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/NonConstantType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/Type"/>
+        <rdfs:label>Non Constant Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ParameterType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ParameterType">
+        <rdfs:label>Parameter Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterType"/>
+        <rdfs:label>Parameter Type With Data Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ParameterVariableSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ParameterVariableSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/NonConstantAttributeSpecification"/>
+        <rdfs:label>Parameter Variable Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ReceiveSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ReceiveSpecification">
+        <rdfs:label>Receive Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/SimpleValueSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/SimpleValueSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ValueSpecification"/>
+        <rdfs:label>Simple Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/SingleMemoryType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/SingleMemoryType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/MemoryType"/>
+        <rdfs:label>Single Memory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/String -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/String">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ElementaryType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:label>String</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/StringValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/StringValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SimpleValueSpecification"/>
+        <rdfs:label>String Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/StructType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/StructType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ConstantType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/ParameterTypeWithDataLocation"/>
+        <rdfs:label>Struct Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Type -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Type">
+        <rdfs:label>Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/UfixedMxN -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/UfixedMxN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/DualMemoryType"/>
+        <rdfs:label>Ufixed Mx N</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Uint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Uint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SolidityOntology/SingleMemoryType"/>
+        <rdfs:label>Uint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/UsingForDirective -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/UsingForDirective">
+        <rdfs:label>Using For Directive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/ValueSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/ValueSpecification">
+        <rdfs:label>Value Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Visibility -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityOntology/Visibility">
+        <rdfs:label>Visibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Calldata -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Calldata">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/External -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/External">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Internal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Internal">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Memory -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Memory">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Override -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Override">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/ModifierBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Payable -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Payable">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FRBehaviour"/>
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Private -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Private">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Public -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Public">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Pure -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Pure">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Storage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Storage">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/DataLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/View -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/View">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityOntology/Virtual -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityOntology/Virtual">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/FunctionBehaviour"/>
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityOntology/ModifierBehaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/def/SolidityOntology/simpleGeneric">
+        <rdfs:label>simple generic</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
