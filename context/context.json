@@ -249,6 +249,20 @@
             }
          }
       },
+      "hasImport":{
+         "@id":"https://w3id.org/def/SolidityOntology#hasImport",
+         "@type":"@id",
+         "@context":{
+            "name":{
+               "@id":"https://w3id.org/def/SolidityOntology#importName",
+               "@type":"http://www.w3.org/2001/XMLSchema#string"
+            },
+            "from":{
+               "@id":"https://w3id.org/def/SolidityOntology#importFrom",
+               "@type":"http://www.w3.org/2001/XMLSchema#string"
+            }
+         }
+      },
       "hasContractConstructor":{
          "@id":"https://w3id.org/def/SolidityOntology#hasContractConstructor",
          "@type":"@id",
