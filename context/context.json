@@ -24,14 +24,54 @@
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterName",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
-                  "isInmutable":{
-                     "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                  "isIndexed":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterType",
                      "@type":"http://www.w3.org/2001/XMLSchema#boolean"
                   },
                   "hasParameterType":{
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterType",
-                     "@type":"@id"
-                  }
+                     "@type":"@id",
+                     "@context":{
+                        "hasType":{
+                           "@id":"https://w3id.org/def/SolidityOntology#hasType",
+                           "@type":"@id",
+                           "@context":{
+                              "memory":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#memory",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "index":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#index",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "lenght":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#lenght",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              }
+                           }
+                        },
+                        "memory":{
+                           "@id":"https://w3id.org/def/SolidityOntology#memory",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        },
+                        "index":{
+                           "@id":"https://w3id.org/def/SolidityOntology#index",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        },
+                        "lenght":{
+                           "@id":"https://w3id.org/def/SolidityOntology#lenght",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        }
+                     }
+                  },
+                  "ArrayType":"https://w3id.org/def/SolidityOntology#ArrayType",
+                  "string":"https://w3id.org/def/SolidityOntology#String",
+                  "bool":"https://w3id.org/def/SolidityOntology#Bool",
+                  "address":"https://w3id.org/def/SolidityOntology#Addres",
+                  "int":"https://w3id.org/def/SolidityOntology#Int",
+                  "bytes":"https://w3id.org/def/SolidityOntology#Bytes",
+                  "uint":"https://w3id.org/def/SolidityOntology#Uint",
+                  "enum":"https://w3id.org/def/SolidityOntology#EnumType"
                }
             }
          }
@@ -80,13 +120,9 @@
          "@id":"https://w3id.org/def/SolidityOntology#contractName",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
-      "import":{
-         "@id":"https://w3id.org/def/SolidityOntology#import",
-         "@type":"http://www.w3.org/2001/XMLSchema#string"
-      },
       "inheritance":{
          "@id":"https://w3id.org/def/SolidityOntology#inheritance",
-         "@type":"http://www.w3.org/2001/XMLSchema#string"
+         "@type":"@id"
       },
       "hasImplementationStructType":{
          "@id":"https://w3id.org/def/SolidityOntology#hasImplementationStructType",
@@ -255,11 +291,11 @@
          "@context":{
             "name":{
                "@id":"https://w3id.org/def/SolidityOntology#importName",
-               "@type":"http://www.w3.org/2001/XMLSchema#string"
+               "@type":"@id"
             },
             "from":{
                "@id":"https://w3id.org/def/SolidityOntology#importFrom",
-               "@type":"http://www.w3.org/2001/XMLSchema#string"
+               "@type":"@id"
             }
          }
       },
