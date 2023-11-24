@@ -124,6 +124,40 @@
          "@id":"https://w3id.org/def/SolidityOntology#inheritance",
          "@type":"@id"
       },
+      "hasContractAttribute":{
+         "@id":"https://w3id.org/def/SolidityOntology#hasContractAttribute",
+         "@type":"@id",
+         "@context":{
+            "attributeName":{
+               "@id":"https://w3id.org/def/SolidityOntology#attributeName",
+               "@type":"http://www.w3.org/2001/XMLSchema#string"
+            },
+            "isInmutable":{
+               "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+               "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "hasAttributeValue":{
+               "@id":"https://w3id.org/def/SolidityOntology#hasAttributeValue",
+               "@type":"@id",
+               "@context":{
+                  "isConstant":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isConstant",
+                     "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+                  }
+               }
+            },
+            "hasAttributeVisibility":{
+               "@id":"https://w3id.org/def/SolidityOntology#hasAttributeVisibility",
+                "@type":"@id"
+            }
+         },
+         "nonConstantAttributeSpecification":"https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification",
+         "constantAttributeSpecification":"https://w3id.org/def/SolidityOntology#ContractAttributeSpecification",
+         "public":"https://w3id.org/def/SolidityOntology#Public",
+         "private":"https://w3id.org/def/SolidityOntology#Private",
+         "internal":"https://w3id.org/def/SolidityOntology#Internal",
+         "external":"https://w3id.org/def/SolidityOntology#External"
+      },
       "hasImplementationStructType":{
          "@id":"https://w3id.org/def/SolidityOntology#hasImplementationStructType",
          "@type":"@id",
@@ -315,14 +349,54 @@
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterPosition",
                      "@type":"http://www.w3.org/2001/XMLSchema#short"
                   },
-                  "isInmutable":{
-                     "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
-                     "@type":"http://www.w3.org/2001/XMLSchema#boolean"
-                  },
                   "hasParameterName":{
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterName",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
-                  }
+                  },
+                  "hasParameterType":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterType",
+                     "@type":"@id",
+                     "@context":{
+                        "hasType":{
+                           "@id":"https://w3id.org/def/SolidityOntology#hasType",
+                           "@type":"@id",
+                           "@context":{
+                              "memory":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#memory",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "index":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#index",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "lenght":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#lenght",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              }
+                           }
+                        },
+                        "memory":{
+                           "@id":"https://w3id.org/def/SolidityOntology#memory",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        },
+                        "index":{
+                           "@id":"https://w3id.org/def/SolidityOntology#index",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        },
+                        "lenght":{
+                           "@id":"https://w3id.org/def/SolidityOntology#lenght",
+                           "@type":"http://www.w3.org/2001/XMLSchema#short"
+                        }
+                     }
+                  },
+                  "ArrayType":"https://w3id.org/def/SolidityOntology#ArrayType",
+                  "string":"https://w3id.org/def/SolidityOntology#String",
+                  "bool":"https://w3id.org/def/SolidityOntology#Bool",
+                  "address":"https://w3id.org/def/SolidityOntology#Addres",
+                  "int":"https://w3id.org/def/SolidityOntology#Int",
+                  "bytes":"https://w3id.org/def/SolidityOntology#Bytes",
+                  "uint":"https://w3id.org/def/SolidityOntology#Uint",
+                  "enum":"https://w3id.org/def/SolidityOntology#EnumType"
                }
             }
          }
