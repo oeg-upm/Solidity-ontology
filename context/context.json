@@ -147,6 +147,26 @@
                   "isConstant":{
                      "@id":"https://w3id.org/def/SolidityOntology#isConstant",
                      "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+                  },
+                  "simpleString":{
+                     "@id":"https://w3id.org/def/SolidityOntology#simpleString",
+                     "@type":"http://www.w3.org/2001/XMLSchema#string"
+                  },
+                  "simpleBool":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isConstant",
+                     "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+                  },
+                  "simpleInt":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isConstant",
+                     "@type":"http://www.w3.org/2001/XMLSchema#string"
+                  },
+                  "simpleBytes":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isConstant",
+                     "@type":"http://www.w3.org/2001/XMLSchema#string"
+                  },
+                  "simpleGeneric":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isConstant",
+                     "@type":"http://www.w3.org/2001/XMLSchema#literal"
                   }
                }
             },
@@ -157,6 +177,44 @@
                   "memory":{
                      "@id":"https://w3id.org/def/SolidityOntology#isConstant",
                      "@type":"http://www.w3.org/2001/XMLSchema#short"
+                  },
+                  "hasNonConstantMapType":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasNonConstantMapType",
+                     "@type":"@id",
+                     "@context":{
+                        "hasKeyMap":{
+                           "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                           "@type":"@vocab"
+                        },
+                        "hasValueMap":{
+                           "@id":"https://w3id.org/def/SolidityOntology#hasNonConstantType",
+                           "@type":"@vocab"
+                        }
+                     }
+                  },
+                  "hasNonConstantArrayType":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasNonConstantMapType",
+                     "@type":"@id",
+                     "@context":{
+                        "hasArrayDimension":{
+                           "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                           "@type":"@id",
+                           "@context":{
+                              "index":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "lenght":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#hasNonConstantType",
+                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
+                              },
+                              "hasType":{
+                                 "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                                 "@type":"@vocab"
+                              }
+                           }
+                        }
+                     }
                   }
                }
             },
