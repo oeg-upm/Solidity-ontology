@@ -307,21 +307,36 @@
                      "@id":"https://w3id.org/def/SolidityOntology#isDefinedAs",
                      "@type":"@id",
                      "@context":{
-                        "modifierCode":{
-                           "@id":"https://w3id.org/def/SolidityOntology#modifierCode",
-                           "@type":"http://www.w3.org/2001/XMLSchema#string"
-                        },
                         "modifierName":{
                            "@id":"https://w3id.org/def/SolidityOntology#modifierName",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
-                        }
+                        },
+                        "hasModifierBehaviour":{
+                           "@id":"https://w3id.org/def/SolidityOntology#isDefinedAs",
+                           "@type":"@vocab"
+                        },
+                        "pure":"https://w3id.org/def/SolidityOntology#Pure",
+                        "view":"https://w3id.org/def/SolidityOntology#View",
+                        "payable":"https://w3id.org/def/SolidityOntology#Payable",
+                        "virtual":"https://w3id.org/def/SolidityOntology#Virtual",
+                        "override":"https://w3id.org/def/SolidityOntology#Override"
                      }
-                  }
+                  },
+                  "hasFunctionVisibilty":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isDefinedAs",
+                     "@type":"@vocab"
+                  },
+                  "public":"https://w3id.org/def/SolidityOntology#Public",
+                  "private":"https://w3id.org/def/SolidityOntology#Private",
+                  "internal":"https://w3id.org/def/SolidityOntology#Internal",
+                  "external":"https://w3id.org/def/SolidityOntology#External"
                }
             },
             "pure":"https://w3id.org/def/SolidityOntology#Pure",
             "view":"https://w3id.org/def/SolidityOntology#View",
             "payable":"https://w3id.org/def/SolidityOntology#Payable",
+            "virtual":"https://w3id.org/def/SolidityOntology#Virtual",
+            "override":"https://w3id.org/def/SolidityOntology#Override",
             "hasFunctionArguments":{
                "@id":"https://w3id.org/def/SolidityOntology#hasFunctionArguments",
                "@type":"@id",
@@ -337,7 +352,18 @@
                   "hasParameterName":{
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterName",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
-                  }
+                  },
+                  "hasParameterType":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
+                  },
+                  "hasParameterTypeWithDataLocation":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
+                  },
+                  "calldata":"https://w3id.org/def/SolidityOntology#Calldata",
+                  "memory":"https://w3id.org/def/SolidityOntology#Memory",
+                  "storage":"https://w3id.org/def/SolidityOntology#Storage"
                }
             },
             "hasFunctionReturn":{
@@ -355,7 +381,18 @@
                   "hasParameterName":{
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterName",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
-                  }
+                  },
+                  "hasParameterType":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
+                  },
+                  "hasParameterTypeWithDataLocation":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
+                  },
+                  "calldata":"https://w3id.org/def/SolidityOntology#Calldata",
+                  "memory":"https://w3id.org/def/SolidityOntology#Memory",
+                  "storage":"https://w3id.org/def/SolidityOntology#Storage"
                }
             },
             "functionName":{

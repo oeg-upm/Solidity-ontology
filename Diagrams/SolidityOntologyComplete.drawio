@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-11-28T00:34:28.501Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="4ubSzV4-nmfi2inAv2_g" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-11-28T19:25:41.150Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="7sGwuGqT5ErWi4W-MIK5" version="22.1.2" type="device">
   <diagram name="Página-1" id="pJHk1jmKi2Voto7qG9wJ">
-    <mxGraphModel dx="3659" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4537" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,7 +33,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmZF7T8KRYOrzVGl7_Tg-7" value="&lt;div&gt;&lt;b&gt;sol&lt;/b&gt;:&amp;nbsp;&amp;lt;https://w3id.org/def/SolidityOntology/&amp;gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+        <mxCell id="bmZF7T8KRYOrzVGl7_Tg-7" value="&lt;div&gt;&lt;b&gt;sol&lt;/b&gt;:&amp;nbsp;&amp;lt;https://w3id.org/def/SolidityOntology#&amp;gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
           <mxGeometry x="453" y="2940" width="290" height="90" as="geometry" />
         </mxCell>
         <mxCell id="bmZF7T8KRYOrzVGl7_Tg-8" value="sol:contractName: string&lt;br&gt;sol:version: string" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="1" vertex="1">
@@ -1625,6 +1625,24 @@
         </mxCell>
         <mxCell id="qqJuGU7iJpzgTH4QgBaA-4" value="sol:importName: string&lt;br&gt;sol:importFrom: string" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="1" vertex="1">
           <mxGeometry x="-115" y="314" width="172" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ueeNUcTvmL_nMMkYw8yx-1" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=8;arcSize=0;rounded=0;entryX=0.9;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NvWkWuXcyiQm78Mj__-v-59" target="7H-r3v3xN0h7ExLqmK3x-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="376" y="976" as="sourcePoint" />
+            <mxPoint x="246" y="1120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="1120" />
+              <mxPoint x="200" y="1120" />
+              <mxPoint x="200" y="1200" />
+              <mxPoint x="200" y="1370" />
+              <mxPoint x="-246" y="1370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ueeNUcTvmL_nMMkYw8yx-2" value="sol:hasFunctionVisibility" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" vertex="1" connectable="0" parent="ueeNUcTvmL_nMMkYw8yx-1">
+          <mxGeometry x="-0.1269" relative="1" as="geometry">
+            <mxPoint x="40" y="-249" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
