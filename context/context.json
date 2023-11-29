@@ -76,6 +76,26 @@
             }
          }
       },
+      "hasContractFallback":{
+         "@id":"https://w3id.org/def/SolidityOntology#hasContractFallback",
+         "@type":"@id",
+         "@context":{
+            "fallbackCode":{
+               "@id":"https://w3id.org/def/SolidityOntology#fallbackCode",
+               "@type":"http://www.w3.org/2001/XMLSchema#string"
+            }
+         }
+      },
+      "hasContractReceive":{
+         "@id":"https://w3id.org/def/SolidityOntology#hasContractReceive",
+         "@type":"@id",
+         "@context":{
+            "receiveCode":{
+               "@id":"https://w3id.org/def/SolidityOntology#receiveCode",
+               "@type":"http://www.w3.org/2001/XMLSchema#string"
+            }
+         }
+      },
       "hasInterface":{
          "@id":"https://w3id.org/def/SolidityOntology#hasInterface",
          "@type":"@id",
