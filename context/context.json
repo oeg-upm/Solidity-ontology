@@ -505,46 +505,25 @@
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterPosition",
                      "@type":"http://www.w3.org/2001/XMLSchema#short"
                   },
+                  "isInmutable":{
+                     "@id":"https://w3id.org/def/SolidityOntology#isInmutable",
+                     "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+                  },
                   "hasParameterName":{
                      "@id":"https://w3id.org/def/SolidityOntology#hasParameterName",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasParameterType":{
-                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterType",
-                     "@type":"@id",
-                     "@context":{
-                        "hasType":{
-                           "@id":"https://w3id.org/def/SolidityOntology#hasType",
-                           "@type":"@id",
-                           "@context":{
-                              "memory":{
-                                 "@id":"https://w3id.org/def/SolidityOntology#memory",
-                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
-                              },
-                              "index":{
-                                 "@id":"https://w3id.org/def/SolidityOntology#index",
-                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
-                              },
-                              "lenght":{
-                                 "@id":"https://w3id.org/def/SolidityOntology#lenght",
-                                 "@type":"http://www.w3.org/2001/XMLSchema#short"
-                              }
-                           }
-                        },
-                        "memory":{
-                           "@id":"https://w3id.org/def/SolidityOntology#memory",
-                           "@type":"http://www.w3.org/2001/XMLSchema#short"
-                        },
-                        "index":{
-                           "@id":"https://w3id.org/def/SolidityOntology#index",
-                           "@type":"http://www.w3.org/2001/XMLSchema#short"
-                        },
-                        "lenght":{
-                           "@id":"https://w3id.org/def/SolidityOntology#lenght",
-                           "@type":"http://www.w3.org/2001/XMLSchema#short"
-                        }
-                     }
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
                   },
+                  "hasParameterTypeWithDataLocation":{
+                     "@id":"https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+                     "@type":"@vocab"
+                  },
+                  "calldata":"https://w3id.org/def/SolidityOntology#Calldata",
+                  "memory":"https://w3id.org/def/SolidityOntology#Memory",
+                  "storage":"https://w3id.org/def/SolidityOntology#Storage",
                   "ArrayType":"https://w3id.org/def/SolidityOntology#ArrayType",
                   "string":"https://w3id.org/def/SolidityOntology#String",
                   "bool":"https://w3id.org/def/SolidityOntology#Bool",
