@@ -14,7 +14,7 @@
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#",
+  "@id" : "https://w3id.org/def/Solidity#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Andrea Cimmino"
@@ -39,593 +39,593 @@
     "@id" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Abstract",
+  "@id" : "https://w3id.org/def/Solidity#Abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Abstract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Address",
+  "@id" : "https://w3id.org/def/Solidity#Address",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ElementaryType"
+    "@id" : "https://w3id.org/def/Solidity#ElementaryType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ArrayAttributeSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ArrayAttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Array Attribute Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ArrayDimension",
+  "@id" : "https://w3id.org/def/Solidity#ArrayDimension",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Array Dimension"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ArrayType",
+  "@id" : "https://w3id.org/def/Solidity#ArrayType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Array Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ArrayValue",
+  "@id" : "https://w3id.org/def/Solidity#ArrayValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Array Value"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ArrayValueSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ArrayValueSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Array Value Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification",
+  "@id" : "https://w3id.org/def/Solidity#AttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Attribute Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Bool",
+  "@id" : "https://w3id.org/def/Solidity#Bool",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bool"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ElementaryType"
+    "@id" : "https://w3id.org/def/Solidity#ElementaryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#BoolValue",
+  "@id" : "https://w3id.org/def/Solidity#BoolValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bool Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Bytes",
+  "@id" : "https://w3id.org/def/Solidity#Bytes",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bytes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#SingleMemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#BytesValue",
+  "@id" : "https://w3id.org/def/Solidity#BytesValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bytes Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Calldata",
+  "@id" : "https://w3id.org/def/Solidity#Calldata",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DataLocation"
+    "@id" : "https://w3id.org/def/Solidity#DataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#CodelessFunctionSpecification",
+  "@id" : "https://w3id.org/def/Solidity#CodelessFunctionSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Codeless Function Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ConstantType",
+  "@id" : "https://w3id.org/def/Solidity#ConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Constant Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Type"
+    "@id" : "https://w3id.org/def/Solidity#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ConstructorSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ConstructorSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Constructor Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Contract",
+  "@id" : "https://w3id.org/def/Solidity#Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ContractAttributeSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ContractAttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Contract Attribute Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#AttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#DataLocation",
+  "@id" : "https://w3id.org/def/Solidity#DataLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Data Location"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#DualMemoryType",
+  "@id" : "https://w3id.org/def/Solidity#DualMemoryType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dual Memory Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MemoryType"
+    "@id" : "https://w3id.org/def/Solidity#MemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ElementaryType",
+  "@id" : "https://w3id.org/def/Solidity#ElementaryType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Elementary Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+    "@id" : "https://w3id.org/def/Solidity#MapKeyType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#EnumType",
+  "@id" : "https://w3id.org/def/Solidity#EnumType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Enum Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstantType"
+    "@id" : "https://w3id.org/def/Solidity#ConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+    "@id" : "https://w3id.org/def/Solidity#MapKeyType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#EventSpecification",
+  "@id" : "https://w3id.org/def/Solidity#EventSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Event Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#External",
+  "@id" : "https://w3id.org/def/Solidity#External",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#FRBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "F R Behaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FallbackSpecification",
+  "@id" : "https://w3id.org/def/Solidity#FallbackSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Fallback Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FixedMxN",
+  "@id" : "https://w3id.org/def/Solidity#FixedMxN",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Fixed Mx N"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DualMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#DualMemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FixedValue",
+  "@id" : "https://w3id.org/def/Solidity#FixedValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Fixed Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Function Behaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification",
+  "@id" : "https://w3id.org/def/Solidity#FunctionSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Function Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#GenericValue",
+  "@id" : "https://w3id.org/def/Solidity#GenericValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Generic Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Import",
+  "@id" : "https://w3id.org/def/Solidity#Import",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Import"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Int",
+  "@id" : "https://w3id.org/def/Solidity#Int",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Int"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#SingleMemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#IntValue",
+  "@id" : "https://w3id.org/def/Solidity#IntValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Int Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Interface",
+  "@id" : "https://w3id.org/def/Solidity#Interface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Internal",
+  "@id" : "https://w3id.org/def/Solidity#Internal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Library",
+  "@id" : "https://w3id.org/def/Solidity#Library",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#MapAttributeSpecification",
+  "@id" : "https://w3id.org/def/Solidity#MapAttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Map Attribute Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType",
+  "@id" : "https://w3id.org/def/Solidity#MapKeyType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Map Key Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#Type"
+    "@id" : "https://w3id.org/def/Solidity#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#MapType",
+  "@id" : "https://w3id.org/def/Solidity#MapType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Map Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Memory",
+  "@id" : "https://w3id.org/def/Solidity#Memory",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DataLocation"
+    "@id" : "https://w3id.org/def/Solidity#DataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#MemoryType",
+  "@id" : "https://w3id.org/def/Solidity#MemoryType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Memory Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+    "@id" : "https://w3id.org/def/Solidity#MapKeyType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ModifierBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#ModifierBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Modifier Behaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ModifierOverrideSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Modifier Override Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideTipe",
+  "@id" : "https://w3id.org/def/Solidity#ModifierOverrideTipe",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Modifier Override Tipe"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ModifierSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Modifier Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification",
+  "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Non Constant Attribute Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#AttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType",
+  "@id" : "https://w3id.org/def/Solidity#NonConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Non Constant Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Type"
+    "@id" : "https://w3id.org/def/Solidity#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Override",
+  "@id" : "https://w3id.org/def/Solidity#Override",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#ModifierBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ParameterType",
+  "@id" : "https://w3id.org/def/Solidity#ParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Parameter Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation",
+  "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Parameter Type With Data Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Parameter Variable Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Payable",
+  "@id" : "https://w3id.org/def/Solidity#Payable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Private",
+  "@id" : "https://w3id.org/def/Solidity#Private",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Public",
+  "@id" : "https://w3id.org/def/Solidity#Public",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Pure",
+  "@id" : "https://w3id.org/def/Solidity#Pure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ReceiveSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ReceiveSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Receive Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification",
+  "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Simple Value Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType",
+  "@id" : "https://w3id.org/def/Solidity#SingleMemoryType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Single Memory Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MemoryType"
+    "@id" : "https://w3id.org/def/Solidity#MemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#SmartContract",
+  "@id" : "https://w3id.org/def/Solidity#SmartContract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Smart Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+    "@id" : "https://w3id.org/def/Solidity#MapKeyType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
+    "@id" : "https://w3id.org/def/Solidity#ModifierOverrideTipe"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Storage",
+  "@id" : "https://w3id.org/def/Solidity#Storage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DataLocation"
+    "@id" : "https://w3id.org/def/Solidity#DataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#String",
+  "@id" : "https://w3id.org/def/Solidity#String",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "String"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ElementaryType"
+    "@id" : "https://w3id.org/def/Solidity#ElementaryType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#StringValue",
+  "@id" : "https://w3id.org/def/Solidity#StringValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "String Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#StructType",
+  "@id" : "https://w3id.org/def/Solidity#StructType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Struct Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstantType"
+    "@id" : "https://w3id.org/def/Solidity#ConstantType"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Type",
+  "@id" : "https://w3id.org/def/Solidity#Type",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#UfixedMxN",
+  "@id" : "https://w3id.org/def/Solidity#UfixedMxN",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Ufixed Mx N"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DualMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#DualMemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Uint",
+  "@id" : "https://w3id.org/def/Solidity#Uint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Uint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#SingleMemoryType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#UsingForDirective",
+  "@id" : "https://w3id.org/def/Solidity#UsingForDirective",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Using For Directive"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ValueSpecification",
+  "@id" : "https://w3id.org/def/Solidity#ValueSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Value Specification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#View",
+  "@id" : "https://w3id.org/def/Solidity#View",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Virtual",
+  "@id" : "https://w3id.org/def/Solidity#Virtual",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#ModifierBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Visibility",
+  "@id" : "https://w3id.org/def/Solidity#Visibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#attributeName",
+  "@id" : "https://w3id.org/def/Solidity#attributeName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#AttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "attribute name"
@@ -634,10 +634,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#codelessFunctionName",
+  "@id" : "https://w3id.org/def/Solidity#codelessFunctionName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#CodelessFunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#CodelessFunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "codeless function name"
@@ -646,10 +646,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#constructorCode",
+  "@id" : "https://w3id.org/def/Solidity#constructorCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstructorSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ConstructorSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "constructor code"
@@ -658,10 +658,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#contractName",
+  "@id" : "https://w3id.org/def/Solidity#contractName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "contract name"
@@ -670,10 +670,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#eventName",
+  "@id" : "https://w3id.org/def/Solidity#eventName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#EventSpecification"
+    "@id" : "https://w3id.org/def/Solidity#EventSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "event name"
@@ -682,10 +682,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#fallbackCode",
+  "@id" : "https://w3id.org/def/Solidity#fallbackCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FallbackSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FallbackSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "fallback code"
@@ -694,10 +694,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#functionCode",
+  "@id" : "https://w3id.org/def/Solidity#functionCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "function code"
@@ -706,10 +706,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#functionName",
+  "@id" : "https://w3id.org/def/Solidity#functionName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "function name"
@@ -718,310 +718,310 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasArrayDimension",
+  "@id" : "https://w3id.org/def/Solidity#hasArrayDimension",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayType"
+    "@id" : "https://w3id.org/def/Solidity#ArrayType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has array dimension"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayDimension"
+    "@id" : "https://w3id.org/def/Solidity#ArrayDimension"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasArrayValue",
+  "@id" : "https://w3id.org/def/Solidity#hasArrayValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ArrayValueSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has array value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayValue"
+    "@id" : "https://w3id.org/def/Solidity#ArrayValue"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasAttributeValue",
+  "@id" : "https://w3id.org/def/Solidity#hasAttributeValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has attribute value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasAttributeVisibility",
+  "@id" : "https://w3id.org/def/Solidity#hasAttributeVisibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has attribute visibility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasConstantAttribute",
+  "@id" : "https://w3id.org/def/Solidity#hasConstantAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Library"
+    "@id" : "https://w3id.org/def/Solidity#Library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has constant attribute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ContractAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasConstantType",
+  "@id" : "https://w3id.org/def/Solidity#hasConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ContractAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has constant type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstantType"
+    "@id" : "https://w3id.org/def/Solidity#ConstantType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasConstructorArguments",
+  "@id" : "https://w3id.org/def/Solidity#hasConstructorArguments",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstructorSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ConstructorSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has constructor arguments"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractAbstractFunction",
+  "@id" : "https://w3id.org/def/Solidity#hasContractAbstractFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Abstract"
+    "@id" : "https://w3id.org/def/Solidity#Abstract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract abstract function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#CodelessFunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#CodelessFunctionSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractAttribute",
+  "@id" : "https://w3id.org/def/Solidity#hasContractAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract attribute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#AttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractConstructor",
+  "@id" : "https://w3id.org/def/Solidity#hasContractConstructor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract constructor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ConstructorSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ConstructorSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractFallback",
+  "@id" : "https://w3id.org/def/Solidity#hasContractFallback",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract fallback"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FallbackSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FallbackSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractReceive",
+  "@id" : "https://w3id.org/def/Solidity#hasContractReceive",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract receive"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ReceiveSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ReceiveSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasContractUsingForDirective",
+  "@id" : "https://w3id.org/def/Solidity#hasContractUsingForDirective",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract using for directive"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#UsingForDirective"
+    "@id" : "https://w3id.org/def/Solidity#UsingForDirective"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasEventArguments",
+  "@id" : "https://w3id.org/def/Solidity#hasEventArguments",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#EventSpecification"
+    "@id" : "https://w3id.org/def/Solidity#EventSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event arguments"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFallbackBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#hasFallbackBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ReceiveSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ReceiveSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has fallback behaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFallbackVisibility",
+  "@id" : "https://w3id.org/def/Solidity#hasFallbackVisibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ReceiveSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ReceiveSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has fallback visibility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFunctionArguments",
+  "@id" : "https://w3id.org/def/Solidity#hasFunctionArguments",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has function arguments"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFunctionBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#hasFunctionBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has function behaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFunctionReturn",
+  "@id" : "https://w3id.org/def/Solidity#hasFunctionReturn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has function return"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasFunctionVisibilty",
+  "@id" : "https://w3id.org/def/Solidity#hasFunctionVisibilty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Function Visibilty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
+    "@id" : "https://w3id.org/def/Solidity#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationEvent",
+  "@id" : "https://w3id.org/def/Solidity#hasImplementationEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#EventSpecification"
+    "@id" : "https://w3id.org/def/Solidity#EventSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationFunction",
+  "@id" : "https://w3id.org/def/Solidity#hasImplementationFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FunctionSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationModifier",
+  "@id" : "https://w3id.org/def/Solidity#hasImplementationModifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation modifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationStructType",
+  "@id" : "https://w3id.org/def/Solidity#hasImplementationStructType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation struct type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#StructType"
+    "@id" : "https://w3id.org/def/Solidity#StructType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasImport",
+  "@id" : "https://w3id.org/def/Solidity#hasImport",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Import"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Import"
+    "@id" : "https://w3id.org/def/Solidity#Import"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasIndex",
+  "@id" : "https://w3id.org/def/Solidity#hasIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayValue"
+    "@id" : "https://w3id.org/def/Solidity#ArrayValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has index"
@@ -1030,166 +1030,166 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasIndexArrayValue",
+  "@id" : "https://w3id.org/def/Solidity#hasIndexArrayValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayValue"
+    "@id" : "https://w3id.org/def/Solidity#ArrayValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has index array value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ArrayValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasInheritance",
+  "@id" : "https://w3id.org/def/Solidity#hasInheritance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Inheritance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasInterface",
+  "@id" : "https://w3id.org/def/Solidity#hasInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Interface"
+    "@id" : "https://w3id.org/def/Solidity#Interface"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasInterfaceFunction",
+  "@id" : "https://w3id.org/def/Solidity#hasInterfaceFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Interface"
+    "@id" : "https://w3id.org/def/Solidity#Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has interface function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#CodelessFunctionSpecification"
+    "@id" : "https://w3id.org/def/Solidity#CodelessFunctionSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasKeyMap",
+  "@id" : "https://w3id.org/def/Solidity#hasKeyMap",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapType"
+    "@id" : "https://w3id.org/def/Solidity#MapType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has key map"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+    "@id" : "https://w3id.org/def/Solidity#MapKeyType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasModifierArguments",
+  "@id" : "https://w3id.org/def/Solidity#hasModifierArguments",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has modifier arguments"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasModifierBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#hasModifierBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has modifier behaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#ModifierBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasModifierOverrideType",
+  "@id" : "https://w3id.org/def/Solidity#hasModifierOverrideType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierOverrideSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has modifier override type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
+    "@id" : "https://w3id.org/def/Solidity#ModifierOverrideTipe"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasNonConstantArrayType",
+  "@id" : "https://w3id.org/def/Solidity#hasNonConstantArrayType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ArrayAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has non constant array type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayType"
+    "@id" : "https://w3id.org/def/Solidity#ArrayType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasNonConstantMapType",
+  "@id" : "https://w3id.org/def/Solidity#hasNonConstantMapType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#MapAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has non constant map type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapType"
+    "@id" : "https://w3id.org/def/Solidity#MapType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasNonConstantStructAttribute",
+  "@id" : "https://w3id.org/def/Solidity#hasNonConstantStructAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#StructType"
+    "@id" : "https://w3id.org/def/Solidity#StructType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has non constant struct attribute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasNonConstantType",
+  "@id" : "https://w3id.org/def/Solidity#hasNonConstantType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has non constant type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasOverrideReturn",
+  "@id" : "https://w3id.org/def/Solidity#hasOverrideReturn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has override return"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierOverrideSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasParameterName",
+  "@id" : "https://w3id.org/def/Solidity#hasParameterName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has parameter name"
@@ -1198,10 +1198,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasParameterPosition",
+  "@id" : "https://w3id.org/def/Solidity#hasParameterPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has parameter position"
@@ -1210,91 +1210,91 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasParameterType",
+  "@id" : "https://w3id.org/def/Solidity#hasParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterVariableSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ParameterVariableSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has parameter type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+    "@id" : "https://w3id.org/def/Solidity#ParameterType"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasParameterTypeWithDataLocation",
+  "@id" : "https://w3id.org/def/Solidity#hasParameterTypeWithDataLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
+    "@id" : "https://w3id.org/def/Solidity#ParameterTypeWithDataLocation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has parameter type with data location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DataLocation"
+    "@id" : "https://w3id.org/def/Solidity#DataLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasReceiveBehaviour",
+  "@id" : "https://w3id.org/def/Solidity#hasReceiveBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FallbackSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FallbackSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has receive behaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasReceiveVisibility",
+  "@id" : "https://w3id.org/def/Solidity#hasReceiveVisibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FallbackSpecification"
+    "@id" : "https://w3id.org/def/Solidity#FallbackSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has receive visibility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FRBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FRBehaviour"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasType",
+  "@id" : "https://w3id.org/def/Solidity#hasType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayType"
+    "@id" : "https://w3id.org/def/Solidity#ArrayType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Type"
+    "@id" : "https://w3id.org/def/Solidity#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#hasValueMap",
+  "@id" : "https://w3id.org/def/Solidity#hasValueMap",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapType"
+    "@id" : "https://w3id.org/def/Solidity#MapType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has value map"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#importFrom",
+  "@id" : "https://w3id.org/def/Solidity#importFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "import From"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#importName",
+  "@id" : "https://w3id.org/def/Solidity#importName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "import Name"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#index",
+  "@id" : "https://w3id.org/def/Solidity#index",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayDimension"
+    "@id" : "https://w3id.org/def/Solidity#ArrayDimension"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "index"
@@ -1303,22 +1303,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isAbstract",
+  "@id" : "https://w3id.org/def/Solidity#isAbstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    "@id" : "https://w3id.org/def/Solidity#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is abstract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Abstract"
+    "@id" : "https://w3id.org/def/Solidity#Abstract"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isAnonymous",
+  "@id" : "https://w3id.org/def/Solidity#isAnonymous",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#EventSpecification"
+    "@id" : "https://w3id.org/def/Solidity#EventSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is anonymous"
@@ -1327,10 +1327,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isConstant",
+  "@id" : "https://w3id.org/def/Solidity#isConstant",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ValueSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ValueSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is constant"
@@ -1339,22 +1339,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isDefinedAs",
+  "@id" : "https://w3id.org/def/Solidity#isDefinedAs",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FunctionBehaviour"
+    "@id" : "https://w3id.org/def/Solidity#FunctionBehaviour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is defined as"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isInmutable",
+  "@id" : "https://w3id.org/def/Solidity#isInmutable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantAttributeSpecification"
+    "@id" : "https://w3id.org/def/Solidity#NonConstantAttributeSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is inmutable"
@@ -1363,22 +1363,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#isUsingLibrary",
+  "@id" : "https://w3id.org/def/Solidity#isUsingLibrary",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#UsingForDirective"
+    "@id" : "https://w3id.org/def/Solidity#UsingForDirective"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is using library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Library"
+    "@id" : "https://w3id.org/def/Solidity#Library"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#lenght",
+  "@id" : "https://w3id.org/def/Solidity#lenght",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ArrayDimension"
+    "@id" : "https://w3id.org/def/Solidity#ArrayDimension"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "lenght"
@@ -1387,10 +1387,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#memory",
+  "@id" : "https://w3id.org/def/Solidity#memory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#SingleMemoryType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "memory"
@@ -1399,10 +1399,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#memoryM",
+  "@id" : "https://w3id.org/def/Solidity#memoryM",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DualMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#DualMemoryType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "memory m"
@@ -1411,10 +1411,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#memoryN",
+  "@id" : "https://w3id.org/def/Solidity#memoryN",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#DualMemoryType"
+    "@id" : "https://w3id.org/def/Solidity#DualMemoryType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "memory n"
@@ -1423,10 +1423,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#modifierCode",
+  "@id" : "https://w3id.org/def/Solidity#modifierCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "modifier code"
@@ -1435,10 +1435,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#modifierName",
+  "@id" : "https://w3id.org/def/Solidity#modifierName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ModifierSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "modifier name"
@@ -1447,10 +1447,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#option",
+  "@id" : "https://w3id.org/def/Solidity#option",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#EnumType"
+    "@id" : "https://w3id.org/def/Solidity#EnumType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "option"
@@ -1459,10 +1459,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#receiveCode",
+  "@id" : "https://w3id.org/def/Solidity#receiveCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ReceiveSpecification"
+    "@id" : "https://w3id.org/def/Solidity#ReceiveSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "receive code"
@@ -1471,10 +1471,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleBool",
+  "@id" : "https://w3id.org/def/Solidity#simpleBool",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#BoolValue"
+    "@id" : "https://w3id.org/def/Solidity#BoolValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple bool"
@@ -1483,10 +1483,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleBytes",
+  "@id" : "https://w3id.org/def/Solidity#simpleBytes",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#BytesValue"
+    "@id" : "https://w3id.org/def/Solidity#BytesValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple bytes"
@@ -1495,10 +1495,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleFixed",
+  "@id" : "https://w3id.org/def/Solidity#simpleFixed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#FixedValue"
+    "@id" : "https://w3id.org/def/Solidity#FixedValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple fixed"
@@ -1507,19 +1507,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleGeneric",
+  "@id" : "https://w3id.org/def/Solidity#simpleGeneric",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#GenericValue"
+    "@id" : "https://w3id.org/def/Solidity#GenericValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple generic"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleInt",
+  "@id" : "https://w3id.org/def/Solidity#simpleInt",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#IntValue"
+    "@id" : "https://w3id.org/def/Solidity#IntValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple int"
@@ -1528,10 +1528,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#simpleString",
+  "@id" : "https://w3id.org/def/Solidity#simpleString",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#StringValue"
+    "@id" : "https://w3id.org/def/Solidity#StringValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "simple string"
@@ -1540,10 +1540,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#usingForName",
+  "@id" : "https://w3id.org/def/Solidity#usingForName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#UsingForDirective"
+    "@id" : "https://w3id.org/def/Solidity#UsingForDirective"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "using for name"
@@ -1552,10 +1552,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#version",
+  "@id" : "https://w3id.org/def/Solidity#version",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+    "@id" : "https://w3id.org/def/Solidity#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "version"
