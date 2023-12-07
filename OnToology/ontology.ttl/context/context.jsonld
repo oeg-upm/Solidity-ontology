@@ -157,6 +157,9 @@
       "@id" : "https://w3id.org/def/SolidityOntology#hasContractFallback",
       "@type" : "@id"
     },
+    "Contract" : {
+      "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+    },
     "GenericValue" : {
       "@id" : "https://w3id.org/def/SolidityOntology#GenericValue"
     },
@@ -195,10 +198,6 @@
     "hasContractUsingForDirective" : {
       "@id" : "https://w3id.org/def/SolidityOntology#hasContractUsingForDirective",
       "@type" : "@id"
-    },
-    "inheritance" : {
-      "@id" : "https://w3id.org/def/SolidityOntology#inheritance",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasNonConstantMapType" : {
       "@id" : "https://w3id.org/def/SolidityOntology#hasNonConstantMapType",
@@ -257,6 +256,10 @@
     "FixedValue" : {
       "@id" : "https://w3id.org/def/SolidityOntology#FixedValue"
     },
+    "hasInheritance" : {
+      "@id" : "https://w3id.org/def/SolidityOntology#hasInheritance",
+      "@type" : "@id"
+    },
     "constructorCode" : {
       "@id" : "https://w3id.org/def/SolidityOntology#constructorCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -275,6 +278,9 @@
     "hasModifierBehaviour" : {
       "@id" : "https://w3id.org/def/SolidityOntology#hasModifierBehaviour",
       "@type" : "@id"
+    },
+    "Library" : {
+      "@id" : "https://w3id.org/def/SolidityOntology#Library"
     },
     "ArrayValueSpecification" : {
       "@id" : "https://w3id.org/def/SolidityOntology#ArrayValueSpecification"
@@ -387,9 +393,6 @@
     "SingleMemoryType" : {
       "@id" : "https://w3id.org/def/SolidityOntology#SingleMemoryType"
     },
-    "Implementation" : {
-      "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
-    },
     "hasModifierOverrideType" : {
       "@id" : "https://w3id.org/def/SolidityOntology#hasModifierOverrideType",
       "@type" : "@id"
@@ -413,8 +416,8 @@
       "@id" : "https://w3id.org/def/SolidityOntology#simpleInt",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "ContractImplementation" : {
-      "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "SmartContract" : {
+      "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
     },
     "hasModifierArguments" : {
       "@id" : "https://w3id.org/def/SolidityOntology#hasModifierArguments",
@@ -438,9 +441,6 @@
     "isUsingLibrary" : {
       "@id" : "https://w3id.org/def/SolidityOntology#isUsingLibrary",
       "@type" : "@id"
-    },
-    "LibraryImplementation" : {
-      "@id" : "https://w3id.org/def/SolidityOntology#LibraryImplementation"
     },
     "EnumType" : {
       "@id" : "https://w3id.org/def/SolidityOntology#EnumType"

@@ -168,6 +168,15 @@
     "@value" : "Constructor Specification"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/SolidityOntology#Contract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/SolidityOntology#ContractAttributeSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -175,15 +184,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SolidityOntology#AttributeSpecification"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Contract Implementation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SolidityOntology#DataLocation",
@@ -292,23 +292,6 @@
     "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#Implementation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Implementation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
-  }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
-  }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
-  }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
-  }, {
-    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/SolidityOntology#Import",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -337,6 +320,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SolidityOntology#Internal",
@@ -345,13 +331,13 @@
     "@id" : "https://w3id.org/def/SolidityOntology#Visibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#LibraryImplementation",
+  "@id" : "https://w3id.org/def/SolidityOntology#Library",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Library Implementation"
+    "@value" : "Library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SolidityOntology#MapAttributeSpecification",
@@ -526,6 +512,23 @@
     "@id" : "https://w3id.org/def/SolidityOntology#MemoryType"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/SolidityOntology#SmartContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smart Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SolidityOntology#MapKeyType"
+  }, {
+    "@id" : "https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
+  }, {
+    "@id" : "https://w3id.org/def/SolidityOntology#NonConstantType"
+  }, {
+    "@id" : "https://w3id.org/def/SolidityOntology#ParameterType"
+  }, {
+    "@id" : "https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/SolidityOntology#Storage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -658,7 +661,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#contractName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "contract name"
@@ -766,7 +769,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasConstantAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#LibraryImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has constant attribute"
@@ -814,7 +817,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasContractAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract attribute"
@@ -826,7 +829,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasContractConstructor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract constructor"
@@ -838,7 +841,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasContractFallback",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract fallback"
@@ -850,7 +853,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasContractReceive",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract receive"
@@ -862,7 +865,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasContractUsingForDirective",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has contract using for directive"
@@ -958,7 +961,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation event"
@@ -970,7 +973,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation function"
@@ -982,7 +985,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationModifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation modifier"
@@ -994,7 +997,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasImplementationStructType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has implementation struct type"
@@ -1006,7 +1009,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#hasImport",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Import"
@@ -1039,10 +1042,22 @@
     "@id" : "https://w3id.org/def/SolidityOntology#ArrayValueSpecification"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/SolidityOntology#hasInheritance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Inheritance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/SolidityOntology#hasInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has interface"
@@ -1288,22 +1303,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#short"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityOntology#inheritance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "inheritance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/SolidityOntology#isAbstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#ContractImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is abstract"
@@ -1369,7 +1372,7 @@
     "@value" : "is using library"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#LibraryImplementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#Library"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SolidityOntology#lenght",
@@ -1552,7 +1555,7 @@
   "@id" : "https://w3id.org/def/SolidityOntology#version",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SolidityOntology#Implementation"
+    "@id" : "https://w3id.org/def/SolidityOntology#SmartContract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "version"
