@@ -331,13 +331,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:Implementation">
+      <node id="nid_base:SmartContract">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="180.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Implementation</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:SmartContract</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -355,7 +355,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasImport11" source="nid_base:Implementation" target="nid_base:Import">
+    <edge id="eid_base:hasImport11" source="nid_base:SmartContract" target="nid_base:Import">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -541,19 +541,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_base:LibraryImplementation">
+      <node id="nid_base:Library">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:LibraryImplementation</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Library</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:isUsingLibrary17" source="nid_base:UsingForDirective" target="nid_base:LibraryImplementation">
+    <edge id="eid_base:isUsingLibrary17" source="nid_base:UsingForDirective" target="nid_base:Library">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -633,7 +633,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasConstantAttribute21" source="nid_base:LibraryImplementation" target="nid_base:ContractAttributeSpecification">
+    <edge id="eid_base:hasConstantAttribute21" source="nid_base:Library" target="nid_base:ContractAttributeSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -644,13 +644,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:ContractImplementation">
+      <node id="nid_base:Contract">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="130.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:ContractImplementation</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Contract</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -668,7 +668,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:isAbstract22" source="nid_base:ContractImplementation" target="nid_base:Abstract">
+    <edge id="eid_base:isAbstract22" source="nid_base:Contract" target="nid_base:Abstract">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -679,7 +679,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasImplementationEvent23" source="nid_base:Implementation" target="nid_base:EventSpecification">
+    <edge id="eid_base:hasImplementationEvent23" source="nid_base:SmartContract" target="nid_base:EventSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -804,7 +804,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasContractAttribute30" source="nid_base:ContractImplementation" target="nid_base:AttributeSpecification">
+    <edge id="eid_base:hasContractAttribute30" source="nid_base:Contract" target="nid_base:AttributeSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -838,7 +838,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasInterface32" source="nid_base:Implementation" target="nid_base:Interface">
+    <edge id="eid_base:hasInheritance32" source="nid_base:Contract" target="nid_base:Contract">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:hasInheritance</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_base:hasInterface33" source="nid_base:SmartContract" target="nid_base:Interface">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -849,7 +860,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasFallbackVisibility33" source="nid_base:ReceiveSpecification" target="nid_base:FRBehaviour">
+    <edge id="eid_base:hasFallbackVisibility34" source="nid_base:ReceiveSpecification" target="nid_base:FRBehaviour">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -860,7 +871,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:modifierName34" source="nid_base:ModifierSpecification" target="nid_xsd:string">
+    <edge id="eid_base:modifierName35" source="nid_base:ModifierSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -883,7 +894,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasFunctionVisibilty35" source="nid_base:FunctionBehaviour" target="nid_base:Visibility">
+    <edge id="eid_base:hasFunctionVisibilty36" source="nid_base:FunctionBehaviour" target="nid_base:Visibility">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -906,7 +917,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:simpleFixed36" source="nid_base:FixedValue" target="nid_xsd:string">
+    <edge id="eid_base:simpleFixed37" source="nid_base:FixedValue" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -929,7 +940,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasIndexArrayValue37" source="nid_base:ArrayValue" target="nid_base:ArrayValueSpecification">
+    <edge id="eid_base:hasIndexArrayValue38" source="nid_base:ArrayValue" target="nid_base:ArrayValueSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -940,7 +951,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:receiveCode38" source="nid_base:ReceiveSpecification" target="nid_xsd:string">
+    <edge id="eid_base:receiveCode39" source="nid_base:ReceiveSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -951,7 +962,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasContractReceive39" source="nid_base:ContractImplementation" target="nid_base:ReceiveSpecification">
+    <edge id="eid_base:hasContractReceive40" source="nid_base:Contract" target="nid_base:ReceiveSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -962,7 +973,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasContractFallback40" source="nid_base:ContractImplementation" target="nid_base:FallbackSpecification">
+    <edge id="eid_base:hasContractFallback41" source="nid_base:Contract" target="nid_base:FallbackSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -973,7 +984,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:lenght41" source="nid_base:ArrayDimension" target="nid_xsd:short">
+    <edge id="eid_base:lenght42" source="nid_base:ArrayDimension" target="nid_xsd:short">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -996,7 +1007,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasNonConstantMapType42" source="nid_base:MapAttributeSpecification" target="nid_base:MapType">
+    <edge id="eid_base:hasNonConstantMapType43" source="nid_base:MapAttributeSpecification" target="nid_base:MapType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1007,7 +1018,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:contractName43" source="nid_base:Implementation" target="nid_xsd:string">
+    <edge id="eid_base:contractName44" source="nid_base:SmartContract" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1018,7 +1029,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasParameterName44" source="nid_base:ParameterVariableSpecification" target="nid_xsd:string">
+    <edge id="eid_base:hasParameterName45" source="nid_base:ParameterVariableSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1041,7 +1052,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasNonConstantType45" source="nid_base:NonConstantAttributeSpecification" target="nid_base:NonConstantType">
+    <edge id="eid_base:hasNonConstantType46" source="nid_base:NonConstantAttributeSpecification" target="nid_base:NonConstantType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1064,7 +1075,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasConstructorArguments46" source="nid_base:ConstructorSpecification" target="nid_base:ParameterVariableSpecification">
+    <edge id="eid_base:hasConstructorArguments47" source="nid_base:ConstructorSpecification" target="nid_base:ParameterVariableSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1087,7 +1098,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasNonConstantArrayType47" source="nid_base:ArrayAttributeSpecification" target="nid_base:ArrayType">
+    <edge id="eid_base:hasNonConstantArrayType48" source="nid_base:ArrayAttributeSpecification" target="nid_base:ArrayType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1122,7 +1133,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasParameterTypeWithDataLocation48" source="nid_base:ParameterTypeWithDataLocation" target="nid_base:DataLocation">
+    <edge id="eid_base:hasParameterTypeWithDataLocation49" source="nid_base:ParameterTypeWithDataLocation" target="nid_base:DataLocation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1133,7 +1144,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasEventArguments49" source="nid_base:EventSpecification" target="nid_base:ParameterVariableSpecification">
+    <edge id="eid_base:hasEventArguments50" source="nid_base:EventSpecification" target="nid_base:ParameterVariableSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1144,7 +1155,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:eventName50" source="nid_base:EventSpecification" target="nid_xsd:string">
+    <edge id="eid_base:eventName51" source="nid_base:EventSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1155,7 +1166,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:constructorCode51" source="nid_base:ConstructorSpecification" target="nid_xsd:string">
+    <edge id="eid_base:constructorCode52" source="nid_base:ConstructorSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1178,7 +1189,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasNonConstantStructAttribute52" source="nid_base:StructType" target="nid_base:NonConstantAttributeSpecification">
+    <edge id="eid_base:hasNonConstantStructAttribute53" source="nid_base:StructType" target="nid_base:NonConstantAttributeSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1189,7 +1200,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasModifierArguments53" source="nid_base:ModifierSpecification" target="nid_base:ParameterVariableSpecification">
+    <edge id="eid_base:hasModifierArguments54" source="nid_base:ModifierSpecification" target="nid_base:ParameterVariableSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1200,7 +1211,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasParameterPosition54" source="nid_base:ParameterVariableSpecification" target="nid_xsd:short">
+    <edge id="eid_base:hasParameterPosition55" source="nid_base:ParameterVariableSpecification" target="nid_xsd:short">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1223,7 +1234,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasModifierBehaviour55" source="nid_base:ModifierSpecification" target="nid_base:ModifierBehaviour">
+    <edge id="eid_base:hasModifierBehaviour56" source="nid_base:ModifierSpecification" target="nid_base:ModifierBehaviour">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1234,7 +1245,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:fallbackCode56" source="nid_base:FallbackSpecification" target="nid_xsd:string">
+    <edge id="eid_base:fallbackCode57" source="nid_base:FallbackSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1245,7 +1256,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:modifierCode57" source="nid_base:ModifierSpecification" target="nid_xsd:string">
+    <edge id="eid_base:modifierCode58" source="nid_base:ModifierSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1256,7 +1267,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasContractUsingForDirective58" source="nid_base:ContractImplementation" target="nid_base:UsingForDirective">
+    <edge id="eid_base:hasContractUsingForDirective59" source="nid_base:Contract" target="nid_base:UsingForDirective">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1279,7 +1290,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasAttributeValue59" source="nid_base:NonConstantAttributeSpecification" target="nid_base:ValueSpecification">
+    <edge id="eid_base:hasAttributeValue60" source="nid_base:NonConstantAttributeSpecification" target="nid_base:ValueSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1290,7 +1301,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasFunctionArguments60" source="nid_base:FunctionSpecification" target="nid_base:ParameterVariableSpecification">
+    <edge id="eid_base:hasFunctionArguments61" source="nid_base:FunctionSpecification" target="nid_base:ParameterVariableSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1301,7 +1312,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:usingForName61" source="nid_base:UsingForDirective" target="nid_xsd:string">
+    <edge id="eid_base:usingForName62" source="nid_base:UsingForDirective" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1324,7 +1335,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:simpleString62" source="nid_base:StringValue" target="nid_xsd:string">
+    <edge id="eid_base:simpleString63" source="nid_base:StringValue" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1347,7 +1358,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:simpleGeneric63" source="nid_base:GenericValue" target="nid_owl:Thing">
+    <edge id="eid_base:simpleGeneric64" source="nid_base:GenericValue" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1358,7 +1369,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasImplementationFunction64" source="nid_base:Implementation" target="nid_base:FunctionSpecification">
+    <edge id="eid_base:hasImplementationFunction65" source="nid_base:SmartContract" target="nid_base:FunctionSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1369,7 +1380,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:functionCode65" source="nid_base:FunctionSpecification" target="nid_xsd:string">
+    <edge id="eid_base:functionCode66" source="nid_base:FunctionSpecification" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1380,7 +1391,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasFunctionBehaviour66" source="nid_base:FunctionSpecification" target="nid_base:FunctionBehaviour">
+    <edge id="eid_base:hasFunctionBehaviour67" source="nid_base:FunctionSpecification" target="nid_base:FunctionBehaviour">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1391,18 +1402,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:inheritance67" source="nid_base:ContractImplementation" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:inheritance</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_base:version68" source="nid_base:Implementation" target="nid_xsd:string">
+    <edge id="eid_base:version68" source="nid_base:SmartContract" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1436,7 +1436,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasImplementationModifier70" source="nid_base:Implementation" target="nid_base:ModifierSpecification">
+    <edge id="eid_base:hasImplementationModifier70" source="nid_base:SmartContract" target="nid_base:ModifierSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1469,7 +1469,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasImplementationStructType73" source="nid_base:Implementation" target="nid_base:StructType">
+    <edge id="eid_base:hasImplementationStructType73" source="nid_base:SmartContract" target="nid_base:StructType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1524,7 +1524,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasContractConstructor78" source="nid_base:ContractImplementation" target="nid_base:ConstructorSpecification">
+    <edge id="eid_base:hasContractConstructor78" source="nid_base:Contract" target="nid_base:ConstructorSpecification">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

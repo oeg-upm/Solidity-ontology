@@ -60,12 +60,11 @@ This section provides details for each class and property defined by The example
             title="https://w3id.org/def/SolidityOntology#ConstructorSpecification">Constructor Specification</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/SolidityOntology#ContractAttributeSpecification"
-            title="https://w3id.org/def/SolidityOntology#ContractAttributeSpecification">Contract Attribute Specification</a>
+         <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-            title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+         <a href="#https://w3id.org/def/SolidityOntology#ContractAttributeSpecification"
+            title="https://w3id.org/def/SolidityOntology#ContractAttributeSpecification">Contract Attribute Specification</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#DataLocation"
@@ -114,10 +113,6 @@ This section provides details for each class and property defined by The example
             title="https://w3id.org/def/SolidityOntology#GenericValue">Generic Value</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-            title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
-      </li>
-      <li>
          <a href="#https://w3id.org/def/SolidityOntology#Import" title="https://w3id.org/def/SolidityOntology#Import">Import</a>
       </li>
       <li>
@@ -130,8 +125,7 @@ This section provides details for each class and property defined by The example
          <a href="#https://w3id.org/def/SolidityOntology#Interface" title="https://w3id.org/def/SolidityOntology#Interface">Interface</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/SolidityOntology#LibraryImplementation"
-            title="https://w3id.org/def/SolidityOntology#LibraryImplementation">Library Implementation</a>
+         <a href="#https://w3id.org/def/SolidityOntology#Library" title="https://w3id.org/def/SolidityOntology#Library">Library</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#MapAttributeSpecification"
@@ -195,6 +189,10 @@ This section provides details for each class and property defined by The example
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#SingleMemoryType"
             title="https://w3id.org/def/SolidityOntology#SingleMemoryType">Single Memory Type</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+            title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#String" title="https://w3id.org/def/SolidityOntology#String">String</a>
@@ -577,6 +575,45 @@ This section provides details for each class and property defined by The example
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/SolidityOntology#Contract">
+      <h3>Contract<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#Contract</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#hasInheritance"
+               title="https://w3id.org/def/SolidityOntology#hasInheritance">has Inheritance</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractAttribute"
+               title="https://w3id.org/def/SolidityOntology#hasContractAttribute">has contract attribute</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractConstructor"
+               title="https://w3id.org/def/SolidityOntology#hasContractConstructor">has contract constructor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractFallback"
+               title="https://w3id.org/def/SolidityOntology#hasContractFallback">has contract fallback</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractReceive"
+               title="https://w3id.org/def/SolidityOntology#hasContractReceive">has contract receive</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractUsingForDirective"
+               title="https://w3id.org/def/SolidityOntology#hasContractUsingForDirective">has contract using for directive</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#isAbstract" title="https://w3id.org/def/SolidityOntology#isAbstract">is abstract</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#hasInheritance"
+               title="https://w3id.org/def/SolidityOntology#hasInheritance">has Inheritance</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/def/SolidityOntology#ContractAttributeSpecification">
       <h3>Contract Attribute Specification<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -601,39 +638,6 @@ This section provides details for each class and property defined by The example
          <dd>
             <a href="#https://w3id.org/def/SolidityOntology#hasConstantAttribute"
                title="https://w3id.org/def/SolidityOntology#hasConstantAttribute">has constant attribute</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://w3id.org/def/SolidityOntology#ContractImplementation">
-      <h3>Contract Implementation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#ContractImplementation</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#hasContractAttribute"
-               title="https://w3id.org/def/SolidityOntology#hasContractAttribute">has contract attribute</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractConstructor"
-               title="https://w3id.org/def/SolidityOntology#hasContractConstructor">has contract constructor</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractFallback"
-               title="https://w3id.org/def/SolidityOntology#hasContractFallback">has contract fallback</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractReceive"
-               title="https://w3id.org/def/SolidityOntology#hasContractReceive">has contract receive</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasContractUsingForDirective"
-               title="https://w3id.org/def/SolidityOntology#hasContractUsingForDirective">has contract using for directive</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#inheritance"
-               title="https://w3id.org/def/SolidityOntology#inheritance">inheritance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/SolidityOntology#isAbstract" title="https://w3id.org/def/SolidityOntology#isAbstract">is abstract</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -943,56 +947,6 @@ This section provides details for each class and property defined by The example
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/def/SolidityOntology#Implementation">
-      <h3>Implementation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#Implementation</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#MapKeyType"
-               title="https://w3id.org/def/SolidityOntology#MapKeyType">Map Key Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
-               title="https://w3id.org/def/SolidityOntology#ModifierOverrideTipe">Modifier Override Tipe</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#NonConstantType"
-               title="https://w3id.org/def/SolidityOntology#NonConstantType">Non Constant Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ParameterType"
-               title="https://w3id.org/def/SolidityOntology#ParameterType">Parameter Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
-               title="https://w3id.org/def/SolidityOntology#SimpleValueSpecification">Simple Value Specification</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-               title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#LibraryImplementation"
-               title="https://w3id.org/def/SolidityOntology#LibraryImplementation">Library Implementation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#contractName"
-               title="https://w3id.org/def/SolidityOntology#contractName">contract name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImport" title="https://w3id.org/def/SolidityOntology#hasImport">has Import</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationEvent"
-               title="https://w3id.org/def/SolidityOntology#hasImplementationEvent">has implementation event</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationFunction"
-               title="https://w3id.org/def/SolidityOntology#hasImplementationFunction">has implementation function</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationModifier"
-               title="https://w3id.org/def/SolidityOntology#hasImplementationModifier">has implementation modifier</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationStructType"
-               title="https://w3id.org/def/SolidityOntology#hasImplementationStructType">has implementation struct type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasInterface"
-               title="https://w3id.org/def/SolidityOntology#hasInterface">has interface</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#version" title="https://w3id.org/def/SolidityOntology#version">version</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://w3id.org/def/SolidityOntology#Import">
       <h3>Import<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1053,6 +1007,12 @@ This section provides details for each class and property defined by The example
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#Interface</p>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/def/SolidityOntology#hasInterfaceFunction"
@@ -1067,18 +1027,18 @@ This section provides details for each class and property defined by The example
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/def/SolidityOntology#LibraryImplementation">
-      <h3>Library Implementation<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://w3id.org/def/SolidityOntology#Library">
+      <h3>Library<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#LibraryImplementation</p>
+         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#Library</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+            <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1137,10 +1097,10 @@ This section provides details for each class and property defined by The example
             <a href="#https://w3id.org/def/SolidityOntology#ElementaryType"
                title="https://w3id.org/def/SolidityOntology#ElementaryType">Elementary Type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#EnumType" title="https://w3id.org/def/SolidityOntology#EnumType">Enum Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#MemoryType"
                title="https://w3id.org/def/SolidityOntology#MemoryType">Memory Type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1261,8 +1221,8 @@ This section provides details for each class and property defined by The example
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+            <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1369,10 +1329,10 @@ This section provides details for each class and property defined by The example
             <a href="#https://w3id.org/def/SolidityOntology#ArrayType" title="https://w3id.org/def/SolidityOntology#ArrayType">Array Type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ElementaryType"
                title="https://w3id.org/def/SolidityOntology#ElementaryType">Elementary Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#MemoryType"
                title="https://w3id.org/def/SolidityOntology#MemoryType">Memory Type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1396,12 +1356,12 @@ This section provides details for each class and property defined by The example
             <a href="#https://w3id.org/def/SolidityOntology#ElementaryType"
                title="https://w3id.org/def/SolidityOntology#ElementaryType">Elementary Type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#EnumType" title="https://w3id.org/def/SolidityOntology#EnumType">Enum Type</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#MemoryType"
                title="https://w3id.org/def/SolidityOntology#MemoryType">Memory Type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation"
                title="https://w3id.org/def/SolidityOntology#ParameterTypeWithDataLocation">Parameter Type With Data Location</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1535,9 +1495,9 @@ This section provides details for each class and property defined by The example
                title="https://w3id.org/def/SolidityOntology#FixedValue">Fixed Value</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#GenericValue"
                title="https://w3id.org/def/SolidityOntology#GenericValue">Generic Value</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-               title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#IntValue" title="https://w3id.org/def/SolidityOntology#IntValue">Int Value</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+               title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#StringValue"
                title="https://w3id.org/def/SolidityOntology#StringValue">String Value</a>
             <sup class="type-c" title="class">c</sup>
@@ -1568,6 +1528,55 @@ This section provides details for each class and property defined by The example
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/def/SolidityOntology#memory" title="https://w3id.org/def/SolidityOntology#memory">memory</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/SolidityOntology#SmartContract">
+      <h3>Smart Contract<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#SmartContract</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#MapKeyType"
+               title="https://w3id.org/def/SolidityOntology#MapKeyType">Map Key Type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ModifierOverrideTipe"
+               title="https://w3id.org/def/SolidityOntology#ModifierOverrideTipe">Modifier Override Tipe</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#NonConstantType"
+               title="https://w3id.org/def/SolidityOntology#NonConstantType">Non Constant Type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#ParameterType"
+               title="https://w3id.org/def/SolidityOntology#ParameterType">Parameter Type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#SimpleValueSpecification"
+               title="https://w3id.org/def/SolidityOntology#SimpleValueSpecification">Simple Value Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Interface" title="https://w3id.org/def/SolidityOntology#Interface">Interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/SolidityOntology#Library" title="https://w3id.org/def/SolidityOntology#Library">Library</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/SolidityOntology#contractName"
+               title="https://w3id.org/def/SolidityOntology#contractName">contract name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImport" title="https://w3id.org/def/SolidityOntology#hasImport">has Import</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationEvent"
+               title="https://w3id.org/def/SolidityOntology#hasImplementationEvent">has implementation event</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationFunction"
+               title="https://w3id.org/def/SolidityOntology#hasImplementationFunction">has implementation function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationModifier"
+               title="https://w3id.org/def/SolidityOntology#hasImplementationModifier">has implementation modifier</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasImplementationStructType"
+               title="https://w3id.org/def/SolidityOntology#hasImplementationStructType">has implementation struct type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#hasInterface"
+               title="https://w3id.org/def/SolidityOntology#hasInterface">has interface</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/SolidityOntology#version" title="https://w3id.org/def/SolidityOntology#version">version</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -1887,6 +1896,10 @@ This section provides details for each class and property defined by The example
             title="https://w3id.org/def/SolidityOntology#hasIndexArrayValue">has index array value</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/SolidityOntology#hasInheritance"
+            title="https://w3id.org/def/SolidityOntology#hasInheritance">has Inheritance</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/SolidityOntology#hasInterface"
             title="https://w3id.org/def/SolidityOntology#hasInterface">has interface</a>
       </li>
@@ -2076,8 +2089,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#LibraryImplementation"
-                  title="https://w3id.org/def/SolidityOntology#LibraryImplementation">Library Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Library" title="https://w3id.org/def/SolidityOntology#Library">Library</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2171,8 +2183,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2195,8 +2206,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2219,8 +2229,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2243,8 +2252,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2267,8 +2275,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2459,8 +2466,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2483,8 +2490,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2507,8 +2514,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2531,8 +2538,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2555,8 +2562,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2591,6 +2598,28 @@ This section provides details for each class and property defined by The example
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/def/SolidityOntology#hasInheritance">
+      <h3>has Inheritance<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#hasInheritance</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.org/def/SolidityOntology#hasInterface">
       <h3>has interface<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2602,8 +2631,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2996,8 +3025,7 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Contract" title="https://w3id.org/def/SolidityOntology#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3049,8 +3077,7 @@ This section provides details for each class and property defined by The example
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#LibraryImplementation"
-                  title="https://w3id.org/def/SolidityOntology#LibraryImplementation">Library Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#Library" title="https://w3id.org/def/SolidityOntology#Library">Library</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3131,10 +3158,6 @@ This section provides details for each class and property defined by The example
       </li>
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#index" title="https://w3id.org/def/SolidityOntology#index">index</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/def/SolidityOntology#inheritance"
-            title="https://w3id.org/def/SolidityOntology#inheritance">inheritance</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/SolidityOntology#isAnonymous"
@@ -3283,8 +3306,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3500,30 +3523,6 @@ This section provides details for each class and property defined by The example
                <a href="http://www.w3.org/2001/XMLSchema#short"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#short">short</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/def/SolidityOntology#inheritance">
-      <h3>inheritance<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/SolidityOntology#inheritance</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#ContractImplementation"
-                  title="https://w3id.org/def/SolidityOntology#ContractImplementation">Contract Implementation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -3944,8 +3943,8 @@ This section provides details for each class and property defined by The example
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityOntology#Implementation"
-                  title="https://w3id.org/def/SolidityOntology#Implementation">Implementation</a>
+               <a href="#https://w3id.org/def/SolidityOntology#SmartContract"
+                  title="https://w3id.org/def/SolidityOntology#SmartContract">Smart Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

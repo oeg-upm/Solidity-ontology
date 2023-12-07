@@ -68,7 +68,7 @@
 # 
 # https://w3id.org/def/SolidityOntology#hasConstantAttribute
 <https://w3id.org/def/SolidityOntology#hasConstantAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#LibraryImplementation> .
+<https://w3id.org/def/SolidityOntology#hasConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Library> .
 <https://w3id.org/def/SolidityOntology#hasConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#ContractAttributeSpecification> .
 <https://w3id.org/def/SolidityOntology#hasConstantAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "has constant attribute" .
 # 
@@ -92,31 +92,31 @@
 # 
 # https://w3id.org/def/SolidityOntology#hasContractAttribute
 <https://w3id.org/def/SolidityOntology#hasContractAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasContractAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#hasContractAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#hasContractAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#AttributeSpecification> .
 <https://w3id.org/def/SolidityOntology#hasContractAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "has contract attribute" .
 # 
 # https://w3id.org/def/SolidityOntology#hasContractConstructor
 <https://w3id.org/def/SolidityOntology#hasContractConstructor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasContractConstructor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#hasContractConstructor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#hasContractConstructor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#ConstructorSpecification> .
 <https://w3id.org/def/SolidityOntology#hasContractConstructor> <http://www.w3.org/2000/01/rdf-schema#label> "has contract constructor" .
 # 
 # https://w3id.org/def/SolidityOntology#hasContractFallback
 <https://w3id.org/def/SolidityOntology#hasContractFallback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasContractFallback> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#hasContractFallback> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#hasContractFallback> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#FallbackSpecification> .
 <https://w3id.org/def/SolidityOntology#hasContractFallback> <http://www.w3.org/2000/01/rdf-schema#label> "has contract fallback" .
 # 
 # https://w3id.org/def/SolidityOntology#hasContractReceive
 <https://w3id.org/def/SolidityOntology#hasContractReceive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasContractReceive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#hasContractReceive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#hasContractReceive> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#ReceiveSpecification> .
 <https://w3id.org/def/SolidityOntology#hasContractReceive> <http://www.w3.org/2000/01/rdf-schema#label> "has contract receive" .
 # 
 # https://w3id.org/def/SolidityOntology#hasContractUsingForDirective
 <https://w3id.org/def/SolidityOntology#hasContractUsingForDirective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasContractUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#hasContractUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#hasContractUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#UsingForDirective> .
 <https://w3id.org/def/SolidityOntology#hasContractUsingForDirective> <http://www.w3.org/2000/01/rdf-schema#label> "has contract using for directive" .
 # 
@@ -164,31 +164,31 @@
 # 
 # https://w3id.org/def/SolidityOntology#hasImplementationEvent
 <https://w3id.org/def/SolidityOntology#hasImplementationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasImplementationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasImplementationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasImplementationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#EventSpecification> .
 <https://w3id.org/def/SolidityOntology#hasImplementationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation event" .
 # 
 # https://w3id.org/def/SolidityOntology#hasImplementationFunction
 <https://w3id.org/def/SolidityOntology#hasImplementationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasImplementationFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasImplementationFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasImplementationFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#FunctionSpecification> .
 <https://w3id.org/def/SolidityOntology#hasImplementationFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation function" .
 # 
 # https://w3id.org/def/SolidityOntology#hasImplementationModifier
 <https://w3id.org/def/SolidityOntology#hasImplementationModifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasImplementationModifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasImplementationModifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasImplementationModifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#ModifierSpecification> .
 <https://w3id.org/def/SolidityOntology#hasImplementationModifier> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation modifier" .
 # 
 # https://w3id.org/def/SolidityOntology#hasImplementationStructType
 <https://w3id.org/def/SolidityOntology#hasImplementationStructType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasImplementationStructType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasImplementationStructType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasImplementationStructType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#StructType> .
 <https://w3id.org/def/SolidityOntology#hasImplementationStructType> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation struct type" .
 # 
 # https://w3id.org/def/SolidityOntology#hasImport
 <https://w3id.org/def/SolidityOntology#hasImport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasImport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasImport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasImport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#Import> .
 <https://w3id.org/def/SolidityOntology#hasImport> <http://www.w3.org/2000/01/rdf-schema#label> "has Import" .
 # 
@@ -198,9 +198,15 @@
 <https://w3id.org/def/SolidityOntology#hasIndexArrayValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#ArrayValueSpecification> .
 <https://w3id.org/def/SolidityOntology#hasIndexArrayValue> <http://www.w3.org/2000/01/rdf-schema#label> "has index array value" .
 # 
+# https://w3id.org/def/SolidityOntology#hasInheritance
+<https://w3id.org/def/SolidityOntology#hasInheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SolidityOntology#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
+<https://w3id.org/def/SolidityOntology#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#Contract> .
+<https://w3id.org/def/SolidityOntology#hasInheritance> <http://www.w3.org/2000/01/rdf-schema#label> "has Inheritance" .
+# 
 # https://w3id.org/def/SolidityOntology#hasInterface
 <https://w3id.org/def/SolidityOntology#hasInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#hasInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#hasInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#hasInterface> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#Interface> .
 <https://w3id.org/def/SolidityOntology#hasInterface> <http://www.w3.org/2000/01/rdf-schema#label> "has interface" .
 # 
@@ -301,7 +307,7 @@
 # 
 # https://w3id.org/def/SolidityOntology#isAbstract
 <https://w3id.org/def/SolidityOntology#isAbstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/SolidityOntology#isAbstract> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
+<https://w3id.org/def/SolidityOntology#isAbstract> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Contract> .
 <https://w3id.org/def/SolidityOntology#isAbstract> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#Abstract> .
 <https://w3id.org/def/SolidityOntology#isAbstract> <http://www.w3.org/2000/01/rdf-schema#label> "is abstract" .
 # 
@@ -314,7 +320,7 @@
 # https://w3id.org/def/SolidityOntology#isUsingLibrary
 <https://w3id.org/def/SolidityOntology#isUsingLibrary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SolidityOntology#isUsingLibrary> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#UsingForDirective> .
-<https://w3id.org/def/SolidityOntology#isUsingLibrary> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#LibraryImplementation> .
+<https://w3id.org/def/SolidityOntology#isUsingLibrary> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityOntology#Library> .
 <https://w3id.org/def/SolidityOntology#isUsingLibrary> <http://www.w3.org/2000/01/rdf-schema#label> "is using library" .
 # 
 # https://w3id.org/def/SolidityOntology#simpleGeneric
@@ -350,7 +356,7 @@
 # 
 # https://w3id.org/def/SolidityOntology#contractName
 <https://w3id.org/def/SolidityOntology#contractName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/SolidityOntology#contractName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#contractName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#contractName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/def/SolidityOntology#contractName> <http://www.w3.org/2000/01/rdf-schema#label> "contract name" .
 # 
@@ -409,12 +415,6 @@
 <https://w3id.org/def/SolidityOntology#index> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ArrayDimension> .
 <https://w3id.org/def/SolidityOntology#index> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
 <https://w3id.org/def/SolidityOntology#index> <http://www.w3.org/2000/01/rdf-schema#label> "index" .
-# 
-# https://w3id.org/def/SolidityOntology#inheritance
-<https://w3id.org/def/SolidityOntology#inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/SolidityOntology#inheritance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#ContractImplementation> .
-<https://w3id.org/def/SolidityOntology#inheritance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/SolidityOntology#inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "inheritance" .
 # 
 # https://w3id.org/def/SolidityOntology#isAnonymous
 <https://w3id.org/def/SolidityOntology#isAnonymous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -523,7 +523,7 @@
 # 
 # https://w3id.org/def/SolidityOntology#version
 <https://w3id.org/def/SolidityOntology#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/SolidityOntology#version> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#Implementation> .
+<https://w3id.org/def/SolidityOntology#version> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/def/SolidityOntology#version> <http://www.w3.org/2000/01/rdf-schema#label> "version" .
 # 
@@ -608,15 +608,15 @@
 <https://w3id.org/def/SolidityOntology#ConstructorSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SolidityOntology#ConstructorSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Constructor Specification" .
 # 
+# https://w3id.org/def/SolidityOntology#Contract
+<https://w3id.org/def/SolidityOntology#Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SolidityOntology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SmartContract> .
+<https://w3id.org/def/SolidityOntology#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contract" .
+# 
 # https://w3id.org/def/SolidityOntology#ContractAttributeSpecification
 <https://w3id.org/def/SolidityOntology#ContractAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SolidityOntology#ContractAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#AttributeSpecification> .
 <https://w3id.org/def/SolidityOntology#ContractAttributeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Attribute Specification" .
-# 
-# https://w3id.org/def/SolidityOntology#ContractImplementation
-<https://w3id.org/def/SolidityOntology#ContractImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/SolidityOntology#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#Implementation> .
-<https://w3id.org/def/SolidityOntology#ContractImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Implementation" .
 # 
 # https://w3id.org/def/SolidityOntology#DataLocation
 <https://w3id.org/def/SolidityOntology#DataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -676,15 +676,6 @@
 <https://w3id.org/def/SolidityOntology#GenericValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SimpleValueSpecification> .
 <https://w3id.org/def/SolidityOntology#GenericValue> <http://www.w3.org/2000/01/rdf-schema#label> "Generic Value" .
 # 
-# https://w3id.org/def/SolidityOntology#Implementation
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#MapKeyType> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#ModifierOverrideTipe> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#NonConstantType> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#ParameterType> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SimpleValueSpecification> .
-<https://w3id.org/def/SolidityOntology#Implementation> <http://www.w3.org/2000/01/rdf-schema#label> "Implementation" .
-# 
 # https://w3id.org/def/SolidityOntology#Import
 <https://w3id.org/def/SolidityOntology#Import> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SolidityOntology#Import> <http://www.w3.org/2000/01/rdf-schema#label> "Import" .
@@ -701,12 +692,13 @@
 # 
 # https://w3id.org/def/SolidityOntology#Interface
 <https://w3id.org/def/SolidityOntology#Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SolidityOntology#Interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SmartContract> .
 <https://w3id.org/def/SolidityOntology#Interface> <http://www.w3.org/2000/01/rdf-schema#label> "Interface" .
 # 
-# https://w3id.org/def/SolidityOntology#LibraryImplementation
-<https://w3id.org/def/SolidityOntology#LibraryImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/SolidityOntology#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#Implementation> .
-<https://w3id.org/def/SolidityOntology#LibraryImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Library Implementation" .
+# https://w3id.org/def/SolidityOntology#Library
+<https://w3id.org/def/SolidityOntology#Library> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SolidityOntology#Library> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SmartContract> .
+<https://w3id.org/def/SolidityOntology#Library> <http://www.w3.org/2000/01/rdf-schema#label> "Library" .
 # 
 # https://w3id.org/def/SolidityOntology#MapAttributeSpecification
 <https://w3id.org/def/SolidityOntology#MapAttributeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -784,6 +776,15 @@
 <https://w3id.org/def/SolidityOntology#SingleMemoryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SolidityOntology#SingleMemoryType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#MemoryType> .
 <https://w3id.org/def/SolidityOntology#SingleMemoryType> <http://www.w3.org/2000/01/rdf-schema#label> "Single Memory Type" .
+# 
+# https://w3id.org/def/SolidityOntology#SmartContract
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#MapKeyType> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#ModifierOverrideTipe> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#NonConstantType> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#ParameterType> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SolidityOntology#SimpleValueSpecification> .
+<https://w3id.org/def/SolidityOntology#SmartContract> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Contract" .
 # 
 # https://w3id.org/def/SolidityOntology#String
 <https://w3id.org/def/SolidityOntology#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

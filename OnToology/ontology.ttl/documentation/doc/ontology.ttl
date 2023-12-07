@@ -77,7 +77,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#hasConstantAttribute
 :hasConstantAttribute rdf:type owl:ObjectProperty ;
-                      rdfs:domain :LibraryImplementation ;
+                      rdfs:domain :Library ;
                       rdfs:range :ContractAttributeSpecification ;
                       rdfs:label "has constant attribute" .
 
@@ -105,35 +105,35 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#hasContractAttribute
 :hasContractAttribute rdf:type owl:ObjectProperty ;
-                      rdfs:domain :ContractImplementation ;
+                      rdfs:domain :Contract ;
                       rdfs:range :AttributeSpecification ;
                       rdfs:label "has contract attribute" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasContractConstructor
 :hasContractConstructor rdf:type owl:ObjectProperty ;
-                        rdfs:domain :ContractImplementation ;
+                        rdfs:domain :Contract ;
                         rdfs:range :ConstructorSpecification ;
                         rdfs:label "has contract constructor" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasContractFallback
 :hasContractFallback rdf:type owl:ObjectProperty ;
-                     rdfs:domain :ContractImplementation ;
+                     rdfs:domain :Contract ;
                      rdfs:range :FallbackSpecification ;
                      rdfs:label "has contract fallback" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasContractReceive
 :hasContractReceive rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ContractImplementation ;
+                    rdfs:domain :Contract ;
                     rdfs:range :ReceiveSpecification ;
                     rdfs:label "has contract receive" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasContractUsingForDirective
 :hasContractUsingForDirective rdf:type owl:ObjectProperty ;
-                              rdfs:domain :ContractImplementation ;
+                              rdfs:domain :Contract ;
                               rdfs:range :UsingForDirective ;
                               rdfs:label "has contract using for directive" .
 
@@ -189,35 +189,35 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#hasImplementationEvent
 :hasImplementationEvent rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Implementation ;
+                        rdfs:domain :SmartContract ;
                         rdfs:range :EventSpecification ;
                         rdfs:label "has implementation event" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasImplementationFunction
 :hasImplementationFunction rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Implementation ;
+                           rdfs:domain :SmartContract ;
                            rdfs:range :FunctionSpecification ;
                            rdfs:label "has implementation function" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasImplementationModifier
 :hasImplementationModifier rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Implementation ;
+                           rdfs:domain :SmartContract ;
                            rdfs:range :ModifierSpecification ;
                            rdfs:label "has implementation modifier" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasImplementationStructType
 :hasImplementationStructType rdf:type owl:ObjectProperty ;
-                             rdfs:domain :Implementation ;
+                             rdfs:domain :SmartContract ;
                              rdfs:range :StructType ;
                              rdfs:label "has implementation struct type" .
 
 
 ###  https://w3id.org/def/SolidityOntology#hasImport
 :hasImport rdf:type owl:ObjectProperty ;
-           rdfs:domain :Implementation ;
+           rdfs:domain :SmartContract ;
            rdfs:range :Import ;
            rdfs:label "has Import" .
 
@@ -229,9 +229,16 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                     rdfs:label "has index array value" .
 
 
+###  https://w3id.org/def/SolidityOntology#hasInheritance
+:hasInheritance rdf:type owl:ObjectProperty ;
+                rdfs:domain :Contract ;
+                rdfs:range :Contract ;
+                rdfs:label "has Inheritance" .
+
+
 ###  https://w3id.org/def/SolidityOntology#hasInterface
 :hasInterface rdf:type owl:ObjectProperty ;
-              rdfs:domain :Implementation ;
+              rdfs:domain :SmartContract ;
               rdfs:range :Interface ;
               rdfs:label "has interface" .
 
@@ -349,7 +356,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#isAbstract
 :isAbstract rdf:type owl:ObjectProperty ;
-            rdfs:domain :ContractImplementation ;
+            rdfs:domain :Contract ;
             rdfs:range :Abstract ;
             rdfs:label "is abstract" .
 
@@ -364,7 +371,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/def/SolidityOntology#isUsingLibrary
 :isUsingLibrary rdf:type owl:ObjectProperty ;
                 rdfs:domain :UsingForDirective ;
-                rdfs:range :LibraryImplementation ;
+                rdfs:range :Library ;
                 rdfs:label "is using library" .
 
 
@@ -400,7 +407,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#contractName
 :contractName rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Implementation ;
+              rdfs:domain :SmartContract ;
               rdfs:range xsd:string ;
               rdfs:label "contract name" .
 
@@ -469,13 +476,6 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
        rdfs:domain :ArrayDimension ;
        rdfs:range xsd:short ;
        rdfs:label "index" .
-
-
-###  https://w3id.org/def/SolidityOntology#inheritance
-:inheritance rdf:type owl:DatatypeProperty ;
-             rdfs:domain :ContractImplementation ;
-             rdfs:range xsd:string ;
-             rdfs:label "inheritance" .
 
 
 ###  https://w3id.org/def/SolidityOntology#isAnonymous
@@ -603,7 +603,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#version
 :version rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Implementation ;
+         rdfs:domain :SmartContract ;
          rdfs:range xsd:string ;
          rdfs:label "version" .
 
@@ -699,16 +699,16 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                           rdfs:label "Constructor Specification" .
 
 
+###  https://w3id.org/def/SolidityOntology#Contract
+:Contract rdf:type owl:Class ;
+          rdfs:subClassOf :SmartContract ;
+          rdfs:label "Contract" .
+
+
 ###  https://w3id.org/def/SolidityOntology#ContractAttributeSpecification
 :ContractAttributeSpecification rdf:type owl:Class ;
                                 rdfs:subClassOf :AttributeSpecification ;
                                 rdfs:label "Contract Attribute Specification" .
-
-
-###  https://w3id.org/def/SolidityOntology#ContractImplementation
-:ContractImplementation rdf:type owl:Class ;
-                        rdfs:subClassOf :Implementation ;
-                        rdfs:label "Contract Implementation" .
 
 
 ###  https://w3id.org/def/SolidityOntology#DataLocation
@@ -781,16 +781,6 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
               rdfs:label "Generic Value" .
 
 
-###  https://w3id.org/def/SolidityOntology#Implementation
-:Implementation rdf:type owl:Class ;
-                rdfs:subClassOf :MapKeyType ,
-                                :ModifierOverrideTipe ,
-                                :NonConstantType ,
-                                :ParameterType ,
-                                :SimpleValueSpecification ;
-                rdfs:label "Implementation" .
-
-
 ###  https://w3id.org/def/SolidityOntology#Import
 :Import rdf:type owl:Class ;
         rdfs:label "Import" .
@@ -810,13 +800,14 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/SolidityOntology#Interface
 :Interface rdf:type owl:Class ;
+           rdfs:subClassOf :SmartContract ;
            rdfs:label "Interface" .
 
 
-###  https://w3id.org/def/SolidityOntology#LibraryImplementation
-:LibraryImplementation rdf:type owl:Class ;
-                       rdfs:subClassOf :Implementation ;
-                       rdfs:label "Library Implementation" .
+###  https://w3id.org/def/SolidityOntology#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :SmartContract ;
+         rdfs:label "Library" .
 
 
 ###  https://w3id.org/def/SolidityOntology#MapAttributeSpecification
@@ -910,6 +901,16 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :SingleMemoryType rdf:type owl:Class ;
                   rdfs:subClassOf :MemoryType ;
                   rdfs:label "Single Memory Type" .
+
+
+###  https://w3id.org/def/SolidityOntology#SmartContract
+:SmartContract rdf:type owl:Class ;
+               rdfs:subClassOf :MapKeyType ,
+                               :ModifierOverrideTipe ,
+                               :NonConstantType ,
+                               :ParameterType ,
+                               :SimpleValueSpecification ;
+               rdfs:label "Smart Contract" .
 
 
 ###  https://w3id.org/def/SolidityOntology#String
