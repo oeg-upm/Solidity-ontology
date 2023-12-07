@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-01T08:47:13.127Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="3l3-kroXIee425qNbW2d" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-12-07T11:13:30.536Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="_7zvVfN5pl_rmqgcvTXy" version="22.1.2" type="device">
   <diagram name="Página-1" id="pJHk1jmKi2Voto7qG9wJ">
-    <mxGraphModel dx="8407" dy="3417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3773" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -18,7 +18,7 @@
           <mxGeometry x="114" y="379" width="172" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bmZF7T8KRYOrzVGl7_Tg-4" value="&lt;div&gt;&lt;b&gt;dc:title&lt;/b&gt;: &quot;The example ontology&quot;@en&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dc:description&lt;/b&gt;: &quot;Brief description of your ontology.&quot;@en &lt;br&gt;&lt;br&gt;&lt;b&gt;dc:created&lt;/b&gt;: &quot;2021-01-01&quot;^^xsd:date &lt;br&gt;&lt;b&gt;dc:creator&lt;/b&gt;: Juan Cano-Benito&lt;br&gt;&lt;b&gt;dc:creator&lt;/b&gt;: Raúl García Castro&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;dc:creator&lt;/b&gt;: Andrea Cimmino&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;owl:versionInfo&lt;/b&gt;: &quot;0.0.1&quot;&lt;br&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fontSize=12;fontColor=#000000;size=0.07407407407407407;" parent="1" vertex="1">
-          <mxGeometry x="899" y="2910" width="360" height="250" as="geometry" />
+          <mxGeometry x="740" y="2810" width="360" height="170" as="geometry" />
         </mxCell>
         <mxCell id="bmZF7T8KRYOrzVGl7_Tg-5" value="sol:Library" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="320" y="379" width="165" height="30" as="geometry" />
@@ -33,8 +33,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmZF7T8KRYOrzVGl7_Tg-7" value="&lt;div&gt;&lt;b&gt;sol&lt;/b&gt;:&amp;nbsp;&amp;lt;https://w3id.org/def/SolidityOntology#&amp;gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="453" y="2940" width="290" height="90" as="geometry" />
+        <mxCell id="bmZF7T8KRYOrzVGl7_Tg-7" value="&lt;div&gt;&lt;b&gt;sol&lt;/b&gt;:&amp;nbsp;&amp;lt;https://w3id.org/def/Solidity#&amp;gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="124" y="2870" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="bmZF7T8KRYOrzVGl7_Tg-8" value="sol:contractName: string&lt;br&gt;sol:version: string" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="1" vertex="1">
           <mxGeometry x="206" y="270" width="179" height="58" as="geometry" />
