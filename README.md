@@ -2,7 +2,7 @@
 
 This ontology aims at modelling the Application Binary Interface (ABI) of a contract in Ethereum.
 
-The ontology documentation can be found [here](https://w3id.org/def/SolidityOntology)
+The ontology documentation can be found [here](https://w3id.org/def/Solidity)
 
 ## Current version of the ontology model
 
