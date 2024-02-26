@@ -16,6 +16,7 @@
                                           dc:description "This ontology aims at modelling the Solidity smart contract language."@en ;
                                           dc:title "Solidity ontology"@en ;
                                           owl:versionInfo 1.1 ;
+                                          <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                           mod:createdWith <https://chowlk.linkeddata.es/> .
 
 #################################################################
